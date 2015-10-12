@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarrocITApp.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace BarrocITApp
 {
     public partial class MainForm : Form
     {
+        private EnrollBill enrollBill;
+
         public MainForm()
         {
             InitializeComponent();
@@ -29,5 +32,18 @@ namespace BarrocITApp
 
         }
         #endregion
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+            if (enrollBill != null)
+            {
+                enrollBill.Hide();
+                enrollBill = null;
+            }
+            enrollBill = new Forms.EnrollBill();
+            enrollBill.Show();
+
+        }
     }
 }
