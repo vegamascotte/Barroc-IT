@@ -28,31 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
+            this.UssernameTbx = new System.Windows.Forms.TextBox();
+            this.PasswordTbx = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LoginBtn = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // UssernameTbx
             // 
-            this.textBox1.Location = new System.Drawing.Point(305, 135);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(295, 31);
-            this.textBox1.TabIndex = 0;
+            this.UssernameTbx.Location = new System.Drawing.Point(305, 120);
+            this.UssernameTbx.Name = "UssernameTbx";
+            this.UssernameTbx.Size = new System.Drawing.Size(295, 31);
+            this.UssernameTbx.TabIndex = 0;
             // 
-            // textBox2
+            // PasswordTbx
             // 
-            this.textBox2.Location = new System.Drawing.Point(305, 172);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(295, 31);
-            this.textBox2.TabIndex = 1;
+            this.PasswordTbx.Location = new System.Drawing.Point(305, 172);
+            this.PasswordTbx.Name = "PasswordTbx";
+            this.PasswordTbx.Size = new System.Drawing.Size(295, 31);
+            this.PasswordTbx.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(141, 138);
+            this.label1.Location = new System.Drawing.Point(141, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 25);
             this.label1.TabIndex = 2;
@@ -67,28 +70,35 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             // 
-            // button1
+            // LoginBtn
             // 
-            this.button1.Location = new System.Drawing.Point(359, 278);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 53);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
+            this.LoginBtn.Location = new System.Drawing.Point(355, 271);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(179, 53);
+            this.LoginBtn.TabIndex = 4;
+            this.LoginBtn.Text = "Login";
+            this.LoginBtn.UseVisualStyleBackColor = true;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(824, 401);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PasswordTbx);
+            this.Controls.Add(this.UssernameTbx);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "LoginForm";
             this.Text = "LoginForm";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,10 +106,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox UssernameTbx;
+        private System.Windows.Forms.TextBox PasswordTbx;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button LoginBtn;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

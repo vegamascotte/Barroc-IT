@@ -1,2 +1,14 @@
 c:\users\jeebes\documents\visual studio 2013\Projects\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.exe.config
 C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.exe.config
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITDB.mdf
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITDB_log.ldf
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.exe
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.pdb
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.EditKlantForm.resources
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.MainForm.resources
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.LoginForm.resources
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Properties.Resources.resources
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.csproj.GenerateResource.Cache
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.exe
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.pdb
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.csprojResolveAssemblyReference.cache
