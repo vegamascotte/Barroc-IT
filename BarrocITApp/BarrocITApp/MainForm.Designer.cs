@@ -97,9 +97,7 @@
             this.projectStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.barrocITDBDataSetFinance = new BarrocITApp.BarrocITDBDataSetFinance();
             this.barrocITDBDataSetFinanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.barrocITDBDataSet5 = new BarrocITApp.BarrocITDBDataSet5();
             this.tbloffertesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_offertesTableAdapter = new BarrocITApp.BarrocITDBDataSet5TableAdapters.tbl_offertesTableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblklantendataBindingSource)).BeginInit();
@@ -119,7 +117,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblprojectenBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barrocITDBDataSetFinance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barrocITDBDataSetFinanceBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barrocITDBDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbloffertesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -701,17 +698,13 @@
             // 
             // barrocITDBDataSet5
             // 
-            this.barrocITDBDataSet5.DataSetName = "BarrocITDBDataSet5";
-            this.barrocITDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tbloffertesBindingSource
             // 
             this.tbloffertesBindingSource.DataMember = "tbl_offertes";
-            this.tbloffertesBindingSource.DataSource = this.barrocITDBDataSet5;
             // 
             // tbl_offertesTableAdapter
             // 
-            this.tbl_offertesTableAdapter.ClearBeforeFill = true;
             // 
             // MainForm
             // 
@@ -743,7 +736,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblprojectenBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barrocITDBDataSetFinance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barrocITDBDataSetFinanceBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barrocITDBDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbloffertesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -819,9 +811,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn projectStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource barrocITDBDataSetFinanceBindingSource;
         private BarrocITDBDataSetFinance barrocITDBDataSetFinance;
-        private BarrocITDBDataSet5 barrocITDBDataSet5;
         private System.Windows.Forms.BindingSource tbloffertesBindingSource;
-        private BarrocITDBDataSet5TableAdapters.tbl_offertesTableAdapter tbl_offertesTableAdapter;
     }
 }
 
