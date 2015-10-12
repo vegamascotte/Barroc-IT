@@ -41,6 +41,7 @@ namespace BarrocITApp
                 enrollBill.Hide();
                 enrollBill = null;
             }
+
             enrollBill = new Forms.EnrollBill();
             enrollBill.Show();
 
