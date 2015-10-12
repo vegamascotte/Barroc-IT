@@ -59,6 +59,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarrocITDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarrocITDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +132,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="BarrocITDBDataSet.xsc">
+      <DependentUpon>BarrocITDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BarrocITDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BarrocITDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BarrocITDBDataSet.xss">
+      <DependentUpon>BarrocITDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
