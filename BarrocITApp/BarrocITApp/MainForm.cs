@@ -19,6 +19,12 @@ namespace BarrocITApp
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'barrocITDBDataSet5.tbl_offertes' table. You can move, or remove it, as needed.
+            this.tbl_offertesTableAdapter.Fill(this.barrocITDBDataSet5.tbl_offertes);
+            // TODO: This line of code loads data into the 'barrocITDBDataSet2.tbl_projecten' table. You can move, or remove it, as needed.
+            this.tbl_projectenTableAdapter.Fill(this.barrocITDBDataSet2.tbl_projecten);
+            // TODO: This line of code loads data into the 'barrocITDBDataSet1.tbl_klantendata' table. You can move, or remove it, as needed.
+            this.tbl_klantendataTableAdapter1.Fill(this.barrocITDBDataSet1.tbl_klantendata);
             // TODO: This line of code loads data into the 'barrocITDBDataSet.tbl_klantendata' table. You can move, or remove it, as needed.
             this.tbl_klantendataTableAdapter.Fill(this.barrocITDBDataSet.tbl_klantendata);
 
