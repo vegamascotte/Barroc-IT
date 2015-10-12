@@ -59,28 +59,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EditForm.cs">
+    <Compile Include="Forms\AddClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditForm.Designer.cs">
-      <DependentUpon>EditForm.cs</DependentUpon>
+    <Compile Include="Forms\AddClient.Designer.cs">
+      <DependentUpon>AddClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\AddProject.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\AddProject.Designer.cs">
+      <DependentUpon>AddProject.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Forms\EditClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Forms\EditClientForm.Designer.cs">
+      <DependentUpon>EditClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditProject.Designer.cs">
+      <DependentUpon>EditProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EnrollBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EnrollBill.Designer.cs">
+      <DependentUpon>EnrollBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EnrollQuatation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EnrollQuatation.Designer.cs">
+      <DependentUpon>EnrollQuatation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\EditClientForm.resx">
+      <DependentUpon>EditClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
