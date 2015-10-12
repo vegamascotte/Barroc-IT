@@ -16,7 +16,8 @@ namespace BarrocITApp
         {
             InitializeComponent();
         }
-
+        //Fill the datagrid on form load
+        #region FormLoadData
         private void MainForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'barrocITDBDataSet5.tbl_offertes' table. You can move, or remove it, as needed.
@@ -29,5 +30,6 @@ namespace BarrocITApp
             this.tbl_klantendataTableAdapter.Fill(this.barrocITDBDataSet.tbl_klantendata);
 
         }
+        #endregion
     }
 }
