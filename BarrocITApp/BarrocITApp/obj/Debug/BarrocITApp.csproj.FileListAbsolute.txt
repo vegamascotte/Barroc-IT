@@ -1,1 +1,2 @@
 c:\users\jeebes\documents\visual studio 2013\Projects\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.exe.config
+C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.exe.config
