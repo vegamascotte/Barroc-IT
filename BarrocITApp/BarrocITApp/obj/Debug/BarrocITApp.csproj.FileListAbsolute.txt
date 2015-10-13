@@ -27,3 +27,4 @@ C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\Bar
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.LoginForm.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Properties.Resources.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.csproj.GenerateResource.Cache
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.AddClient.resources
