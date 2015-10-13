@@ -132,8 +132,14 @@
     <EmbeddedResource Include="Forms\AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddProject.resx">
+      <DependentUpon>AddProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditClientForm.resx">
       <DependentUpon>EditClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditProject.resx">
+      <DependentUpon>EditProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EnrollBill.resx">
       <DependentUpon>EnrollBill.cs</DependentUpon>

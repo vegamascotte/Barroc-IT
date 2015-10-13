@@ -59,44 +59,44 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.potentialcustomerN = new System.Windows.Forms.RadioButton();
-            this.potentialcustomerY = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.creditworthyY = new System.Windows.Forms.RadioButton();
-            this.creditworthyN = new System.Windows.Forms.RadioButton();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
             this.maintenancecontractN = new System.Windows.Forms.RadioButton();
             this.maintenancecontractY = new System.Windows.Forms.RadioButton();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.creditworthyN = new System.Windows.Forms.RadioButton();
+            this.creditworthyY = new System.Windows.Forms.RadioButton();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.potentialcustomerN = new System.Windows.Forms.RadioButton();
+            this.potentialcustomerY = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -420,291 +420,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Client Data";
             // 
-            // potentialcustomerN
-            // 
-            this.potentialcustomerN.AutoSize = true;
-            this.potentialcustomerN.Location = new System.Drawing.Point(212, 336);
-            this.potentialcustomerN.Name = "potentialcustomerN";
-            this.potentialcustomerN.Size = new System.Drawing.Size(39, 17);
-            this.potentialcustomerN.TabIndex = 33;
-            this.potentialcustomerN.TabStop = true;
-            this.potentialcustomerN.Text = "No";
-            this.potentialcustomerN.UseVisualStyleBackColor = true;
-            // 
-            // potentialcustomerY
-            // 
-            this.potentialcustomerY.AutoSize = true;
-            this.potentialcustomerY.Location = new System.Drawing.Point(120, 336);
-            this.potentialcustomerY.Name = "potentialcustomerY";
-            this.potentialcustomerY.Size = new System.Drawing.Size(43, 17);
-            this.potentialcustomerY.TabIndex = 32;
-            this.potentialcustomerY.TabStop = true;
-            this.potentialcustomerY.Text = "Yes";
-            this.potentialcustomerY.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(108, 358);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(210, 20);
-            this.dateTimePicker2.TabIndex = 34;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(351, 51);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(90, 13);
-            this.label17.TabIndex = 35;
-            this.label17.Text = "Sales percentage";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(351, 77);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(65, 13);
-            this.label18.TabIndex = 36;
-            this.label18.Text = "Creditworthy";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(351, 103);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(114, 13);
-            this.label19.TabIndex = 37;
-            this.label19.Text = "Bank account nummer";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(351, 129);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 13);
-            this.label20.TabIndex = 38;
-            this.label20.Text = "Credit balance";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(351, 156);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(98, 13);
-            this.label21.TabIndex = 39;
-            this.label21.Text = "Number of invoices";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(351, 182);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(70, 13);
-            this.label22.TabIndex = 40;
-            this.label22.Text = "Gross revenu";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(351, 208);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(28, 13);
-            this.label23.TabIndex = 41;
-            this.label23.Text = "Limit";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(351, 234);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(120, 13);
-            this.label24.TabIndex = 42;
-            this.label24.Text = "Ledger account number";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(351, 260);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(49, 13);
-            this.label25.TabIndex = 43;
-            this.label25.Text = "Taxcode";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(351, 286);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(111, 13);
-            this.label26.TabIndex = 44;
-            this.label26.Text = "Maintenance contract";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(351, 312);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(73, 13);
-            this.label27.TabIndex = 45;
-            this.label27.Text = "Open projects";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(351, 338);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(64, 13);
-            this.label28.TabIndex = 46;
-            this.label28.Text = "Applications";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(351, 364);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(53, 13);
-            this.label29.TabIndex = 47;
-            this.label29.Text = "Hardware";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(351, 390);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(96, 13);
-            this.label30.TabIndex = 48;
-            this.label30.Text = "Opperating System";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(720, 55);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(71, 13);
-            this.label31.TabIndex = 49;
-            this.label31.Text = "Appointments";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(720, 25);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(116, 13);
-            this.label32.TabIndex = 50;
-            this.label32.Text = "Internal contact person";
-            // 
-            // creditworthyY
-            // 
-            this.creditworthyY.AutoSize = true;
-            this.creditworthyY.Location = new System.Drawing.Point(476, 75);
-            this.creditworthyY.Name = "creditworthyY";
-            this.creditworthyY.Size = new System.Drawing.Size(43, 17);
-            this.creditworthyY.TabIndex = 51;
-            this.creditworthyY.TabStop = true;
-            this.creditworthyY.Text = "Yes";
-            this.creditworthyY.UseVisualStyleBackColor = true;
-            // 
-            // creditworthyN
-            // 
-            this.creditworthyN.AutoSize = true;
-            this.creditworthyN.Location = new System.Drawing.Point(555, 75);
-            this.creditworthyN.Name = "creditworthyN";
-            this.creditworthyN.Size = new System.Drawing.Size(39, 17);
-            this.creditworthyN.TabIndex = 52;
-            this.creditworthyN.TabStop = true;
-            this.creditworthyN.Text = "No";
-            this.creditworthyN.UseVisualStyleBackColor = true;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(476, 100);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(210, 20);
-            this.textBox13.TabIndex = 53;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(476, 22);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(210, 20);
-            this.textBox14.TabIndex = 53;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(476, 48);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(210, 20);
-            this.textBox15.TabIndex = 54;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(476, 126);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(210, 20);
-            this.textBox16.TabIndex = 55;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(476, 153);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(210, 20);
-            this.textBox17.TabIndex = 56;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(476, 179);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(210, 20);
-            this.textBox18.TabIndex = 57;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(476, 257);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(210, 20);
-            this.textBox19.TabIndex = 58;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(476, 205);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(210, 20);
-            this.textBox20.TabIndex = 58;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(476, 231);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(210, 20);
-            this.textBox21.TabIndex = 59;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(476, 309);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(210, 20);
-            this.textBox23.TabIndex = 61;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(476, 335);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(210, 20);
-            this.textBox24.TabIndex = 62;
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(476, 361);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(210, 20);
-            this.textBox26.TabIndex = 63;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(476, 387);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(210, 20);
-            this.textBox27.TabIndex = 64;
+            // textBox25
+            // 
+            this.textBox25.Location = new System.Drawing.Point(842, 25);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(134, 20);
+            this.textBox25.TabIndex = 68;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(723, 71);
+            this.textBox22.MaxLength = 255;
+            this.textBox22.Multiline = true;
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(253, 150);
+            this.textBox22.TabIndex = 67;
             // 
             // maintenancecontractN
             // 
@@ -728,21 +458,291 @@
             this.maintenancecontractY.Text = "Yes";
             this.maintenancecontractY.UseVisualStyleBackColor = true;
             // 
-            // textBox22
+            // textBox27
             // 
-            this.textBox22.Location = new System.Drawing.Point(723, 71);
-            this.textBox22.MaxLength = 255;
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(253, 150);
-            this.textBox22.TabIndex = 67;
+            this.textBox27.Location = new System.Drawing.Point(476, 387);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(210, 20);
+            this.textBox27.TabIndex = 64;
             // 
-            // textBox25
+            // textBox26
             // 
-            this.textBox25.Location = new System.Drawing.Point(842, 25);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(134, 20);
-            this.textBox25.TabIndex = 68;
+            this.textBox26.Location = new System.Drawing.Point(476, 361);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(210, 20);
+            this.textBox26.TabIndex = 63;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(476, 335);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(210, 20);
+            this.textBox24.TabIndex = 62;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(476, 309);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(210, 20);
+            this.textBox23.TabIndex = 61;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(476, 231);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(210, 20);
+            this.textBox21.TabIndex = 59;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(476, 205);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(210, 20);
+            this.textBox20.TabIndex = 58;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(476, 257);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(210, 20);
+            this.textBox19.TabIndex = 58;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(476, 179);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(210, 20);
+            this.textBox18.TabIndex = 57;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(476, 153);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(210, 20);
+            this.textBox17.TabIndex = 56;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(476, 126);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(210, 20);
+            this.textBox16.TabIndex = 55;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(476, 48);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(210, 20);
+            this.textBox15.TabIndex = 54;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(476, 22);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(210, 20);
+            this.textBox14.TabIndex = 53;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(476, 100);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(210, 20);
+            this.textBox13.TabIndex = 53;
+            // 
+            // creditworthyN
+            // 
+            this.creditworthyN.AutoSize = true;
+            this.creditworthyN.Location = new System.Drawing.Point(555, 75);
+            this.creditworthyN.Name = "creditworthyN";
+            this.creditworthyN.Size = new System.Drawing.Size(39, 17);
+            this.creditworthyN.TabIndex = 52;
+            this.creditworthyN.TabStop = true;
+            this.creditworthyN.Text = "No";
+            this.creditworthyN.UseVisualStyleBackColor = true;
+            // 
+            // creditworthyY
+            // 
+            this.creditworthyY.AutoSize = true;
+            this.creditworthyY.Location = new System.Drawing.Point(476, 75);
+            this.creditworthyY.Name = "creditworthyY";
+            this.creditworthyY.Size = new System.Drawing.Size(43, 17);
+            this.creditworthyY.TabIndex = 51;
+            this.creditworthyY.TabStop = true;
+            this.creditworthyY.Text = "Yes";
+            this.creditworthyY.UseVisualStyleBackColor = true;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(720, 25);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(116, 13);
+            this.label32.TabIndex = 50;
+            this.label32.Text = "Internal contact person";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(720, 55);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(71, 13);
+            this.label31.TabIndex = 49;
+            this.label31.Text = "Appointments";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(351, 390);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(96, 13);
+            this.label30.TabIndex = 48;
+            this.label30.Text = "Opperating System";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(351, 364);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(53, 13);
+            this.label29.TabIndex = 47;
+            this.label29.Text = "Hardware";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(351, 338);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(64, 13);
+            this.label28.TabIndex = 46;
+            this.label28.Text = "Applications";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(351, 312);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(73, 13);
+            this.label27.TabIndex = 45;
+            this.label27.Text = "Open projects";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(351, 286);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(111, 13);
+            this.label26.TabIndex = 44;
+            this.label26.Text = "Maintenance contract";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(351, 260);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(49, 13);
+            this.label25.TabIndex = 43;
+            this.label25.Text = "Taxcode";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(351, 234);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(120, 13);
+            this.label24.TabIndex = 42;
+            this.label24.Text = "Ledger account number";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(351, 208);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(28, 13);
+            this.label23.TabIndex = 41;
+            this.label23.Text = "Limit";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(351, 182);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(70, 13);
+            this.label22.TabIndex = 40;
+            this.label22.Text = "Gross revenu";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(351, 156);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(98, 13);
+            this.label21.TabIndex = 39;
+            this.label21.Text = "Number of invoices";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(351, 129);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(75, 13);
+            this.label20.TabIndex = 38;
+            this.label20.Text = "Credit balance";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(351, 103);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(114, 13);
+            this.label19.TabIndex = 37;
+            this.label19.Text = "Bank account nummer";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(351, 77);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(65, 13);
+            this.label18.TabIndex = 36;
+            this.label18.Text = "Creditworthy";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(351, 51);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(90, 13);
+            this.label17.TabIndex = 35;
+            this.label17.Text = "Sales percentage";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(108, 358);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(210, 20);
+            this.dateTimePicker2.TabIndex = 34;
+            // 
+            // potentialcustomerN
+            // 
+            this.potentialcustomerN.AutoSize = true;
+            this.potentialcustomerN.Location = new System.Drawing.Point(212, 336);
+            this.potentialcustomerN.Name = "potentialcustomerN";
+            this.potentialcustomerN.Size = new System.Drawing.Size(39, 17);
+            this.potentialcustomerN.TabIndex = 33;
+            this.potentialcustomerN.TabStop = true;
+            this.potentialcustomerN.Text = "No";
+            this.potentialcustomerN.UseVisualStyleBackColor = true;
+            // 
+            // potentialcustomerY
+            // 
+            this.potentialcustomerY.AutoSize = true;
+            this.potentialcustomerY.Location = new System.Drawing.Point(120, 336);
+            this.potentialcustomerY.Name = "potentialcustomerY";
+            this.potentialcustomerY.Size = new System.Drawing.Size(43, 17);
+            this.potentialcustomerY.TabIndex = 32;
+            this.potentialcustomerY.TabStop = true;
+            this.potentialcustomerY.Text = "Yes";
+            this.potentialcustomerY.UseVisualStyleBackColor = true;
             // 
             // AddClient
             // 
@@ -752,7 +752,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.saveClientBtn);
             this.Name = "AddClient";
-            this.Text = "AddClient";
+            this.Text = "Add Client";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
