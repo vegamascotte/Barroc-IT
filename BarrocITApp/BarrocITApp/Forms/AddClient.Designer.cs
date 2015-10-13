@@ -28,37 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_CompanyName = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Lbl_Adress1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_ContactPerson = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Lbl_Zipcode1 = new System.Windows.Forms.Label();
             this.saveClientBtn = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.Lbl_NextAction = new System.Windows.Forms.Label();
+            this.Lbl_adress2 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.Lbl_Zipcode2 = new System.Windows.Forms.Label();
+            this.Lbl_Place1 = new System.Windows.Forms.Label();
+            this.Lbl_Place2 = new System.Windows.Forms.Label();
+            this.Label_initials = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Lbl_Phonenumber = new System.Windows.Forms.Label();
+            this.Lbl_FaxNumber = new System.Windows.Forms.Label();
+            this.Lbl_Email = new System.Windows.Forms.Label();
+            this.Lbl_PotentialCustomer = new System.Windows.Forms.Label();
+            this.Lbl_ApointmentDay = new System.Windows.Forms.Label();
+            this.Lbl_ContactDate = new System.Windows.Forms.Label();
+            this.Groupbox_Clientdata = new System.Windows.Forms.GroupBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.maintenancecontractN = new System.Windows.Forms.RadioButton();
@@ -78,36 +78,36 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.creditworthyN = new System.Windows.Forms.RadioButton();
             this.creditworthyY = new System.Windows.Forms.RadioButton();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.Lbl_InternalContactPerson = new System.Windows.Forms.Label();
+            this.Lbl_Appointments = new System.Windows.Forms.Label();
+            this.Lbl_OperatingSystem = new System.Windows.Forms.Label();
+            this.Lbl_Hardware = new System.Windows.Forms.Label();
+            this.Lbl_Applications = new System.Windows.Forms.Label();
+            this.Lbl_OpenProjects = new System.Windows.Forms.Label();
+            this.Lbl_MaintenanceContract = new System.Windows.Forms.Label();
+            this.Lbl_Taxcode = new System.Windows.Forms.Label();
+            this.Lbl_LedgerAccountNumber = new System.Windows.Forms.Label();
+            this.Lbl_Limit = new System.Windows.Forms.Label();
+            this.Lbl_GrossRevenu = new System.Windows.Forms.Label();
+            this.Lbl_NumberOfInvoices = new System.Windows.Forms.Label();
+            this.Lbl_CreditBalance = new System.Windows.Forms.Label();
+            this.Lbl_BankAccountNumber = new System.Windows.Forms.Label();
+            this.Lbl_CreditWorthy = new System.Windows.Forms.Label();
+            this.Lbl_Salespercentage = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.potentialcustomerN = new System.Windows.Forms.RadioButton();
             this.potentialcustomerY = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
+            this.Groupbox_Clientdata.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_CompanyName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Company Name";
+            this.lbl_CompanyName.AutoSize = true;
+            this.lbl_CompanyName.Location = new System.Drawing.Point(18, 25);
+            this.lbl_CompanyName.Name = "lbl_CompanyName";
+            this.lbl_CompanyName.Size = new System.Drawing.Size(82, 13);
+            this.lbl_CompanyName.TabIndex = 0;
+            this.lbl_CompanyName.Text = "Company Name";
             // 
             // textBox1
             // 
@@ -123,14 +123,14 @@
             this.textBox2.Size = new System.Drawing.Size(210, 20);
             this.textBox2.TabIndex = 3;
             // 
-            // label2
+            // Lbl_Adress1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Adress 1";
+            this.Lbl_Adress1.AutoSize = true;
+            this.Lbl_Adress1.Location = new System.Drawing.Point(18, 103);
+            this.Lbl_Adress1.Name = "Lbl_Adress1";
+            this.Lbl_Adress1.Size = new System.Drawing.Size(48, 13);
+            this.Lbl_Adress1.TabIndex = 2;
+            this.Lbl_Adress1.Text = "Adress 1";
             // 
             // textBox3
             // 
@@ -139,14 +139,14 @@
             this.textBox3.Size = new System.Drawing.Size(210, 20);
             this.textBox3.TabIndex = 5;
             // 
-            // label3
+            // lbl_ContactPerson
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 51);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Contact Person";
+            this.lbl_ContactPerson.AutoSize = true;
+            this.lbl_ContactPerson.Location = new System.Drawing.Point(18, 51);
+            this.lbl_ContactPerson.Name = "lbl_ContactPerson";
+            this.lbl_ContactPerson.Size = new System.Drawing.Size(80, 13);
+            this.lbl_ContactPerson.TabIndex = 4;
+            this.lbl_ContactPerson.Text = "Contact Person";
             // 
             // textBox4
             // 
@@ -155,14 +155,14 @@
             this.textBox4.Size = new System.Drawing.Size(210, 20);
             this.textBox4.TabIndex = 7;
             // 
-            // label4
+            // Lbl_Zipcode1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 129);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Zipcode 1";
+            this.Lbl_Zipcode1.AutoSize = true;
+            this.Lbl_Zipcode1.Location = new System.Drawing.Point(18, 129);
+            this.Lbl_Zipcode1.Name = "Lbl_Zipcode1";
+            this.Lbl_Zipcode1.Size = new System.Drawing.Size(55, 13);
+            this.Lbl_Zipcode1.TabIndex = 6;
+            this.Lbl_Zipcode1.Text = "Zipcode 1";
             // 
             // saveClientBtn
             // 
@@ -180,23 +180,23 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(210, 20);
             this.dateTimePicker1.TabIndex = 9;
             // 
-            // label5
+            // Lbl_NextAction
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(351, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Next Action";
+            this.Lbl_NextAction.AutoSize = true;
+            this.Lbl_NextAction.Location = new System.Drawing.Point(351, 25);
+            this.Lbl_NextAction.Name = "Lbl_NextAction";
+            this.Lbl_NextAction.Size = new System.Drawing.Size(62, 13);
+            this.Lbl_NextAction.TabIndex = 10;
+            this.Lbl_NextAction.Text = "Next Action";
             // 
-            // label6
+            // Lbl_adress2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 182);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Adress 2";
+            this.Lbl_adress2.AutoSize = true;
+            this.Lbl_adress2.Location = new System.Drawing.Point(18, 182);
+            this.Lbl_adress2.Name = "Lbl_adress2";
+            this.Lbl_adress2.Size = new System.Drawing.Size(48, 13);
+            this.Lbl_adress2.TabIndex = 11;
+            this.Lbl_adress2.Text = "Adress 2";
             // 
             // textBox5
             // 
@@ -226,41 +226,41 @@
             this.textBox8.Size = new System.Drawing.Size(210, 20);
             this.textBox8.TabIndex = 15;
             // 
-            // label7
+            // Lbl_Zipcode2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 208);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 13);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Zipcode 2";
+            this.Lbl_Zipcode2.AutoSize = true;
+            this.Lbl_Zipcode2.Location = new System.Drawing.Point(18, 208);
+            this.Lbl_Zipcode2.Name = "Lbl_Zipcode2";
+            this.Lbl_Zipcode2.Size = new System.Drawing.Size(55, 13);
+            this.Lbl_Zipcode2.TabIndex = 16;
+            this.Lbl_Zipcode2.Text = "Zipcode 2";
             // 
-            // label8
+            // Lbl_Place1
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(18, 156);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Place 1";
+            this.Lbl_Place1.AutoSize = true;
+            this.Lbl_Place1.Location = new System.Drawing.Point(18, 156);
+            this.Lbl_Place1.Name = "Lbl_Place1";
+            this.Lbl_Place1.Size = new System.Drawing.Size(43, 13);
+            this.Lbl_Place1.TabIndex = 17;
+            this.Lbl_Place1.Text = "Place 1";
             // 
-            // label9
+            // Lbl_Place2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(18, 234);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 13);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Place 2";
+            this.Lbl_Place2.AutoSize = true;
+            this.Lbl_Place2.Location = new System.Drawing.Point(18, 234);
+            this.Lbl_Place2.Name = "Lbl_Place2";
+            this.Lbl_Place2.Size = new System.Drawing.Size(43, 13);
+            this.Lbl_Place2.TabIndex = 18;
+            this.Lbl_Place2.Text = "Place 2";
             // 
-            // label10
+            // Label_initials
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(20, 77);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(36, 13);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Initials";
+            this.Label_initials.AutoSize = true;
+            this.Label_initials.Location = new System.Drawing.Point(20, 77);
+            this.Label_initials.Name = "Label_initials";
+            this.Label_initials.Size = new System.Drawing.Size(36, 13);
+            this.Label_initials.TabIndex = 19;
+            this.Label_initials.Text = "Initials";
             // 
             // textBox9
             // 
@@ -290,135 +290,135 @@
             this.textBox12.Size = new System.Drawing.Size(210, 20);
             this.textBox12.TabIndex = 22;
             // 
-            // label11
+            // Lbl_Phonenumber
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(18, 260);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(78, 13);
-            this.label11.TabIndex = 26;
-            this.label11.Text = "Phone Number";
+            this.Lbl_Phonenumber.AutoSize = true;
+            this.Lbl_Phonenumber.Location = new System.Drawing.Point(18, 260);
+            this.Lbl_Phonenumber.Name = "Lbl_Phonenumber";
+            this.Lbl_Phonenumber.Size = new System.Drawing.Size(78, 13);
+            this.Lbl_Phonenumber.TabIndex = 26;
+            this.Lbl_Phonenumber.Text = "Phone Number";
             // 
-            // label12
+            // Lbl_FaxNumber
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(18, 286);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 13);
-            this.label12.TabIndex = 27;
-            this.label12.Text = "Fax Number";
+            this.Lbl_FaxNumber.AutoSize = true;
+            this.Lbl_FaxNumber.Location = new System.Drawing.Point(18, 286);
+            this.Lbl_FaxNumber.Name = "Lbl_FaxNumber";
+            this.Lbl_FaxNumber.Size = new System.Drawing.Size(64, 13);
+            this.Lbl_FaxNumber.TabIndex = 27;
+            this.Lbl_FaxNumber.Text = "Fax Number";
             // 
-            // label13
+            // Lbl_Email
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(18, 312);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(32, 13);
-            this.label13.TabIndex = 28;
-            this.label13.Text = "Email";
+            this.Lbl_Email.AutoSize = true;
+            this.Lbl_Email.Location = new System.Drawing.Point(18, 312);
+            this.Lbl_Email.Name = "Lbl_Email";
+            this.Lbl_Email.Size = new System.Drawing.Size(32, 13);
+            this.Lbl_Email.TabIndex = 28;
+            this.Lbl_Email.Text = "Email";
             // 
-            // label14
+            // Lbl_PotentialCustomer
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(18, 338);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(95, 13);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "Potential Customer";
+            this.Lbl_PotentialCustomer.AutoSize = true;
+            this.Lbl_PotentialCustomer.Location = new System.Drawing.Point(18, 338);
+            this.Lbl_PotentialCustomer.Name = "Lbl_PotentialCustomer";
+            this.Lbl_PotentialCustomer.Size = new System.Drawing.Size(95, 13);
+            this.Lbl_PotentialCustomer.TabIndex = 29;
+            this.Lbl_PotentialCustomer.Text = "Potential Customer";
             // 
-            // label15
+            // Lbl_ApointmentDay
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(18, 364);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(80, 13);
-            this.label15.TabIndex = 30;
-            this.label15.Text = "Apointment day";
+            this.Lbl_ApointmentDay.AutoSize = true;
+            this.Lbl_ApointmentDay.Location = new System.Drawing.Point(18, 364);
+            this.Lbl_ApointmentDay.Name = "Lbl_ApointmentDay";
+            this.Lbl_ApointmentDay.Size = new System.Drawing.Size(80, 13);
+            this.Lbl_ApointmentDay.TabIndex = 30;
+            this.Lbl_ApointmentDay.Text = "Apointment day";
             // 
-            // label16
+            // Lbl_ContactDate
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(18, 390);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(90, 13);
-            this.label16.TabIndex = 31;
-            this.label16.Text = "Last contact date";
+            this.Lbl_ContactDate.AutoSize = true;
+            this.Lbl_ContactDate.Location = new System.Drawing.Point(18, 390);
+            this.Lbl_ContactDate.Name = "Lbl_ContactDate";
+            this.Lbl_ContactDate.Size = new System.Drawing.Size(90, 13);
+            this.Lbl_ContactDate.TabIndex = 31;
+            this.Lbl_ContactDate.Text = "Last contact date";
             // 
-            // groupBox1
+            // Groupbox_Clientdata
             // 
-            this.groupBox1.Controls.Add(this.textBox25);
-            this.groupBox1.Controls.Add(this.textBox22);
-            this.groupBox1.Controls.Add(this.maintenancecontractN);
-            this.groupBox1.Controls.Add(this.maintenancecontractY);
-            this.groupBox1.Controls.Add(this.textBox27);
-            this.groupBox1.Controls.Add(this.textBox26);
-            this.groupBox1.Controls.Add(this.textBox24);
-            this.groupBox1.Controls.Add(this.textBox23);
-            this.groupBox1.Controls.Add(this.textBox21);
-            this.groupBox1.Controls.Add(this.textBox20);
-            this.groupBox1.Controls.Add(this.textBox19);
-            this.groupBox1.Controls.Add(this.textBox18);
-            this.groupBox1.Controls.Add(this.textBox17);
-            this.groupBox1.Controls.Add(this.textBox16);
-            this.groupBox1.Controls.Add(this.textBox15);
-            this.groupBox1.Controls.Add(this.textBox14);
-            this.groupBox1.Controls.Add(this.textBox13);
-            this.groupBox1.Controls.Add(this.creditworthyN);
-            this.groupBox1.Controls.Add(this.creditworthyY);
-            this.groupBox1.Controls.Add(this.label32);
-            this.groupBox1.Controls.Add(this.label31);
-            this.groupBox1.Controls.Add(this.label30);
-            this.groupBox1.Controls.Add(this.label29);
-            this.groupBox1.Controls.Add(this.label28);
-            this.groupBox1.Controls.Add(this.label27);
-            this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Controls.Add(this.label25);
-            this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.potentialcustomerN);
-            this.groupBox1.Controls.Add(this.potentialcustomerY);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox12);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.textBox11);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(10, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(992, 417);
-            this.groupBox1.TabIndex = 32;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Client Data";
+            this.Groupbox_Clientdata.Controls.Add(this.textBox25);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox22);
+            this.Groupbox_Clientdata.Controls.Add(this.maintenancecontractN);
+            this.Groupbox_Clientdata.Controls.Add(this.maintenancecontractY);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox27);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox26);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox24);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox23);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox21);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox20);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox19);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox18);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox17);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox16);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox15);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox14);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox13);
+            this.Groupbox_Clientdata.Controls.Add(this.creditworthyN);
+            this.Groupbox_Clientdata.Controls.Add(this.creditworthyY);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_InternalContactPerson);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Appointments);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_OperatingSystem);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Hardware);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Applications);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_OpenProjects);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_MaintenanceContract);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Taxcode);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_LedgerAccountNumber);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Limit);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_GrossRevenu);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_NumberOfInvoices);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_CreditBalance);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_BankAccountNumber);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_CreditWorthy);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Salespercentage);
+            this.Groupbox_Clientdata.Controls.Add(this.dateTimePicker2);
+            this.Groupbox_Clientdata.Controls.Add(this.potentialcustomerN);
+            this.Groupbox_Clientdata.Controls.Add(this.potentialcustomerY);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_ContactDate);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_ApointmentDay);
+            this.Groupbox_Clientdata.Controls.Add(this.lbl_CompanyName);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_PotentialCustomer);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox1);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Email);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Adress1);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_FaxNumber);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox2);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Phonenumber);
+            this.Groupbox_Clientdata.Controls.Add(this.lbl_ContactPerson);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox3);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Zipcode1);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox4);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox12);
+            this.Groupbox_Clientdata.Controls.Add(this.dateTimePicker1);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox11);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_NextAction);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox10);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_adress2);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox9);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox5);
+            this.Groupbox_Clientdata.Controls.Add(this.Label_initials);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox6);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Place2);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox7);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Place1);
+            this.Groupbox_Clientdata.Controls.Add(this.textBox8);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Zipcode2);
+            this.Groupbox_Clientdata.Location = new System.Drawing.Point(10, 6);
+            this.Groupbox_Clientdata.Name = "Groupbox_Clientdata";
+            this.Groupbox_Clientdata.Size = new System.Drawing.Size(992, 417);
+            this.Groupbox_Clientdata.TabIndex = 32;
+            this.Groupbox_Clientdata.TabStop = false;
+            this.Groupbox_Clientdata.Text = "Client Data";
             // 
             // textBox25
             // 
@@ -571,149 +571,149 @@
             this.creditworthyY.Text = "Yes";
             this.creditworthyY.UseVisualStyleBackColor = true;
             // 
-            // label32
+            // Lbl_InternalContactPerson
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(720, 25);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(116, 13);
-            this.label32.TabIndex = 50;
-            this.label32.Text = "Internal contact person";
+            this.Lbl_InternalContactPerson.AutoSize = true;
+            this.Lbl_InternalContactPerson.Location = new System.Drawing.Point(720, 25);
+            this.Lbl_InternalContactPerson.Name = "Lbl_InternalContactPerson";
+            this.Lbl_InternalContactPerson.Size = new System.Drawing.Size(116, 13);
+            this.Lbl_InternalContactPerson.TabIndex = 50;
+            this.Lbl_InternalContactPerson.Text = "Internal contact person";
             // 
-            // label31
+            // Lbl_Appointments
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(720, 55);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(71, 13);
-            this.label31.TabIndex = 49;
-            this.label31.Text = "Appointments";
+            this.Lbl_Appointments.AutoSize = true;
+            this.Lbl_Appointments.Location = new System.Drawing.Point(720, 55);
+            this.Lbl_Appointments.Name = "Lbl_Appointments";
+            this.Lbl_Appointments.Size = new System.Drawing.Size(71, 13);
+            this.Lbl_Appointments.TabIndex = 49;
+            this.Lbl_Appointments.Text = "Appointments";
             // 
-            // label30
+            // Lbl_OperatingSystem
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(351, 390);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(96, 13);
-            this.label30.TabIndex = 48;
-            this.label30.Text = "Opperating System";
+            this.Lbl_OperatingSystem.AutoSize = true;
+            this.Lbl_OperatingSystem.Location = new System.Drawing.Point(351, 390);
+            this.Lbl_OperatingSystem.Name = "Lbl_OperatingSystem";
+            this.Lbl_OperatingSystem.Size = new System.Drawing.Size(96, 13);
+            this.Lbl_OperatingSystem.TabIndex = 48;
+            this.Lbl_OperatingSystem.Text = "Opperating System";
             // 
-            // label29
+            // Lbl_Hardware
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(351, 364);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(53, 13);
-            this.label29.TabIndex = 47;
-            this.label29.Text = "Hardware";
+            this.Lbl_Hardware.AutoSize = true;
+            this.Lbl_Hardware.Location = new System.Drawing.Point(351, 364);
+            this.Lbl_Hardware.Name = "Lbl_Hardware";
+            this.Lbl_Hardware.Size = new System.Drawing.Size(53, 13);
+            this.Lbl_Hardware.TabIndex = 47;
+            this.Lbl_Hardware.Text = "Hardware";
             // 
-            // label28
+            // Lbl_Applications
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(351, 338);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(64, 13);
-            this.label28.TabIndex = 46;
-            this.label28.Text = "Applications";
+            this.Lbl_Applications.AutoSize = true;
+            this.Lbl_Applications.Location = new System.Drawing.Point(351, 338);
+            this.Lbl_Applications.Name = "Lbl_Applications";
+            this.Lbl_Applications.Size = new System.Drawing.Size(64, 13);
+            this.Lbl_Applications.TabIndex = 46;
+            this.Lbl_Applications.Text = "Applications";
             // 
-            // label27
+            // Lbl_OpenProjects
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(351, 312);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(73, 13);
-            this.label27.TabIndex = 45;
-            this.label27.Text = "Open projects";
+            this.Lbl_OpenProjects.AutoSize = true;
+            this.Lbl_OpenProjects.Location = new System.Drawing.Point(351, 312);
+            this.Lbl_OpenProjects.Name = "Lbl_OpenProjects";
+            this.Lbl_OpenProjects.Size = new System.Drawing.Size(73, 13);
+            this.Lbl_OpenProjects.TabIndex = 45;
+            this.Lbl_OpenProjects.Text = "Open projects";
             // 
-            // label26
+            // Lbl_MaintenanceContract
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(351, 286);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(111, 13);
-            this.label26.TabIndex = 44;
-            this.label26.Text = "Maintenance contract";
+            this.Lbl_MaintenanceContract.AutoSize = true;
+            this.Lbl_MaintenanceContract.Location = new System.Drawing.Point(351, 286);
+            this.Lbl_MaintenanceContract.Name = "Lbl_MaintenanceContract";
+            this.Lbl_MaintenanceContract.Size = new System.Drawing.Size(111, 13);
+            this.Lbl_MaintenanceContract.TabIndex = 44;
+            this.Lbl_MaintenanceContract.Text = "Maintenance contract";
             // 
-            // label25
+            // Lbl_Taxcode
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(351, 260);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(49, 13);
-            this.label25.TabIndex = 43;
-            this.label25.Text = "Taxcode";
+            this.Lbl_Taxcode.AutoSize = true;
+            this.Lbl_Taxcode.Location = new System.Drawing.Point(351, 260);
+            this.Lbl_Taxcode.Name = "Lbl_Taxcode";
+            this.Lbl_Taxcode.Size = new System.Drawing.Size(49, 13);
+            this.Lbl_Taxcode.TabIndex = 43;
+            this.Lbl_Taxcode.Text = "Taxcode";
             // 
-            // label24
+            // Lbl_LedgerAccountNumber
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(351, 234);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(120, 13);
-            this.label24.TabIndex = 42;
-            this.label24.Text = "Ledger account number";
+            this.Lbl_LedgerAccountNumber.AutoSize = true;
+            this.Lbl_LedgerAccountNumber.Location = new System.Drawing.Point(351, 234);
+            this.Lbl_LedgerAccountNumber.Name = "Lbl_LedgerAccountNumber";
+            this.Lbl_LedgerAccountNumber.Size = new System.Drawing.Size(120, 13);
+            this.Lbl_LedgerAccountNumber.TabIndex = 42;
+            this.Lbl_LedgerAccountNumber.Text = "Ledger account number";
             // 
-            // label23
+            // Lbl_Limit
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(351, 208);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(28, 13);
-            this.label23.TabIndex = 41;
-            this.label23.Text = "Limit";
+            this.Lbl_Limit.AutoSize = true;
+            this.Lbl_Limit.Location = new System.Drawing.Point(351, 208);
+            this.Lbl_Limit.Name = "Lbl_Limit";
+            this.Lbl_Limit.Size = new System.Drawing.Size(28, 13);
+            this.Lbl_Limit.TabIndex = 41;
+            this.Lbl_Limit.Text = "Limit";
             // 
-            // label22
+            // Lbl_GrossRevenu
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(351, 182);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(70, 13);
-            this.label22.TabIndex = 40;
-            this.label22.Text = "Gross revenu";
+            this.Lbl_GrossRevenu.AutoSize = true;
+            this.Lbl_GrossRevenu.Location = new System.Drawing.Point(351, 182);
+            this.Lbl_GrossRevenu.Name = "Lbl_GrossRevenu";
+            this.Lbl_GrossRevenu.Size = new System.Drawing.Size(70, 13);
+            this.Lbl_GrossRevenu.TabIndex = 40;
+            this.Lbl_GrossRevenu.Text = "Gross revenu";
             // 
-            // label21
+            // Lbl_NumberOfInvoices
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(351, 156);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(98, 13);
-            this.label21.TabIndex = 39;
-            this.label21.Text = "Number of invoices";
+            this.Lbl_NumberOfInvoices.AutoSize = true;
+            this.Lbl_NumberOfInvoices.Location = new System.Drawing.Point(351, 156);
+            this.Lbl_NumberOfInvoices.Name = "Lbl_NumberOfInvoices";
+            this.Lbl_NumberOfInvoices.Size = new System.Drawing.Size(98, 13);
+            this.Lbl_NumberOfInvoices.TabIndex = 39;
+            this.Lbl_NumberOfInvoices.Text = "Number of invoices";
             // 
-            // label20
+            // Lbl_CreditBalance
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(351, 129);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 13);
-            this.label20.TabIndex = 38;
-            this.label20.Text = "Credit balance";
+            this.Lbl_CreditBalance.AutoSize = true;
+            this.Lbl_CreditBalance.Location = new System.Drawing.Point(351, 129);
+            this.Lbl_CreditBalance.Name = "Lbl_CreditBalance";
+            this.Lbl_CreditBalance.Size = new System.Drawing.Size(75, 13);
+            this.Lbl_CreditBalance.TabIndex = 38;
+            this.Lbl_CreditBalance.Text = "Credit balance";
             // 
-            // label19
+            // Lbl_BankAccountNumber
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(351, 103);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(114, 13);
-            this.label19.TabIndex = 37;
-            this.label19.Text = "Bank account nummer";
+            this.Lbl_BankAccountNumber.AutoSize = true;
+            this.Lbl_BankAccountNumber.Location = new System.Drawing.Point(351, 103);
+            this.Lbl_BankAccountNumber.Name = "Lbl_BankAccountNumber";
+            this.Lbl_BankAccountNumber.Size = new System.Drawing.Size(114, 13);
+            this.Lbl_BankAccountNumber.TabIndex = 37;
+            this.Lbl_BankAccountNumber.Text = "Bank account nummer";
             // 
-            // label18
+            // Lbl_CreditWorthy
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(351, 77);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(65, 13);
-            this.label18.TabIndex = 36;
-            this.label18.Text = "Creditworthy";
+            this.Lbl_CreditWorthy.AutoSize = true;
+            this.Lbl_CreditWorthy.Location = new System.Drawing.Point(351, 77);
+            this.Lbl_CreditWorthy.Name = "Lbl_CreditWorthy";
+            this.Lbl_CreditWorthy.Size = new System.Drawing.Size(65, 13);
+            this.Lbl_CreditWorthy.TabIndex = 36;
+            this.Lbl_CreditWorthy.Text = "Creditworthy";
             // 
-            // label17
+            // Lbl_Salespercentage
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(351, 51);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(90, 13);
-            this.label17.TabIndex = 35;
-            this.label17.Text = "Sales percentage";
+            this.Lbl_Salespercentage.AutoSize = true;
+            this.Lbl_Salespercentage.Location = new System.Drawing.Point(351, 51);
+            this.Lbl_Salespercentage.Name = "Lbl_Salespercentage";
+            this.Lbl_Salespercentage.Size = new System.Drawing.Size(90, 13);
+            this.Lbl_Salespercentage.TabIndex = 35;
+            this.Lbl_Salespercentage.Text = "Sales percentage";
             // 
             // dateTimePicker2
             // 
@@ -749,70 +749,70 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1014, 478);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Groupbox_Clientdata);
             this.Controls.Add(this.saveClientBtn);
             this.Name = "AddClient";
             this.Text = "Add Client";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Groupbox_Clientdata.ResumeLayout(false);
+            this.Groupbox_Clientdata.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_CompanyName;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Lbl_Adress1;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_ContactPerson;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Lbl_Zipcode1;
         private System.Windows.Forms.Button saveClientBtn;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label Lbl_NextAction;
+        private System.Windows.Forms.Label Lbl_adress2;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label Lbl_Zipcode2;
+        private System.Windows.Forms.Label Lbl_Place1;
+        private System.Windows.Forms.Label Lbl_Place2;
+        private System.Windows.Forms.Label Label_initials;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label Lbl_Phonenumber;
+        private System.Windows.Forms.Label Lbl_FaxNumber;
+        private System.Windows.Forms.Label Lbl_Email;
+        private System.Windows.Forms.Label Lbl_PotentialCustomer;
+        private System.Windows.Forms.Label Lbl_ApointmentDay;
+        private System.Windows.Forms.Label Lbl_ContactDate;
+        private System.Windows.Forms.GroupBox Groupbox_Clientdata;
         private System.Windows.Forms.RadioButton potentialcustomerN;
         private System.Windows.Forms.RadioButton potentialcustomerY;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label Lbl_OperatingSystem;
+        private System.Windows.Forms.Label Lbl_Hardware;
+        private System.Windows.Forms.Label Lbl_Applications;
+        private System.Windows.Forms.Label Lbl_OpenProjects;
+        private System.Windows.Forms.Label Lbl_MaintenanceContract;
+        private System.Windows.Forms.Label Lbl_Taxcode;
+        private System.Windows.Forms.Label Lbl_LedgerAccountNumber;
+        private System.Windows.Forms.Label Lbl_Limit;
+        private System.Windows.Forms.Label Lbl_GrossRevenu;
+        private System.Windows.Forms.Label Lbl_NumberOfInvoices;
+        private System.Windows.Forms.Label Lbl_CreditBalance;
+        private System.Windows.Forms.Label Lbl_BankAccountNumber;
+        private System.Windows.Forms.Label Lbl_CreditWorthy;
+        private System.Windows.Forms.Label Lbl_Salespercentage;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.RadioButton creditworthyN;
         private System.Windows.Forms.RadioButton creditworthyY;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label Lbl_InternalContactPerson;
+        private System.Windows.Forms.Label Lbl_Appointments;
         private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.RadioButton maintenancecontractN;

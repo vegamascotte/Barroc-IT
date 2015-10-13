@@ -1,6 +1,6 @@
 ﻿namespace BarrocITApp
 {
-    partial class EditKlantForm
+    partial class EditClientForm
     {
         /// <summary>
         /// Required designer variable.
@@ -743,16 +743,17 @@
             this.saveClientBtn.TabIndex = 33;
             this.saveClientBtn.Text = "Save";
             this.saveClientBtn.UseVisualStyleBackColor = true;
+            this.saveClientBtn.Click += new System.EventHandler(this.saveClientBtn_Click);
             // 
-            // EditKlantForm
+            // EditClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1010, 503);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.saveClientBtn);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "EditKlantForm";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "EditClientForm";
             this.Text = "Edit Client";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -28,3 +28,7 @@ C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\Bar
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Properties.Resources.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.csproj.GenerateResource.Cache
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.AddClient.resources
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.AddProject.resources
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.EditProject.resources
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.EnrollQuatation.resources
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.EditClientForm.resources

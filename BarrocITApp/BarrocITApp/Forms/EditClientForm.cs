@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BarrocITApp
 {
-    public partial class EditKlantForm : Form
+    public partial class EditClientForm : Form
     {
-        public EditKlantForm()
+        public EditClientForm()
         {
             InitializeComponent();
+        }
+
+        private void saveClientBtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are You sure you bloody fucking idiot Morn piece of crap", "Goddammit" );
         }
     }
 }
