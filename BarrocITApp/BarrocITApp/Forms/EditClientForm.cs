@@ -19,7 +19,7 @@ namespace BarrocITApp
 
         private void saveClientBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Are You sure you bloody fucking idiot Morn piece of crap", "Goddammit" );
+            
         }
     }
 }

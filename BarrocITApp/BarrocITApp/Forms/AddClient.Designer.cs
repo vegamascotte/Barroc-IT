@@ -29,53 +29,53 @@
         private void InitializeComponent()
         {
             this.lbl_CompanyName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbx_CompanyName = new System.Windows.Forms.TextBox();
+            this.tbx_ContactPerson = new System.Windows.Forms.TextBox();
             this.Lbl_Adress1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbx_Adress1 = new System.Windows.Forms.TextBox();
             this.Lbl_ContactPerson = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbx_Zipcode1 = new System.Windows.Forms.TextBox();
             this.Lbl_Zipcode1 = new System.Windows.Forms.Label();
             this.saveClientBtn = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.datetime_LastContactDate = new System.Windows.Forms.DateTimePicker();
             this.Lbl_NextAction = new System.Windows.Forms.Label();
             this.Lbl_adress2 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbx_Place1 = new System.Windows.Forms.TextBox();
+            this.tbx_Adress2 = new System.Windows.Forms.TextBox();
+            this.tbx_Zipcode2 = new System.Windows.Forms.TextBox();
+            this.tbx_Place2 = new System.Windows.Forms.TextBox();
             this.Lbl_Zipcode2 = new System.Windows.Forms.Label();
             this.Lbl_Place1 = new System.Windows.Forms.Label();
             this.Lbl_Place2 = new System.Windows.Forms.Label();
             this.Lbl_initials = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tbx_Initials = new System.Windows.Forms.TextBox();
+            this.tbx_FaxNumber = new System.Windows.Forms.TextBox();
+            this.tbx_Phonenumber = new System.Windows.Forms.TextBox();
+            this.tbx_Email = new System.Windows.Forms.TextBox();
             this.Lbl_Phonenumber = new System.Windows.Forms.Label();
             this.Lbl_FaxNumber = new System.Windows.Forms.Label();
             this.Lbl_Email = new System.Windows.Forms.Label();
             this.Lbl_PotentialCustomer = new System.Windows.Forms.Label();
             this.Lbl_ApointmentDay = new System.Windows.Forms.Label();
             this.Lbl_ContactDate = new System.Windows.Forms.Label();
-            this.Groupbox_Clientdata = new System.Windows.Forms.GroupBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.groupbox_Clientdata = new System.Windows.Forms.GroupBox();
+            this.tbx_InternalContactPerson = new System.Windows.Forms.TextBox();
+            this.tbx_Appontments = new System.Windows.Forms.TextBox();
             this.maintenancecontractN = new System.Windows.Forms.RadioButton();
             this.maintenancecontractY = new System.Windows.Forms.RadioButton();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.tbx_OpperatingSystem = new System.Windows.Forms.TextBox();
+            this.tbx_Hardware = new System.Windows.Forms.TextBox();
+            this.tbx_Applications = new System.Windows.Forms.TextBox();
+            this.tbx_OpenProjects = new System.Windows.Forms.TextBox();
+            this.tbx_LedgerAccountNumber = new System.Windows.Forms.TextBox();
+            this.tbx_Limit = new System.Windows.Forms.TextBox();
+            this.tbx_Taxcode = new System.Windows.Forms.TextBox();
+            this.tbx_GrossRevenu = new System.Windows.Forms.TextBox();
+            this.tbx_NumberOfInvoices = new System.Windows.Forms.TextBox();
+            this.tbx_CreditBalance = new System.Windows.Forms.TextBox();
+            this.tbx_SalesPercentage = new System.Windows.Forms.TextBox();
+            this.tbx_NextAction = new System.Windows.Forms.TextBox();
+            this.tbx_BankAccountNumber = new System.Windows.Forms.TextBox();
             this.creditworthyN = new System.Windows.Forms.RadioButton();
             this.creditworthyY = new System.Windows.Forms.RadioButton();
             this.Lbl_InternalContactPerson = new System.Windows.Forms.Label();
@@ -94,10 +94,10 @@
             this.Lbl_BankAccountNumber = new System.Windows.Forms.Label();
             this.Lbl_CreditWorthy = new System.Windows.Forms.Label();
             this.Lbl_Salespercentage = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.datetime_ApointmentDay = new System.Windows.Forms.DateTimePicker();
             this.potentialcustomerN = new System.Windows.Forms.RadioButton();
             this.potentialcustomerY = new System.Windows.Forms.RadioButton();
-            this.Groupbox_Clientdata.SuspendLayout();
+            this.groupbox_Clientdata.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_CompanyName
@@ -109,19 +109,19 @@
             this.lbl_CompanyName.TabIndex = 0;
             this.lbl_CompanyName.Text = "Company Name";
             // 
-            // textBox1
+            // tbx_CompanyName
             // 
-            this.textBox1.Location = new System.Drawing.Point(108, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbx_CompanyName.Location = new System.Drawing.Point(108, 22);
+            this.tbx_CompanyName.Name = "tbx_CompanyName";
+            this.tbx_CompanyName.Size = new System.Drawing.Size(210, 20);
+            this.tbx_CompanyName.TabIndex = 1;
             // 
-            // textBox2
+            // tbx_ContactPerson
             // 
-            this.textBox2.Location = new System.Drawing.Point(108, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(210, 20);
-            this.textBox2.TabIndex = 3;
+            this.tbx_ContactPerson.Location = new System.Drawing.Point(108, 48);
+            this.tbx_ContactPerson.Name = "tbx_ContactPerson";
+            this.tbx_ContactPerson.Size = new System.Drawing.Size(210, 20);
+            this.tbx_ContactPerson.TabIndex = 3;
             // 
             // Lbl_Adress1
             // 
@@ -132,12 +132,12 @@
             this.Lbl_Adress1.TabIndex = 2;
             this.Lbl_Adress1.Text = "Adress 1";
             // 
-            // textBox3
+            // tbx_Adress1
             // 
-            this.textBox3.Location = new System.Drawing.Point(108, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(210, 20);
-            this.textBox3.TabIndex = 5;
+            this.tbx_Adress1.Location = new System.Drawing.Point(108, 100);
+            this.tbx_Adress1.Name = "tbx_Adress1";
+            this.tbx_Adress1.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Adress1.TabIndex = 5;
             // 
             // Lbl_ContactPerson
             // 
@@ -148,12 +148,12 @@
             this.Lbl_ContactPerson.TabIndex = 4;
             this.Lbl_ContactPerson.Text = "Contact Person";
             // 
-            // textBox4
+            // tbx_Zipcode1
             // 
-            this.textBox4.Location = new System.Drawing.Point(108, 126);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(210, 20);
-            this.textBox4.TabIndex = 7;
+            this.tbx_Zipcode1.Location = new System.Drawing.Point(108, 126);
+            this.tbx_Zipcode1.Name = "tbx_Zipcode1";
+            this.tbx_Zipcode1.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Zipcode1.TabIndex = 7;
             // 
             // Lbl_Zipcode1
             // 
@@ -173,12 +173,12 @@
             this.saveClientBtn.Text = "Save";
             this.saveClientBtn.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // datetime_LastContactDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(108, 384);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(210, 20);
-            this.dateTimePicker1.TabIndex = 9;
+            this.datetime_LastContactDate.Location = new System.Drawing.Point(108, 384);
+            this.datetime_LastContactDate.Name = "datetime_LastContactDate";
+            this.datetime_LastContactDate.Size = new System.Drawing.Size(210, 20);
+            this.datetime_LastContactDate.TabIndex = 9;
             // 
             // Lbl_NextAction
             // 
@@ -198,33 +198,33 @@
             this.Lbl_adress2.TabIndex = 11;
             this.Lbl_adress2.Text = "Adress 2";
             // 
-            // textBox5
+            // tbx_Place1
             // 
-            this.textBox5.Location = new System.Drawing.Point(108, 153);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(210, 20);
-            this.textBox5.TabIndex = 12;
+            this.tbx_Place1.Location = new System.Drawing.Point(108, 153);
+            this.tbx_Place1.Name = "tbx_Place1";
+            this.tbx_Place1.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Place1.TabIndex = 12;
             // 
-            // textBox6
+            // tbx_Adress2
             // 
-            this.textBox6.Location = new System.Drawing.Point(108, 179);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(210, 20);
-            this.textBox6.TabIndex = 13;
+            this.tbx_Adress2.Location = new System.Drawing.Point(108, 179);
+            this.tbx_Adress2.Name = "tbx_Adress2";
+            this.tbx_Adress2.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Adress2.TabIndex = 13;
             // 
-            // textBox7
+            // tbx_Zipcode2
             // 
-            this.textBox7.Location = new System.Drawing.Point(108, 205);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(210, 20);
-            this.textBox7.TabIndex = 14;
+            this.tbx_Zipcode2.Location = new System.Drawing.Point(108, 205);
+            this.tbx_Zipcode2.Name = "tbx_Zipcode2";
+            this.tbx_Zipcode2.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Zipcode2.TabIndex = 14;
             // 
-            // textBox8
+            // tbx_Place2
             // 
-            this.textBox8.Location = new System.Drawing.Point(108, 231);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(210, 20);
-            this.textBox8.TabIndex = 15;
+            this.tbx_Place2.Location = new System.Drawing.Point(108, 231);
+            this.tbx_Place2.Name = "tbx_Place2";
+            this.tbx_Place2.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Place2.TabIndex = 15;
             // 
             // Lbl_Zipcode2
             // 
@@ -262,33 +262,33 @@
             this.Lbl_initials.TabIndex = 19;
             this.Lbl_initials.Text = "Initials";
             // 
-            // textBox9
+            // tbx_Initials
             // 
-            this.textBox9.Location = new System.Drawing.Point(108, 74);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(210, 20);
-            this.textBox9.TabIndex = 20;
+            this.tbx_Initials.Location = new System.Drawing.Point(108, 74);
+            this.tbx_Initials.Name = "tbx_Initials";
+            this.tbx_Initials.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Initials.TabIndex = 20;
             // 
-            // textBox10
+            // tbx_FaxNumber
             // 
-            this.textBox10.Location = new System.Drawing.Point(108, 283);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(210, 20);
-            this.textBox10.TabIndex = 21;
+            this.tbx_FaxNumber.Location = new System.Drawing.Point(108, 283);
+            this.tbx_FaxNumber.Name = "tbx_FaxNumber";
+            this.tbx_FaxNumber.Size = new System.Drawing.Size(210, 20);
+            this.tbx_FaxNumber.TabIndex = 21;
             // 
-            // textBox11
+            // tbx_Phonenumber
             // 
-            this.textBox11.Location = new System.Drawing.Point(108, 257);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(210, 20);
-            this.textBox11.TabIndex = 21;
+            this.tbx_Phonenumber.Location = new System.Drawing.Point(108, 257);
+            this.tbx_Phonenumber.Name = "tbx_Phonenumber";
+            this.tbx_Phonenumber.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Phonenumber.TabIndex = 21;
             // 
-            // textBox12
+            // tbx_Email
             // 
-            this.textBox12.Location = new System.Drawing.Point(108, 309);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(210, 20);
-            this.textBox12.TabIndex = 22;
+            this.tbx_Email.Location = new System.Drawing.Point(108, 309);
+            this.tbx_Email.Name = "tbx_Email";
+            this.tbx_Email.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Email.TabIndex = 22;
             // 
             // Lbl_Phonenumber
             // 
@@ -344,97 +344,97 @@
             this.Lbl_ContactDate.TabIndex = 31;
             this.Lbl_ContactDate.Text = "Last contact date";
             // 
-            // Groupbox_Clientdata
+            // groupbox_Clientdata
             // 
-            this.Groupbox_Clientdata.Controls.Add(this.textBox25);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox22);
-            this.Groupbox_Clientdata.Controls.Add(this.maintenancecontractN);
-            this.Groupbox_Clientdata.Controls.Add(this.maintenancecontractY);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox27);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox26);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox24);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox23);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox21);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox20);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox19);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox18);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox17);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox16);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox15);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox14);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox13);
-            this.Groupbox_Clientdata.Controls.Add(this.creditworthyN);
-            this.Groupbox_Clientdata.Controls.Add(this.creditworthyY);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_InternalContactPerson);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Appointments);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_OperatingSystem);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Hardware);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Applications);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_OpenProjects);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_MaintenanceContract);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Taxcode);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_LedgerAccountNumber);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Limit);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_GrossRevenu);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_NumberOfInvoices);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_CreditBalance);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_BankAccountNumber);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_CreditWorthy);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Salespercentage);
-            this.Groupbox_Clientdata.Controls.Add(this.dateTimePicker2);
-            this.Groupbox_Clientdata.Controls.Add(this.potentialcustomerN);
-            this.Groupbox_Clientdata.Controls.Add(this.potentialcustomerY);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_ContactDate);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_ApointmentDay);
-            this.Groupbox_Clientdata.Controls.Add(this.lbl_CompanyName);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_PotentialCustomer);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox1);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Email);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Adress1);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_FaxNumber);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox2);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Phonenumber);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_ContactPerson);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox3);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Zipcode1);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox4);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox12);
-            this.Groupbox_Clientdata.Controls.Add(this.dateTimePicker1);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox11);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_NextAction);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox10);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_adress2);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox9);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox5);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_initials);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox6);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Place2);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox7);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Place1);
-            this.Groupbox_Clientdata.Controls.Add(this.textBox8);
-            this.Groupbox_Clientdata.Controls.Add(this.Lbl_Zipcode2);
-            this.Groupbox_Clientdata.Location = new System.Drawing.Point(10, 6);
-            this.Groupbox_Clientdata.Name = "Groupbox_Clientdata";
-            this.Groupbox_Clientdata.Size = new System.Drawing.Size(992, 417);
-            this.Groupbox_Clientdata.TabIndex = 32;
-            this.Groupbox_Clientdata.TabStop = false;
-            this.Groupbox_Clientdata.Text = "Client Data";
+            this.groupbox_Clientdata.Controls.Add(this.tbx_InternalContactPerson);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Appontments);
+            this.groupbox_Clientdata.Controls.Add(this.maintenancecontractN);
+            this.groupbox_Clientdata.Controls.Add(this.maintenancecontractY);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_OpperatingSystem);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Hardware);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Applications);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_OpenProjects);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_LedgerAccountNumber);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Limit);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Taxcode);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_GrossRevenu);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_NumberOfInvoices);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_CreditBalance);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_SalesPercentage);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_NextAction);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_BankAccountNumber);
+            this.groupbox_Clientdata.Controls.Add(this.creditworthyN);
+            this.groupbox_Clientdata.Controls.Add(this.creditworthyY);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_InternalContactPerson);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Appointments);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_OperatingSystem);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Hardware);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Applications);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_OpenProjects);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_MaintenanceContract);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Taxcode);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_LedgerAccountNumber);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Limit);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_GrossRevenu);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_NumberOfInvoices);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_CreditBalance);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_BankAccountNumber);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_CreditWorthy);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Salespercentage);
+            this.groupbox_Clientdata.Controls.Add(this.datetime_ApointmentDay);
+            this.groupbox_Clientdata.Controls.Add(this.potentialcustomerN);
+            this.groupbox_Clientdata.Controls.Add(this.potentialcustomerY);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_ContactDate);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_ApointmentDay);
+            this.groupbox_Clientdata.Controls.Add(this.lbl_CompanyName);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_PotentialCustomer);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_CompanyName);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Email);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Adress1);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_FaxNumber);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_ContactPerson);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Phonenumber);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_ContactPerson);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Adress1);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Zipcode1);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Zipcode1);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Email);
+            this.groupbox_Clientdata.Controls.Add(this.datetime_LastContactDate);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Phonenumber);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_NextAction);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_FaxNumber);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_adress2);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Initials);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Place1);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_initials);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Adress2);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Place2);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Zipcode2);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Place1);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Place2);
+            this.groupbox_Clientdata.Controls.Add(this.Lbl_Zipcode2);
+            this.groupbox_Clientdata.Location = new System.Drawing.Point(10, 6);
+            this.groupbox_Clientdata.Name = "groupbox_Clientdata";
+            this.groupbox_Clientdata.Size = new System.Drawing.Size(992, 417);
+            this.groupbox_Clientdata.TabIndex = 32;
+            this.groupbox_Clientdata.TabStop = false;
+            this.groupbox_Clientdata.Text = "Client Data";
             // 
-            // textBox25
+            // tbx_InternalContactPerson
             // 
-            this.textBox25.Location = new System.Drawing.Point(842, 25);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(134, 20);
-            this.textBox25.TabIndex = 68;
+            this.tbx_InternalContactPerson.Location = new System.Drawing.Point(842, 25);
+            this.tbx_InternalContactPerson.Name = "tbx_InternalContactPerson";
+            this.tbx_InternalContactPerson.Size = new System.Drawing.Size(134, 20);
+            this.tbx_InternalContactPerson.TabIndex = 68;
             // 
-            // textBox22
+            // tbx_Appontments
             // 
-            this.textBox22.Location = new System.Drawing.Point(723, 71);
-            this.textBox22.MaxLength = 255;
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(253, 150);
-            this.textBox22.TabIndex = 67;
+            this.tbx_Appontments.Location = new System.Drawing.Point(723, 71);
+            this.tbx_Appontments.MaxLength = 255;
+            this.tbx_Appontments.Multiline = true;
+            this.tbx_Appontments.Name = "tbx_Appontments";
+            this.tbx_Appontments.Size = new System.Drawing.Size(253, 150);
+            this.tbx_Appontments.TabIndex = 67;
             // 
             // maintenancecontractN
             // 
@@ -458,96 +458,96 @@
             this.maintenancecontractY.Text = "Yes";
             this.maintenancecontractY.UseVisualStyleBackColor = true;
             // 
-            // textBox27
+            // tbx_OpperatingSystem
             // 
-            this.textBox27.Location = new System.Drawing.Point(476, 387);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(210, 20);
-            this.textBox27.TabIndex = 64;
+            this.tbx_OpperatingSystem.Location = new System.Drawing.Point(476, 387);
+            this.tbx_OpperatingSystem.Name = "tbx_OpperatingSystem";
+            this.tbx_OpperatingSystem.Size = new System.Drawing.Size(210, 20);
+            this.tbx_OpperatingSystem.TabIndex = 64;
             // 
-            // textBox26
+            // tbx_Hardware
             // 
-            this.textBox26.Location = new System.Drawing.Point(476, 361);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(210, 20);
-            this.textBox26.TabIndex = 63;
+            this.tbx_Hardware.Location = new System.Drawing.Point(476, 361);
+            this.tbx_Hardware.Name = "tbx_Hardware";
+            this.tbx_Hardware.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Hardware.TabIndex = 63;
             // 
-            // textBox24
+            // tbx_Applications
             // 
-            this.textBox24.Location = new System.Drawing.Point(476, 335);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(210, 20);
-            this.textBox24.TabIndex = 62;
+            this.tbx_Applications.Location = new System.Drawing.Point(476, 335);
+            this.tbx_Applications.Name = "tbx_Applications";
+            this.tbx_Applications.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Applications.TabIndex = 62;
             // 
-            // textBox23
+            // tbx_OpenProjects
             // 
-            this.textBox23.Location = new System.Drawing.Point(476, 309);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(210, 20);
-            this.textBox23.TabIndex = 61;
+            this.tbx_OpenProjects.Location = new System.Drawing.Point(476, 309);
+            this.tbx_OpenProjects.Name = "tbx_OpenProjects";
+            this.tbx_OpenProjects.Size = new System.Drawing.Size(210, 20);
+            this.tbx_OpenProjects.TabIndex = 61;
             // 
-            // textBox21
+            // tbx_LedgerAccountNumber
             // 
-            this.textBox21.Location = new System.Drawing.Point(476, 231);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(210, 20);
-            this.textBox21.TabIndex = 59;
+            this.tbx_LedgerAccountNumber.Location = new System.Drawing.Point(476, 231);
+            this.tbx_LedgerAccountNumber.Name = "tbx_LedgerAccountNumber";
+            this.tbx_LedgerAccountNumber.Size = new System.Drawing.Size(210, 20);
+            this.tbx_LedgerAccountNumber.TabIndex = 59;
             // 
-            // textBox20
+            // tbx_Limit
             // 
-            this.textBox20.Location = new System.Drawing.Point(476, 205);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(210, 20);
-            this.textBox20.TabIndex = 58;
+            this.tbx_Limit.Location = new System.Drawing.Point(476, 205);
+            this.tbx_Limit.Name = "tbx_Limit";
+            this.tbx_Limit.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Limit.TabIndex = 58;
             // 
-            // textBox19
+            // tbx_Taxcode
             // 
-            this.textBox19.Location = new System.Drawing.Point(476, 257);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(210, 20);
-            this.textBox19.TabIndex = 58;
+            this.tbx_Taxcode.Location = new System.Drawing.Point(476, 257);
+            this.tbx_Taxcode.Name = "tbx_Taxcode";
+            this.tbx_Taxcode.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Taxcode.TabIndex = 58;
             // 
-            // textBox18
+            // tbx_GrossRevenu
             // 
-            this.textBox18.Location = new System.Drawing.Point(476, 179);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(210, 20);
-            this.textBox18.TabIndex = 57;
+            this.tbx_GrossRevenu.Location = new System.Drawing.Point(476, 179);
+            this.tbx_GrossRevenu.Name = "tbx_GrossRevenu";
+            this.tbx_GrossRevenu.Size = new System.Drawing.Size(210, 20);
+            this.tbx_GrossRevenu.TabIndex = 57;
             // 
-            // textBox17
+            // tbx_NumberOfInvoices
             // 
-            this.textBox17.Location = new System.Drawing.Point(476, 153);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(210, 20);
-            this.textBox17.TabIndex = 56;
+            this.tbx_NumberOfInvoices.Location = new System.Drawing.Point(476, 153);
+            this.tbx_NumberOfInvoices.Name = "tbx_NumberOfInvoices";
+            this.tbx_NumberOfInvoices.Size = new System.Drawing.Size(210, 20);
+            this.tbx_NumberOfInvoices.TabIndex = 56;
             // 
-            // textBox16
+            // tbx_CreditBalance
             // 
-            this.textBox16.Location = new System.Drawing.Point(476, 126);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(210, 20);
-            this.textBox16.TabIndex = 55;
+            this.tbx_CreditBalance.Location = new System.Drawing.Point(476, 126);
+            this.tbx_CreditBalance.Name = "tbx_CreditBalance";
+            this.tbx_CreditBalance.Size = new System.Drawing.Size(210, 20);
+            this.tbx_CreditBalance.TabIndex = 55;
             // 
-            // textBox15
+            // tbx_SalesPercentage
             // 
-            this.textBox15.Location = new System.Drawing.Point(476, 48);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(210, 20);
-            this.textBox15.TabIndex = 54;
+            this.tbx_SalesPercentage.Location = new System.Drawing.Point(476, 48);
+            this.tbx_SalesPercentage.Name = "tbx_SalesPercentage";
+            this.tbx_SalesPercentage.Size = new System.Drawing.Size(210, 20);
+            this.tbx_SalesPercentage.TabIndex = 54;
             // 
-            // textBox14
+            // tbx_NextAction
             // 
-            this.textBox14.Location = new System.Drawing.Point(476, 22);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(210, 20);
-            this.textBox14.TabIndex = 53;
+            this.tbx_NextAction.Location = new System.Drawing.Point(476, 22);
+            this.tbx_NextAction.Name = "tbx_NextAction";
+            this.tbx_NextAction.Size = new System.Drawing.Size(210, 20);
+            this.tbx_NextAction.TabIndex = 53;
             // 
-            // textBox13
+            // tbx_BankAccountNumber
             // 
-            this.textBox13.Location = new System.Drawing.Point(476, 100);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(210, 20);
-            this.textBox13.TabIndex = 53;
+            this.tbx_BankAccountNumber.Location = new System.Drawing.Point(476, 100);
+            this.tbx_BankAccountNumber.Name = "tbx_BankAccountNumber";
+            this.tbx_BankAccountNumber.Size = new System.Drawing.Size(210, 20);
+            this.tbx_BankAccountNumber.TabIndex = 53;
             // 
             // creditworthyN
             // 
@@ -715,12 +715,12 @@
             this.Lbl_Salespercentage.TabIndex = 35;
             this.Lbl_Salespercentage.Text = "Sales percentage";
             // 
-            // dateTimePicker2
+            // datetime_ApointmentDay
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(108, 358);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(210, 20);
-            this.dateTimePicker2.TabIndex = 34;
+            this.datetime_ApointmentDay.Location = new System.Drawing.Point(108, 358);
+            this.datetime_ApointmentDay.Name = "datetime_ApointmentDay";
+            this.datetime_ApointmentDay.Size = new System.Drawing.Size(210, 20);
+            this.datetime_ApointmentDay.TabIndex = 34;
             // 
             // potentialcustomerN
             // 
@@ -749,12 +749,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1014, 478);
-            this.Controls.Add(this.Groupbox_Clientdata);
+            this.Controls.Add(this.groupbox_Clientdata);
             this.Controls.Add(this.saveClientBtn);
             this.Name = "AddClient";
             this.Text = "Add Client";
-            this.Groupbox_Clientdata.ResumeLayout(false);
-            this.Groupbox_Clientdata.PerformLayout();
+            this.groupbox_Clientdata.ResumeLayout(false);
+            this.groupbox_Clientdata.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -762,36 +762,36 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_CompanyName;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbx_CompanyName;
+        private System.Windows.Forms.TextBox tbx_ContactPerson;
         private System.Windows.Forms.Label Lbl_Adress1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbx_Adress1;
         private System.Windows.Forms.Label Lbl_ContactPerson;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbx_Zipcode1;
         private System.Windows.Forms.Label Lbl_Zipcode1;
         private System.Windows.Forms.Button saveClientBtn;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker datetime_LastContactDate;
         private System.Windows.Forms.Label Lbl_NextAction;
         private System.Windows.Forms.Label Lbl_adress2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbx_Place1;
+        private System.Windows.Forms.TextBox tbx_Adress2;
+        private System.Windows.Forms.TextBox tbx_Zipcode2;
+        private System.Windows.Forms.TextBox tbx_Place2;
         private System.Windows.Forms.Label Lbl_Zipcode2;
         private System.Windows.Forms.Label Lbl_Place1;
         private System.Windows.Forms.Label Lbl_Place2;
         private System.Windows.Forms.Label Lbl_initials;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tbx_Initials;
+        private System.Windows.Forms.TextBox tbx_FaxNumber;
+        private System.Windows.Forms.TextBox tbx_Phonenumber;
+        private System.Windows.Forms.TextBox tbx_Email;
         private System.Windows.Forms.Label Lbl_Phonenumber;
         private System.Windows.Forms.Label Lbl_FaxNumber;
         private System.Windows.Forms.Label Lbl_Email;
         private System.Windows.Forms.Label Lbl_PotentialCustomer;
         private System.Windows.Forms.Label Lbl_ApointmentDay;
         private System.Windows.Forms.Label Lbl_ContactDate;
-        private System.Windows.Forms.GroupBox Groupbox_Clientdata;
+        private System.Windows.Forms.GroupBox groupbox_Clientdata;
         private System.Windows.Forms.RadioButton potentialcustomerN;
         private System.Windows.Forms.RadioButton potentialcustomerY;
         private System.Windows.Forms.Label Lbl_OperatingSystem;
@@ -808,27 +808,27 @@
         private System.Windows.Forms.Label Lbl_BankAccountNumber;
         private System.Windows.Forms.Label Lbl_CreditWorthy;
         private System.Windows.Forms.Label Lbl_Salespercentage;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker datetime_ApointmentDay;
         private System.Windows.Forms.RadioButton creditworthyN;
         private System.Windows.Forms.RadioButton creditworthyY;
         private System.Windows.Forms.Label Lbl_InternalContactPerson;
         private System.Windows.Forms.Label Lbl_Appointments;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox tbx_InternalContactPerson;
+        private System.Windows.Forms.TextBox tbx_Appontments;
         private System.Windows.Forms.RadioButton maintenancecontractN;
         private System.Windows.Forms.RadioButton maintenancecontractY;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox tbx_OpperatingSystem;
+        private System.Windows.Forms.TextBox tbx_Hardware;
+        private System.Windows.Forms.TextBox tbx_Applications;
+        private System.Windows.Forms.TextBox tbx_OpenProjects;
+        private System.Windows.Forms.TextBox tbx_LedgerAccountNumber;
+        private System.Windows.Forms.TextBox tbx_Limit;
+        private System.Windows.Forms.TextBox tbx_Taxcode;
+        private System.Windows.Forms.TextBox tbx_GrossRevenu;
+        private System.Windows.Forms.TextBox tbx_NumberOfInvoices;
+        private System.Windows.Forms.TextBox tbx_CreditBalance;
+        private System.Windows.Forms.TextBox tbx_SalesPercentage;
+        private System.Windows.Forms.TextBox tbx_NextAction;
+        private System.Windows.Forms.TextBox tbx_BankAccountNumber;
     }
 }
