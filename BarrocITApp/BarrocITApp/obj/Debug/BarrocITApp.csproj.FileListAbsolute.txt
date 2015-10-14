@@ -21,7 +21,6 @@ C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\Bar
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.exe
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.pdb
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.csprojResolveAssemblyReference.cache
-C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.EditKlantForm.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.EnrollBill.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.MainForm.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.LoginForm.resources

@@ -33,7 +33,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.Lbl_Adress1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.lbl_ContactPerson = new System.Windows.Forms.Label();
+            this.Lbl_ContactPerson = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.Lbl_Zipcode1 = new System.Windows.Forms.Label();
             this.saveClientBtn = new System.Windows.Forms.Button();
@@ -47,7 +47,7 @@
             this.Lbl_Zipcode2 = new System.Windows.Forms.Label();
             this.Lbl_Place1 = new System.Windows.Forms.Label();
             this.Lbl_Place2 = new System.Windows.Forms.Label();
-            this.Label_initials = new System.Windows.Forms.Label();
+            this.Lbl_initials = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -139,14 +139,14 @@
             this.textBox3.Size = new System.Drawing.Size(210, 20);
             this.textBox3.TabIndex = 5;
             // 
-            // lbl_ContactPerson
+            // Lbl_ContactPerson
             // 
-            this.lbl_ContactPerson.AutoSize = true;
-            this.lbl_ContactPerson.Location = new System.Drawing.Point(18, 51);
-            this.lbl_ContactPerson.Name = "lbl_ContactPerson";
-            this.lbl_ContactPerson.Size = new System.Drawing.Size(80, 13);
-            this.lbl_ContactPerson.TabIndex = 4;
-            this.lbl_ContactPerson.Text = "Contact Person";
+            this.Lbl_ContactPerson.AutoSize = true;
+            this.Lbl_ContactPerson.Location = new System.Drawing.Point(18, 51);
+            this.Lbl_ContactPerson.Name = "Lbl_ContactPerson";
+            this.Lbl_ContactPerson.Size = new System.Drawing.Size(80, 13);
+            this.Lbl_ContactPerson.TabIndex = 4;
+            this.Lbl_ContactPerson.Text = "Contact Person";
             // 
             // textBox4
             // 
@@ -253,14 +253,14 @@
             this.Lbl_Place2.TabIndex = 18;
             this.Lbl_Place2.Text = "Place 2";
             // 
-            // Label_initials
+            // Lbl_initials
             // 
-            this.Label_initials.AutoSize = true;
-            this.Label_initials.Location = new System.Drawing.Point(20, 77);
-            this.Label_initials.Name = "Label_initials";
-            this.Label_initials.Size = new System.Drawing.Size(36, 13);
-            this.Label_initials.TabIndex = 19;
-            this.Label_initials.Text = "Initials";
+            this.Lbl_initials.AutoSize = true;
+            this.Lbl_initials.Location = new System.Drawing.Point(20, 77);
+            this.Lbl_initials.Name = "Lbl_initials";
+            this.Lbl_initials.Size = new System.Drawing.Size(36, 13);
+            this.Lbl_initials.TabIndex = 19;
+            this.Lbl_initials.Text = "Initials";
             // 
             // textBox9
             // 
@@ -394,7 +394,7 @@
             this.Groupbox_Clientdata.Controls.Add(this.Lbl_FaxNumber);
             this.Groupbox_Clientdata.Controls.Add(this.textBox2);
             this.Groupbox_Clientdata.Controls.Add(this.Lbl_Phonenumber);
-            this.Groupbox_Clientdata.Controls.Add(this.lbl_ContactPerson);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_ContactPerson);
             this.Groupbox_Clientdata.Controls.Add(this.textBox3);
             this.Groupbox_Clientdata.Controls.Add(this.Lbl_Zipcode1);
             this.Groupbox_Clientdata.Controls.Add(this.textBox4);
@@ -406,7 +406,7 @@
             this.Groupbox_Clientdata.Controls.Add(this.Lbl_adress2);
             this.Groupbox_Clientdata.Controls.Add(this.textBox9);
             this.Groupbox_Clientdata.Controls.Add(this.textBox5);
-            this.Groupbox_Clientdata.Controls.Add(this.Label_initials);
+            this.Groupbox_Clientdata.Controls.Add(this.Lbl_initials);
             this.Groupbox_Clientdata.Controls.Add(this.textBox6);
             this.Groupbox_Clientdata.Controls.Add(this.Lbl_Place2);
             this.Groupbox_Clientdata.Controls.Add(this.textBox7);
@@ -766,7 +766,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label Lbl_Adress1;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label lbl_ContactPerson;
+        private System.Windows.Forms.Label Lbl_ContactPerson;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label Lbl_Zipcode1;
         private System.Windows.Forms.Button saveClientBtn;
@@ -780,7 +780,7 @@
         private System.Windows.Forms.Label Lbl_Zipcode2;
         private System.Windows.Forms.Label Lbl_Place1;
         private System.Windows.Forms.Label Lbl_Place2;
-        private System.Windows.Forms.Label Label_initials;
+        private System.Windows.Forms.Label Lbl_initials;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
