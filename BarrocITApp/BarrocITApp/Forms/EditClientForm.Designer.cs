@@ -97,7 +97,9 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.saveClientBtn = new System.Windows.Forms.Button();
+            this.barrocITDBDataSet1 = new BarrocITApp.BarrocITDBDataSet();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.barrocITDBDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -745,6 +747,11 @@
             this.saveClientBtn.UseVisualStyleBackColor = true;
             this.saveClientBtn.Click += new System.EventHandler(this.saveClientBtn_Click);
             // 
+            // barrocITDBDataSet1
+            // 
+            this.barrocITDBDataSet1.DataSetName = "BarrocITDBDataSet";
+            this.barrocITDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // EditClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -755,8 +762,10 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditClientForm";
             this.Text = "Edit Client";
+            this.Load += new System.EventHandler(this.EditClientForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.barrocITDBDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -832,5 +841,6 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button saveClientBtn;
+        private BarrocITDBDataSet barrocITDBDataSet1;
     }
 }
