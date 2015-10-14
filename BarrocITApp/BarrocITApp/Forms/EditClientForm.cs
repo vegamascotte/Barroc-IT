@@ -25,7 +25,7 @@ namespace BarrocITApp
 
         private void EditClientForm_Load(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection("@Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\\Users\\sjoerd\\Documents\\GitHub\\Barroc-IT\\BarrocITApp\\BarrocITApp\\BarrocITDB.mdf;Integrated Security=True;Connect Timeout=30"))
+            using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB.mdf;Integrated Security=True;Connect Timeout=30"))
             {
                 SqlCommand command =
                 new SqlCommand("select * from tbl_klantendata", connection);
@@ -37,6 +37,7 @@ namespace BarrocITApp
                 {
                     //CustID.Text = (read["Customer_ID"].ToString());
                     textBox1.Text = (read["company name"].ToString());
+                    textBox2.Text = (read["contact person"].ToString());
                 }
                 read.Close();
             }
