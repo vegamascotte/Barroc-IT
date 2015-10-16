@@ -113,7 +113,7 @@
             // tbx_CompanyName
             // 
             this.tbx_CompanyName.Location = new System.Drawing.Point(216, 42);
-            this.tbx_CompanyName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_CompanyName.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_CompanyName.Name = "tbx_CompanyName";
             this.tbx_CompanyName.Size = new System.Drawing.Size(416, 31);
             this.tbx_CompanyName.TabIndex = 1;
@@ -121,7 +121,7 @@
             // tbx_ContactPerson
             // 
             this.tbx_ContactPerson.Location = new System.Drawing.Point(216, 92);
-            this.tbx_ContactPerson.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_ContactPerson.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_ContactPerson.Name = "tbx_ContactPerson";
             this.tbx_ContactPerson.Size = new System.Drawing.Size(416, 31);
             this.tbx_ContactPerson.TabIndex = 3;
@@ -139,7 +139,7 @@
             // tbx_Adress1
             // 
             this.tbx_Adress1.Location = new System.Drawing.Point(216, 192);
-            this.tbx_Adress1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Adress1.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Adress1.Name = "tbx_Adress1";
             this.tbx_Adress1.Size = new System.Drawing.Size(416, 31);
             this.tbx_Adress1.TabIndex = 5;
@@ -157,7 +157,7 @@
             // tbx_Zipcode1
             // 
             this.tbx_Zipcode1.Location = new System.Drawing.Point(216, 242);
-            this.tbx_Zipcode1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Zipcode1.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Zipcode1.Name = "tbx_Zipcode1";
             this.tbx_Zipcode1.Size = new System.Drawing.Size(416, 31);
             this.tbx_Zipcode1.TabIndex = 7;
@@ -175,7 +175,7 @@
             // saveClientBtn
             // 
             this.saveClientBtn.Location = new System.Drawing.Point(960, 852);
-            this.saveClientBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.saveClientBtn.Margin = new System.Windows.Forms.Padding(6);
             this.saveClientBtn.Name = "saveClientBtn";
             this.saveClientBtn.Size = new System.Drawing.Size(150, 44);
             this.saveClientBtn.TabIndex = 8;
@@ -185,8 +185,10 @@
             // 
             // datetime_LastContactDate
             // 
+            this.datetime_LastContactDate.CustomFormat = "dd/MM/yyyy - HH:mm";
+            this.datetime_LastContactDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datetime_LastContactDate.Location = new System.Drawing.Point(216, 738);
-            this.datetime_LastContactDate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.datetime_LastContactDate.Margin = new System.Windows.Forms.Padding(6);
             this.datetime_LastContactDate.Name = "datetime_LastContactDate";
             this.datetime_LastContactDate.Size = new System.Drawing.Size(416, 31);
             this.datetime_LastContactDate.TabIndex = 9;
@@ -214,7 +216,7 @@
             // tbx_Place1
             // 
             this.tbx_Place1.Location = new System.Drawing.Point(216, 294);
-            this.tbx_Place1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Place1.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Place1.Name = "tbx_Place1";
             this.tbx_Place1.Size = new System.Drawing.Size(416, 31);
             this.tbx_Place1.TabIndex = 12;
@@ -222,7 +224,7 @@
             // tbx_Adress2
             // 
             this.tbx_Adress2.Location = new System.Drawing.Point(216, 344);
-            this.tbx_Adress2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Adress2.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Adress2.Name = "tbx_Adress2";
             this.tbx_Adress2.Size = new System.Drawing.Size(416, 31);
             this.tbx_Adress2.TabIndex = 13;
@@ -230,7 +232,7 @@
             // tbx_Zipcode2
             // 
             this.tbx_Zipcode2.Location = new System.Drawing.Point(216, 394);
-            this.tbx_Zipcode2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Zipcode2.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Zipcode2.Name = "tbx_Zipcode2";
             this.tbx_Zipcode2.Size = new System.Drawing.Size(416, 31);
             this.tbx_Zipcode2.TabIndex = 14;
@@ -238,7 +240,7 @@
             // tbx_Place2
             // 
             this.tbx_Place2.Location = new System.Drawing.Point(216, 444);
-            this.tbx_Place2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Place2.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Place2.Name = "tbx_Place2";
             this.tbx_Place2.Size = new System.Drawing.Size(416, 31);
             this.tbx_Place2.TabIndex = 15;
@@ -286,7 +288,7 @@
             // tbx_Initials
             // 
             this.tbx_Initials.Location = new System.Drawing.Point(216, 142);
-            this.tbx_Initials.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Initials.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Initials.Name = "tbx_Initials";
             this.tbx_Initials.Size = new System.Drawing.Size(416, 31);
             this.tbx_Initials.TabIndex = 20;
@@ -294,7 +296,7 @@
             // tbx_FaxNumber
             // 
             this.tbx_FaxNumber.Location = new System.Drawing.Point(216, 544);
-            this.tbx_FaxNumber.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_FaxNumber.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_FaxNumber.Name = "tbx_FaxNumber";
             this.tbx_FaxNumber.Size = new System.Drawing.Size(416, 31);
             this.tbx_FaxNumber.TabIndex = 21;
@@ -302,7 +304,7 @@
             // tbx_Phonenumber
             // 
             this.tbx_Phonenumber.Location = new System.Drawing.Point(216, 494);
-            this.tbx_Phonenumber.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Phonenumber.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Phonenumber.Name = "tbx_Phonenumber";
             this.tbx_Phonenumber.Size = new System.Drawing.Size(416, 31);
             this.tbx_Phonenumber.TabIndex = 21;
@@ -310,7 +312,7 @@
             // tbx_Email
             // 
             this.tbx_Email.Location = new System.Drawing.Point(216, 594);
-            this.tbx_Email.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Email.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Email.Name = "tbx_Email";
             this.tbx_Email.Size = new System.Drawing.Size(416, 31);
             this.tbx_Email.TabIndex = 22;
@@ -445,9 +447,9 @@
             this.groupbox_Clientdata.Controls.Add(this.tbx_Place2);
             this.groupbox_Clientdata.Controls.Add(this.Lbl_Zipcode2);
             this.groupbox_Clientdata.Location = new System.Drawing.Point(20, 12);
-            this.groupbox_Clientdata.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupbox_Clientdata.Margin = new System.Windows.Forms.Padding(6);
             this.groupbox_Clientdata.Name = "groupbox_Clientdata";
-            this.groupbox_Clientdata.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupbox_Clientdata.Padding = new System.Windows.Forms.Padding(6);
             this.groupbox_Clientdata.Size = new System.Drawing.Size(1984, 802);
             this.groupbox_Clientdata.TabIndex = 32;
             this.groupbox_Clientdata.TabStop = false;
@@ -456,7 +458,7 @@
             // tbx_InternalContactPerson
             // 
             this.tbx_InternalContactPerson.Location = new System.Drawing.Point(1684, 48);
-            this.tbx_InternalContactPerson.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_InternalContactPerson.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_InternalContactPerson.Name = "tbx_InternalContactPerson";
             this.tbx_InternalContactPerson.Size = new System.Drawing.Size(264, 31);
             this.tbx_InternalContactPerson.TabIndex = 68;
@@ -464,7 +466,7 @@
             // tbx_Appontments
             // 
             this.tbx_Appontments.Location = new System.Drawing.Point(1446, 137);
-            this.tbx_Appontments.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Appontments.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Appontments.MaxLength = 255;
             this.tbx_Appontments.Multiline = true;
             this.tbx_Appontments.Name = "tbx_Appontments";
@@ -475,7 +477,7 @@
             // 
             this.maintenancecontractN.AutoSize = true;
             this.maintenancecontractN.Location = new System.Drawing.Point(1110, 550);
-            this.maintenancecontractN.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.maintenancecontractN.Margin = new System.Windows.Forms.Padding(6);
             this.maintenancecontractN.Name = "maintenancecontractN";
             this.maintenancecontractN.Size = new System.Drawing.Size(70, 29);
             this.maintenancecontractN.TabIndex = 66;
@@ -487,7 +489,7 @@
             // 
             this.maintenancecontractY.AutoSize = true;
             this.maintenancecontractY.Location = new System.Drawing.Point(952, 550);
-            this.maintenancecontractY.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.maintenancecontractY.Margin = new System.Windows.Forms.Padding(6);
             this.maintenancecontractY.Name = "maintenancecontractY";
             this.maintenancecontractY.Size = new System.Drawing.Size(81, 29);
             this.maintenancecontractY.TabIndex = 65;
@@ -498,7 +500,7 @@
             // tbx_OpperatingSystem
             // 
             this.tbx_OpperatingSystem.Location = new System.Drawing.Point(952, 744);
-            this.tbx_OpperatingSystem.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_OpperatingSystem.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_OpperatingSystem.Name = "tbx_OpperatingSystem";
             this.tbx_OpperatingSystem.Size = new System.Drawing.Size(416, 31);
             this.tbx_OpperatingSystem.TabIndex = 64;
@@ -506,7 +508,7 @@
             // tbx_Hardware
             // 
             this.tbx_Hardware.Location = new System.Drawing.Point(952, 694);
-            this.tbx_Hardware.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Hardware.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Hardware.Name = "tbx_Hardware";
             this.tbx_Hardware.Size = new System.Drawing.Size(416, 31);
             this.tbx_Hardware.TabIndex = 63;
@@ -514,7 +516,7 @@
             // tbx_Applications
             // 
             this.tbx_Applications.Location = new System.Drawing.Point(952, 644);
-            this.tbx_Applications.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Applications.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Applications.Name = "tbx_Applications";
             this.tbx_Applications.Size = new System.Drawing.Size(416, 31);
             this.tbx_Applications.TabIndex = 62;
@@ -522,7 +524,7 @@
             // tbx_OpenProjects
             // 
             this.tbx_OpenProjects.Location = new System.Drawing.Point(952, 594);
-            this.tbx_OpenProjects.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_OpenProjects.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_OpenProjects.Name = "tbx_OpenProjects";
             this.tbx_OpenProjects.Size = new System.Drawing.Size(416, 31);
             this.tbx_OpenProjects.TabIndex = 61;
@@ -530,7 +532,7 @@
             // tbx_LedgerAccountNumber
             // 
             this.tbx_LedgerAccountNumber.Location = new System.Drawing.Point(952, 444);
-            this.tbx_LedgerAccountNumber.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_LedgerAccountNumber.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_LedgerAccountNumber.Name = "tbx_LedgerAccountNumber";
             this.tbx_LedgerAccountNumber.Size = new System.Drawing.Size(416, 31);
             this.tbx_LedgerAccountNumber.TabIndex = 59;
@@ -538,7 +540,7 @@
             // tbx_Limit
             // 
             this.tbx_Limit.Location = new System.Drawing.Point(952, 394);
-            this.tbx_Limit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Limit.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Limit.Name = "tbx_Limit";
             this.tbx_Limit.Size = new System.Drawing.Size(416, 31);
             this.tbx_Limit.TabIndex = 58;
@@ -546,7 +548,7 @@
             // tbx_Taxcode
             // 
             this.tbx_Taxcode.Location = new System.Drawing.Point(952, 494);
-            this.tbx_Taxcode.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_Taxcode.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_Taxcode.Name = "tbx_Taxcode";
             this.tbx_Taxcode.Size = new System.Drawing.Size(416, 31);
             this.tbx_Taxcode.TabIndex = 58;
@@ -554,7 +556,7 @@
             // tbx_GrossRevenu
             // 
             this.tbx_GrossRevenu.Location = new System.Drawing.Point(952, 344);
-            this.tbx_GrossRevenu.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_GrossRevenu.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_GrossRevenu.Name = "tbx_GrossRevenu";
             this.tbx_GrossRevenu.Size = new System.Drawing.Size(416, 31);
             this.tbx_GrossRevenu.TabIndex = 57;
@@ -562,7 +564,7 @@
             // tbx_NumberOfInvoices
             // 
             this.tbx_NumberOfInvoices.Location = new System.Drawing.Point(952, 294);
-            this.tbx_NumberOfInvoices.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_NumberOfInvoices.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_NumberOfInvoices.Name = "tbx_NumberOfInvoices";
             this.tbx_NumberOfInvoices.Size = new System.Drawing.Size(416, 31);
             this.tbx_NumberOfInvoices.TabIndex = 56;
@@ -570,7 +572,7 @@
             // tbx_CreditBalance
             // 
             this.tbx_CreditBalance.Location = new System.Drawing.Point(952, 242);
-            this.tbx_CreditBalance.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_CreditBalance.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_CreditBalance.Name = "tbx_CreditBalance";
             this.tbx_CreditBalance.Size = new System.Drawing.Size(416, 31);
             this.tbx_CreditBalance.TabIndex = 55;
@@ -578,7 +580,7 @@
             // tbx_SalesPercentage
             // 
             this.tbx_SalesPercentage.Location = new System.Drawing.Point(952, 92);
-            this.tbx_SalesPercentage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_SalesPercentage.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_SalesPercentage.Name = "tbx_SalesPercentage";
             this.tbx_SalesPercentage.Size = new System.Drawing.Size(416, 31);
             this.tbx_SalesPercentage.TabIndex = 54;
@@ -586,7 +588,7 @@
             // tbx_NextAction
             // 
             this.tbx_NextAction.Location = new System.Drawing.Point(952, 42);
-            this.tbx_NextAction.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_NextAction.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_NextAction.Name = "tbx_NextAction";
             this.tbx_NextAction.Size = new System.Drawing.Size(416, 31);
             this.tbx_NextAction.TabIndex = 53;
@@ -594,7 +596,7 @@
             // tbx_BankAccountNumber
             // 
             this.tbx_BankAccountNumber.Location = new System.Drawing.Point(952, 192);
-            this.tbx_BankAccountNumber.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbx_BankAccountNumber.Margin = new System.Windows.Forms.Padding(6);
             this.tbx_BankAccountNumber.Name = "tbx_BankAccountNumber";
             this.tbx_BankAccountNumber.Size = new System.Drawing.Size(416, 31);
             this.tbx_BankAccountNumber.TabIndex = 53;
@@ -603,7 +605,7 @@
             // 
             this.creditworthyN.AutoSize = true;
             this.creditworthyN.Location = new System.Drawing.Point(1110, 144);
-            this.creditworthyN.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.creditworthyN.Margin = new System.Windows.Forms.Padding(6);
             this.creditworthyN.Name = "creditworthyN";
             this.creditworthyN.Size = new System.Drawing.Size(70, 29);
             this.creditworthyN.TabIndex = 52;
@@ -615,7 +617,7 @@
             // 
             this.creditworthyY.AutoSize = true;
             this.creditworthyY.Location = new System.Drawing.Point(952, 144);
-            this.creditworthyY.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.creditworthyY.Margin = new System.Windows.Forms.Padding(6);
             this.creditworthyY.Name = "creditworthyY";
             this.creditworthyY.Size = new System.Drawing.Size(81, 29);
             this.creditworthyY.TabIndex = 51;
@@ -785,17 +787,20 @@
             // 
             // datetime_ApointmentDay
             // 
+            this.datetime_ApointmentDay.CustomFormat = "dd/MM/yyyy - HH:mm";
+            this.datetime_ApointmentDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datetime_ApointmentDay.Location = new System.Drawing.Point(216, 688);
-            this.datetime_ApointmentDay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.datetime_ApointmentDay.Margin = new System.Windows.Forms.Padding(6);
             this.datetime_ApointmentDay.Name = "datetime_ApointmentDay";
             this.datetime_ApointmentDay.Size = new System.Drawing.Size(416, 31);
             this.datetime_ApointmentDay.TabIndex = 34;
+            this.datetime_ApointmentDay.Value = new System.DateTime(2015, 10, 16, 11, 5, 17, 0);
             // 
             // potentialcustomerN
             // 
             this.potentialcustomerN.AutoSize = true;
             this.potentialcustomerN.Location = new System.Drawing.Point(424, 646);
-            this.potentialcustomerN.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.potentialcustomerN.Margin = new System.Windows.Forms.Padding(6);
             this.potentialcustomerN.Name = "potentialcustomerN";
             this.potentialcustomerN.Size = new System.Drawing.Size(70, 29);
             this.potentialcustomerN.TabIndex = 33;
@@ -807,7 +812,7 @@
             // 
             this.potentialcustomerY.AutoSize = true;
             this.potentialcustomerY.Location = new System.Drawing.Point(240, 646);
-            this.potentialcustomerY.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.potentialcustomerY.Margin = new System.Windows.Forms.Padding(6);
             this.potentialcustomerY.Name = "potentialcustomerY";
             this.potentialcustomerY.Size = new System.Drawing.Size(81, 29);
             this.potentialcustomerY.TabIndex = 32;
@@ -822,7 +827,7 @@
             this.ClientSize = new System.Drawing.Size(2028, 919);
             this.Controls.Add(this.groupbox_Clientdata);
             this.Controls.Add(this.saveClientBtn);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AddClient";
             this.Text = "Add Client";
             this.groupbox_Clientdata.ResumeLayout(false);

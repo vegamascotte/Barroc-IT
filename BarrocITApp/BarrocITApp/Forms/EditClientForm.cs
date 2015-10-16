@@ -36,8 +36,8 @@ namespace BarrocITApp
                 while (read.Read())
                 {
                     //CustID.Text = (read["Customer_ID"].ToString());
-                    textBox1.Text = (read["company name"].ToString());
-                    textBox2.Text = (read["contact person"].ToString());
+                    textBox1.Text = (read["companyName"].ToString());
+                    textBox2.Text = (read["contactPerson"].ToString());
                 }
                 read.Close();
             }
