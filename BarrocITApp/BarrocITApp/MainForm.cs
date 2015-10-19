@@ -16,7 +16,7 @@ namespace BarrocITApp
         private EnrollBill enrollBill;
         private Forms.AddClient addClient;
         private EditClientForm editClientForm;
-
+        public string loggedInAs = "Admin";
         public MainForm()
         {
             InitializeComponent();
@@ -31,8 +31,7 @@ namespace BarrocITApp
             //this.tbl_klantendataTableAdapter.Fill(this.barrocITDBDataSet.tbl_klantendata);
             // TODO: This line of code loads data into the 'barrocITDBDataSet2.tbl_projecten' table. You can move, or remove it, as needed.
             this.tbl_projectenTableAdapter.Fill(this.barrocITDBDataSet2.tbl_projecten);
-            
-
+            Lbl_LogedInas.Text = "Logged is as: " + loggedInAs + " at: " + DateTime.Now.ToShortTimeString();
         }
         #endregion
 
@@ -52,7 +51,7 @@ namespace BarrocITApp
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Do you really want to close the program?", "Exit", MessageBoxButtons.YesNo);
+            DialogResult dialog = MessageBox.Show("Do you really want to close the program: " +loggedInAs + " ? ", "Exit", MessageBoxButtons.YesNo);
             if (dialog == DialogResult.No)
 	        {
 		        e.Cancel = true;

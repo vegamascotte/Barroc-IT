@@ -103,6 +103,7 @@
             this.tbl_klantendataTableAdapter = new BarrocITApp.BarrocITDBDataSetTableAdapters.tbl_klantendataTableAdapter();
             this.tbl_klantendataTableAdapter1 = new BarrocITApp.BarrocITDBDataSet1TableAdapters.tbl_klantendataTableAdapter();
             this.btn_logout = new System.Windows.Forms.Button();
+            this.Lbl_LogedInas = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblklantendataBindingSource4)).BeginInit();
@@ -131,11 +132,11 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(14, 12);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(7, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(324, 848);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(162, 441);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Clients";
@@ -148,11 +149,11 @@
             this.dataGridViewTextBoxColumn33});
             this.dataGridView1.DataSource = this.tblklantendataBindingSource4;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 28);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 15);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(316, 816);
+            this.dataGridView1.Size = new System.Drawing.Size(158, 424);
             this.dataGridView1.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn33
@@ -181,11 +182,11 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.Tabcontrol);
-            this.groupBox2.Location = new System.Drawing.Point(352, 12);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(176, 6);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1734, 844);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(867, 439);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
@@ -196,11 +197,11 @@
             this.Tabcontrol.Controls.Add(this.tabPage1);
             this.Tabcontrol.Controls.Add(this.tabPage2);
             this.Tabcontrol.Controls.Add(this.tabPage3);
-            this.Tabcontrol.Location = new System.Drawing.Point(4, 19);
-            this.Tabcontrol.Margin = new System.Windows.Forms.Padding(4);
+            this.Tabcontrol.Location = new System.Drawing.Point(2, 10);
+            this.Tabcontrol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Tabcontrol.Name = "Tabcontrol";
             this.Tabcontrol.SelectedIndex = 0;
-            this.Tabcontrol.Size = new System.Drawing.Size(1728, 821);
+            this.Tabcontrol.Size = new System.Drawing.Size(864, 427);
             this.Tabcontrol.TabIndex = 0;
             // 
             // tabPage1
@@ -209,21 +210,20 @@
             this.tabPage1.Controls.Add(this.btn_removeSelected);
             this.tabPage1.Controls.Add(this.btn_editClientOpenForm);
             this.tabPage1.Controls.Add(this.dataGridView3);
-            this.tabPage1.Location = new System.Drawing.Point(8, 39);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1712, 774);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(856, 401);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Client Data";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btn_addClientOpenForm
             // 
-            this.btn_addClientOpenForm.Location = new System.Drawing.Point(8, 717);
-            this.btn_addClientOpenForm.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_addClientOpenForm.Location = new System.Drawing.Point(4, 373);
             this.btn_addClientOpenForm.Name = "btn_addClientOpenForm";
-            this.btn_addClientOpenForm.Size = new System.Drawing.Size(150, 44);
+            this.btn_addClientOpenForm.Size = new System.Drawing.Size(75, 23);
             this.btn_addClientOpenForm.TabIndex = 2;
             this.btn_addClientOpenForm.Text = "add client";
             this.btn_addClientOpenForm.UseVisualStyleBackColor = true;
@@ -231,20 +231,18 @@
             // 
             // btn_removeSelected
             // 
-            this.btn_removeSelected.Location = new System.Drawing.Point(332, 717);
-            this.btn_removeSelected.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_removeSelected.Location = new System.Drawing.Point(166, 373);
             this.btn_removeSelected.Name = "btn_removeSelected";
-            this.btn_removeSelected.Size = new System.Drawing.Size(266, 44);
+            this.btn_removeSelected.Size = new System.Drawing.Size(133, 23);
             this.btn_removeSelected.TabIndex = 3;
             this.btn_removeSelected.Text = "delete selected client";
             this.btn_removeSelected.UseVisualStyleBackColor = true;
             // 
             // btn_editClientOpenForm
             // 
-            this.btn_editClientOpenForm.Location = new System.Drawing.Point(170, 717);
-            this.btn_editClientOpenForm.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_editClientOpenForm.Location = new System.Drawing.Point(85, 373);
             this.btn_editClientOpenForm.Name = "btn_editClientOpenForm";
-            this.btn_editClientOpenForm.Size = new System.Drawing.Size(150, 44);
+            this.btn_editClientOpenForm.Size = new System.Drawing.Size(75, 23);
             this.btn_editClientOpenForm.TabIndex = 2;
             this.btn_editClientOpenForm.Text = "edit client";
             this.btn_editClientOpenForm.UseVisualStyleBackColor = true;
@@ -291,12 +289,12 @@
             this.dataGridViewTextBoxColumn31,
             this.dataGridViewTextBoxColumn32});
             this.dataGridView3.DataSource = this.tblklantendataBindingSource3;
-            this.dataGridView3.Location = new System.Drawing.Point(4, 4);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView3.Location = new System.Drawing.Point(2, 2);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
             this.dataGridView3.RowTemplate.Height = 33;
-            this.dataGridView3.Size = new System.Drawing.Size(1708, 713);
+            this.dataGridView3.Size = new System.Drawing.Size(854, 371);
             this.dataGridView3.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -546,41 +544,38 @@
             this.tabPage2.Controls.Add(this.button5);
             this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Location = new System.Drawing.Point(8, 39);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1712, 774);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(856, 401);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Financial Data";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(10, 717);
-            this.button4.Margin = new System.Windows.Forms.Padding(6);
+            this.button4.Location = new System.Drawing.Point(5, 373);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 44);
+            this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 4;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(334, 717);
-            this.button5.Margin = new System.Windows.Forms.Padding(6);
+            this.button5.Location = new System.Drawing.Point(167, 373);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 44);
+            this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 6;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(172, 717);
-            this.button6.Margin = new System.Windows.Forms.Padding(6);
+            this.button6.Location = new System.Drawing.Point(86, 373);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(150, 44);
+            this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 5;
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
@@ -591,12 +586,12 @@
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(4, 4);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView2.Location = new System.Drawing.Point(2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowTemplate.Height = 33;
-            this.dataGridView2.Size = new System.Drawing.Size(1708, 713);
+            this.dataGridView2.Size = new System.Drawing.Size(854, 371);
             this.dataGridView2.TabIndex = 0;
             // 
             // tabPage3
@@ -605,41 +600,38 @@
             this.tabPage3.Controls.Add(this.button8);
             this.tabPage3.Controls.Add(this.button9);
             this.tabPage3.Controls.Add(this.dataGridView4);
-            this.tabPage3.Location = new System.Drawing.Point(8, 39);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(1712, 774);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Size = new System.Drawing.Size(856, 401);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Project Data";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(10, 717);
-            this.button7.Margin = new System.Windows.Forms.Padding(6);
+            this.button7.Location = new System.Drawing.Point(5, 373);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(150, 44);
+            this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 4;
             this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(334, 717);
-            this.button8.Margin = new System.Windows.Forms.Padding(6);
+            this.button8.Location = new System.Drawing.Point(167, 373);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(150, 44);
+            this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 6;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(172, 717);
-            this.button9.Margin = new System.Windows.Forms.Padding(6);
+            this.button9.Location = new System.Drawing.Point(86, 373);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(150, 44);
+            this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 5;
             this.button9.Text = "button9";
             this.button9.UseVisualStyleBackColor = true;
@@ -655,12 +647,12 @@
             this.projectNameDataGridViewTextBoxColumn,
             this.projectStatusDataGridViewTextBoxColumn});
             this.dataGridView4.DataSource = this.tblprojectenBindingSource;
-            this.dataGridView4.Location = new System.Drawing.Point(4, 4);
-            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView4.Location = new System.Drawing.Point(2, 2);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.ReadOnly = true;
             this.dataGridView4.RowTemplate.Height = 33;
-            this.dataGridView4.Size = new System.Drawing.Size(1708, 713);
+            this.dataGridView4.Size = new System.Drawing.Size(854, 371);
             this.dataGridView4.TabIndex = 1;
             // 
             // projectCodeDataGridViewTextBoxColumn
@@ -700,10 +692,9 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(984, 948);
-            this.button10.Margin = new System.Windows.Forms.Padding(6);
+            this.button10.Location = new System.Drawing.Point(492, 493);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(150, 44);
+            this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 2;
             this.button10.Text = "open form";
             this.button10.UseVisualStyleBackColor = true;
@@ -741,26 +732,34 @@
             // 
             // btn_logout
             // 
-            this.btn_logout.Location = new System.Drawing.Point(1936, 1058);
-            this.btn_logout.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_logout.Location = new System.Drawing.Point(968, 550);
             this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(150, 44);
+            this.btn_logout.Size = new System.Drawing.Size(75, 23);
             this.btn_logout.TabIndex = 3;
             this.btn_logout.Text = "Logout";
             this.btn_logout.UseVisualStyleBackColor = true;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
+            // Lbl_LogedInas
+            // 
+            this.Lbl_LogedInas.AutoSize = true;
+            this.Lbl_LogedInas.Location = new System.Drawing.Point(784, 555);
+            this.Lbl_LogedInas.Name = "Lbl_LogedInas";
+            this.Lbl_LogedInas.Size = new System.Drawing.Size(0, 13);
+            this.Lbl_LogedInas.TabIndex = 4;
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2134, 1125);
+            this.ClientSize = new System.Drawing.Size(1067, 585);
+            this.Controls.Add(this.Lbl_LogedInas);
             this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "MainForm";
@@ -790,6 +789,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbloffertesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblklantendataBindingSource1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -902,6 +902,7 @@
         private BarrocITDBDataSet1TableAdapters.tbl_klantendataTableAdapter tbl_klantendataTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
         private System.Windows.Forms.Button btn_logout;
+        private System.Windows.Forms.Label Lbl_LogedInas;
     }
 }
 

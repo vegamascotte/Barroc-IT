@@ -76,25 +76,5 @@ namespace BarrocITApp.Forms
                 throw;
             }
         }
-        public void CheckStrings()
-        { 
-        
-        
-        }
-
-        public void CheckDecimals() 
-        {
-        
-        }
-        public void CheckInts(TextBox tbx, KeyPressEventArgs e)
-        {
-            if (int.TryParse(tbx.Text, out distance))
-            {
-                if (!char.IsDigit(e.KeyChar)) 
-                    e.Handled = true;
-                if (e.KeyChar == (char)8)
-                    e.Handled = false;
-            }
-        }
     }
 }

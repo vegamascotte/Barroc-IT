@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,27 @@ namespace BarrocITApp
         //Load of form
         private void LoginForm_Load(object sender, EventArgs e)
         {
+            try
+            {
+                Ping ping = new Ping();
+                PingReply pingReply = ping.Send("google.com");
+
+                if (pingReply.Status == IPStatus.Success)
+                {
+                    lbl_connectionStatus.BackColor = Color.Green;
+                }
+                else if (pingReply.Status == IPStatus.TimedOut)
+                {
+                    lbl_connectionStatus.BackColor = Color.Red;
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show("No Connection.");
+                lbl_connectionStatus.BackColor = Color.Red;
+            }
+           
         }
         //Errorhandeling of the Null input
         #region Errorhandeling PSW_USER

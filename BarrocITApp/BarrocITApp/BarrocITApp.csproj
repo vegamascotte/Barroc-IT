@@ -79,6 +79,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BarrocITDBDataSetFinance.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DBHandler.cs" />
     <Compile Include="Forms\AddClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +130,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility.cs" />
     <EmbeddedResource Include="Forms\AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
     </EmbeddedResource>
