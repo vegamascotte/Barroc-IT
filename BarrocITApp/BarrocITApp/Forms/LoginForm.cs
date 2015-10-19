@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Net.NetworkInformation;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,53 +11,37 @@ using System.Windows.Forms;
 
 namespace BarrocITApp
 {
+    public enum Role { Finance, Sales, Development}
+
     public partial class LoginForm : Form
     {
+        private Role role;
+
         public LoginForm()
         {
             InitializeComponent();
+            DBHandler.Init();
         }
         //Load of form
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            try
-            {
-                Ping ping = new Ping();
-                PingReply pingReply = ping.Send("google.com");
-
-                if (pingReply.Status == IPStatus.Success)
-                {
-                    lbl_connectionStatus.BackColor = Color.Green;
-                }
-                else if (pingReply.Status == IPStatus.TimedOut)
-                {
-                    lbl_connectionStatus.BackColor = Color.Red;
-                }
-            }
-            catch (Exception ex)
-            {
-                
-                MessageBox.Show("No Connection.");
-                lbl_connectionStatus.BackColor = Color.Red;
-            }
-           
         }
         //Errorhandeling of the Null input
         #region Errorhandeling PSW_USER
         private bool UsernameEmpty()
         {
-            if (UssernameTbx.Text.Trim().Length == 0)
+            if (tb_username.Text.Trim().Length == 0)
             {
-                errorProvider1.SetError(UssernameTbx, "Field cannot be empty!");
+                errorProvider1.SetError(tb_username, "Field cannot be empty!");
                 return false;
             }
             return true;
         }
         private bool PasswordEmpty()
         {
-            if (PasswordTbx.Text.Trim().Length == 0)
+            if (tb_password.Text.Trim().Length == 0)
             {
-                errorProvider1.SetError(PasswordTbx, "Field cannot be empty!");
+                errorProvider1.SetError(tb_password, "Field cannot be empty!");
                 return false;
             }
             return true;
@@ -67,8 +50,19 @@ namespace BarrocITApp
         //LoginBtn 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            UsernameEmpty();
-            PasswordEmpty();
+            if(UsernameEmpty() && PasswordEmpty())
+            {
+                if(DBHandler.CheckLoginData(tb_username.Text, tb_password.Text, ref role))
+                {
+                    this.Hide();
+
+                    MainForm form2 = new MainForm(role);
+                    form2.ShowDialog();
+
+                    this.Close();
+                }
+
+            }
         }
         //Hash to compare values with database password
         public static String GetMD5Hash(String TextToHash)
