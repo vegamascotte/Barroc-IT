@@ -141,7 +141,6 @@ namespace BarrocITApp
 
         public static void InsertProject(object[] datas)
         {
-            "INSERT INTO Table_Login (username, password) VALUES ('antho', 'haha')"
         }
 
 

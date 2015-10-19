@@ -17,9 +17,11 @@ namespace BarrocITApp
         private Forms.AddClient addClient;
         private EditClientForm editClientForm;
         public string loggedInAs = "Admin";
-        public MainForm()
+        private Role role;
+        public MainForm(Role role)
         {
             InitializeComponent();
+            this.role = role;
         }
         //Fill the datagrid on form load
         #region FormLoadData
