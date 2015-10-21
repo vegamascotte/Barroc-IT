@@ -9,16 +9,20 @@ using System.Data;
 
 namespace BarrocITApp
 {
-    class DBHandler
+    public class DBHandler
     {
-        private static SqlConnection con;
+        private SqlConnection con;
         
-        public static void Init()
+        public void Init()
         {
+<<<<<<< HEAD
+            con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Jeebes\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB(N).mdf;Integrated Security=True;Connect Timeout=30");
+=======
             con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB(N).mdf;Integrated Security=True;Connect Timeout=30");
+>>>>>>> origin/master
         }
 
-        public static bool TestConnection()
+        public bool TestConnection()
         {
             if(!IsOpen())
             {
@@ -38,7 +42,7 @@ namespace BarrocITApp
             return false;        
         }
 
-        public static bool Connect()
+        public bool Connect()
         {
             if(!IsOpen())
             {
@@ -55,7 +59,7 @@ namespace BarrocITApp
             return false;
         }
 
-        public static bool Disconnect()
+        public bool Disconnect()
         {
             if (IsOpen())
             {
@@ -72,7 +76,7 @@ namespace BarrocITApp
             return false;
         }
 
-        public static DataTable FillDT(string query)
+        public DataTable FillDT(string query)
         {
             con.Open();
 
@@ -85,17 +89,17 @@ namespace BarrocITApp
             return dt;
         }
 
-        public static SqlConnection GetCon()
+        public SqlConnection GetCon()
         {
             return con;
         }
 
-        private static bool IsOpen()
+        private bool IsOpen()
         {
             return con.State == ConnectionState.Open;
         }
 
-        public static bool CheckLoginData(string username, string password, ref Role role)
+        public bool CheckLoginData(string username, string password, ref Role role)
         {
             Connect();
             try
@@ -134,20 +138,41 @@ namespace BarrocITApp
             return false;
         }
 
+<<<<<<< HEAD
+        public object[] GetRow(DataTable table, int index)
+=======
 
         public static object[] GetRow(DataTable table, int index)
+>>>>>>> origin/master
         {
             return table.Rows[index].ItemArray;
         }
 
-        public static void InsertProject(object[] datas)
+        public void InsertProject(object[] datas)
         {
         }
 
+<<<<<<< HEAD
+        public void InsertRow(string table, string values)
+        {
+            Init();
+            SqlCommand cmd = new SqlCommand();
+            //SqlDataReader reader;
+            cmd.Connection = con;
+
+            cmd.CommandText = "INSERT INTO " + table + " VALUES" + "(" + values + ")";
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection = con;
+=======
         public void InsertClient()
         { 
         
         }
+>>>>>>> origin/master
 
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }
