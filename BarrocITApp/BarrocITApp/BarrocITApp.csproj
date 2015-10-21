@@ -11,6 +11,7 @@
     <AssemblyName>BarrocITApp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -59,26 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BarrocITDBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BarrocITDBDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BarrocITDBDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BarrocITDBDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BarrocITDBDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BarrocITDBDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BarrocITDBDataSetFinance.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BarrocITDBDataSetFinance.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DBHandler.cs" />
     <Compile Include="Forms\AddClient.cs">
       <SubType>Form</SubType>
@@ -131,6 +111,36 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />
+    <Compile Include="_BarrocITDB_N_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_BarrocITDB_N_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_BarrocITDB_N_DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_BarrocITDB_N_DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_BarrocITDB_N_DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_BarrocITDB_N_DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_BarrocITDB_N_DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_BarrocITDB_N_DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_BarrocITDB_N_DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_BarrocITDB_N_DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_BarrocITDB_N_DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_BarrocITDB_N_DataSet5.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,50 +174,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="BarrocITDBDataSet.xsc">
-      <DependentUpon>BarrocITDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BarrocITDBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BarrocITDBDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BarrocITDBDataSet.xss">
-      <DependentUpon>BarrocITDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BarrocITDBDataSet1.xsc">
-      <DependentUpon>BarrocITDBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="BarrocITDBDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BarrocITDBDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BarrocITDBDataSet1.xss">
-      <DependentUpon>BarrocITDBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="BarrocITDBDataSet2.xsc">
-      <DependentUpon>BarrocITDBDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="BarrocITDBDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BarrocITDBDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BarrocITDBDataSet2.xss">
-      <DependentUpon>BarrocITDBDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="BarrocITDBDataSetFinance.xsc">
-      <DependentUpon>BarrocITDBDataSetFinance.xsd</DependentUpon>
-    </None>
-    <None Include="BarrocITDBDataSetFinance.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BarrocITDBDataSetFinance.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BarrocITDBDataSetFinance.xss">
-      <DependentUpon>BarrocITDBDataSetFinance.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -217,17 +183,83 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_BarrocITDB_N_DataSet.xsc">
+      <DependentUpon>_BarrocITDB_N_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_BarrocITDB_N_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet.xss">
+      <DependentUpon>_BarrocITDB_N_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet1.xsc">
+      <DependentUpon>_BarrocITDB_N_DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_BarrocITDB_N_DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet1.xss">
+      <DependentUpon>_BarrocITDB_N_DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet2.xsc">
+      <DependentUpon>_BarrocITDB_N_DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_BarrocITDB_N_DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet2.xss">
+      <DependentUpon>_BarrocITDB_N_DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet3.xsc">
+      <DependentUpon>_BarrocITDB_N_DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_BarrocITDB_N_DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet3.xss">
+      <DependentUpon>_BarrocITDB_N_DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet4.xsc">
+      <DependentUpon>_BarrocITDB_N_DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_BarrocITDB_N_DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet4.xss">
+      <DependentUpon>_BarrocITDB_N_DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet5.xsc">
+      <DependentUpon>_BarrocITDB_N_DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_BarrocITDB_N_DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_BarrocITDB_N_DataSet5.xss">
+      <DependentUpon>_BarrocITDB_N_DataSet5.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BarrocITDB.mdf">
+    <Content Include="BarrocITDB%28N%29.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="BarrocITDB_log.ldf">
+    <Content Include="BarrocITDB%28N%29_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>BarrocITDB.mdf</DependentUpon>
+      <DependentUpon>BarrocITDB%28N%29.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

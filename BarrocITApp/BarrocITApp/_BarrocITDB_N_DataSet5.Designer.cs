@@ -20,17 +20,17 @@ namespace BarrocITApp {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("BarrocITDBDataSet2")]
+    [global::System.Xml.Serialization.XmlRootAttribute("_BarrocITDB_N_DataSet5")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class BarrocITDBDataSet2 : global::System.Data.DataSet {
+    public partial class _BarrocITDB_N_DataSet5 : global::System.Data.DataSet {
         
-        private tbl_projectenDataTable tabletbl_projecten;
+        private tbl_meetingsDataTable tabletbl_meetings;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public BarrocITDBDataSet2() {
+        public _BarrocITDB_N_DataSet5() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace BarrocITApp {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected BarrocITDBDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected _BarrocITDB_N_DataSet5(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace BarrocITApp {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["tbl_projecten"] != null)) {
-                    base.Tables.Add(new tbl_projectenDataTable(ds.Tables["tbl_projecten"]));
+                if ((ds.Tables["tbl_meetings"] != null)) {
+                    base.Tables.Add(new tbl_meetingsDataTable(ds.Tables["tbl_meetings"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace BarrocITApp {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tbl_projectenDataTable tbl_projecten {
+        public tbl_meetingsDataTable tbl_meetings {
             get {
-                return this.tabletbl_projecten;
+                return this.tabletbl_meetings;
             }
         }
         
@@ -127,7 +127,7 @@ namespace BarrocITApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            BarrocITDBDataSet2 cln = ((BarrocITDBDataSet2)(base.Clone()));
+            _BarrocITDB_N_DataSet5 cln = ((_BarrocITDB_N_DataSet5)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace BarrocITApp {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["tbl_projecten"] != null)) {
-                    base.Tables.Add(new tbl_projectenDataTable(ds.Tables["tbl_projecten"]));
+                if ((ds.Tables["tbl_meetings"] != null)) {
+                    base.Tables.Add(new tbl_meetingsDataTable(ds.Tables["tbl_meetings"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace BarrocITApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tabletbl_projecten = ((tbl_projectenDataTable)(base.Tables["tbl_projecten"]));
+            this.tabletbl_meetings = ((tbl_meetingsDataTable)(base.Tables["tbl_meetings"]));
             if ((initTable == true)) {
-                if ((this.tabletbl_projecten != null)) {
-                    this.tabletbl_projecten.InitVars();
+                if ((this.tabletbl_meetings != null)) {
+                    this.tabletbl_meetings.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace BarrocITApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "BarrocITDBDataSet2";
+            this.DataSetName = "_BarrocITDB_N_DataSet5";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/BarrocITDBDataSet2.xsd";
+            this.Namespace = "http://tempuri.org/_BarrocITDB_N_DataSet5.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tabletbl_projecten = new tbl_projectenDataTable();
-            base.Tables.Add(this.tabletbl_projecten);
+            this.tabletbl_meetings = new tbl_meetingsDataTable();
+            base.Tables.Add(this.tabletbl_meetings);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializetbl_projecten() {
+        private bool ShouldSerializetbl_meetings() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace BarrocITApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            BarrocITDBDataSet2 ds = new BarrocITDBDataSet2();
+            _BarrocITDB_N_DataSet5 ds = new _BarrocITDB_N_DataSet5();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,25 +270,35 @@ namespace BarrocITApp {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void tbl_projectenRowChangeEventHandler(object sender, tbl_projectenRowChangeEvent e);
+        public delegate void tbl_meetingsRowChangeEventHandler(object sender, tbl_meetingsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tbl_projectenDataTable : global::System.Data.TypedTableBase<tbl_projectenRow> {
+        public partial class tbl_meetingsDataTable : global::System.Data.TypedTableBase<tbl_meetingsRow> {
             
-            private global::System.Data.DataColumn columnproject_code;
+            private global::System.Data.DataColumn columnp_projectID;
             
-            private global::System.Data.DataColumn columnproject_name_;
+            private global::System.Data.DataColumn columnm_meetingID;
             
-            private global::System.Data.DataColumn columnproject_status;
+            private global::System.Data.DataColumn columnm_date;
+            
+            private global::System.Data.DataColumn columnm_startTime;
+            
+            private global::System.Data.DataColumn columnm_endTime;
+            
+            private global::System.Data.DataColumn columnm_contactPerson;
+            
+            private global::System.Data.DataColumn columnm_location;
+            
+            private global::System.Data.DataColumn columnm_atteningPersons;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_projectenDataTable() {
-                this.TableName = "tbl_projecten";
+            public tbl_meetingsDataTable() {
+                this.TableName = "tbl_meetings";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -296,7 +306,7 @@ namespace BarrocITApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_projectenDataTable(global::System.Data.DataTable table) {
+            internal tbl_meetingsDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -313,32 +323,72 @@ namespace BarrocITApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected tbl_projectenDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected tbl_meetingsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn project_codeColumn {
+            public global::System.Data.DataColumn p_projectIDColumn {
                 get {
-                    return this.columnproject_code;
+                    return this.columnp_projectID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn project_name_Column {
+            public global::System.Data.DataColumn m_meetingIDColumn {
                 get {
-                    return this.columnproject_name_;
+                    return this.columnm_meetingID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn project_statusColumn {
+            public global::System.Data.DataColumn m_dateColumn {
                 get {
-                    return this.columnproject_status;
+                    return this.columnm_date;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn m_startTimeColumn {
+                get {
+                    return this.columnm_startTime;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn m_endTimeColumn {
+                get {
+                    return this.columnm_endTime;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn m_contactPersonColumn {
+                get {
+                    return this.columnm_contactPerson;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn m_locationColumn {
+                get {
+                    return this.columnm_location;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn m_atteningPersonsColumn {
+                get {
+                    return this.columnm_atteningPersons;
                 }
             }
             
@@ -353,54 +403,59 @@ namespace BarrocITApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_projectenRow this[int index] {
+            public tbl_meetingsRow this[int index] {
                 get {
-                    return ((tbl_projectenRow)(this.Rows[index]));
+                    return ((tbl_meetingsRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_projectenRowChangeEventHandler tbl_projectenRowChanging;
+            public event tbl_meetingsRowChangeEventHandler tbl_meetingsRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_projectenRowChangeEventHandler tbl_projectenRowChanged;
+            public event tbl_meetingsRowChangeEventHandler tbl_meetingsRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_projectenRowChangeEventHandler tbl_projectenRowDeleting;
+            public event tbl_meetingsRowChangeEventHandler tbl_meetingsRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_projectenRowChangeEventHandler tbl_projectenRowDeleted;
+            public event tbl_meetingsRowChangeEventHandler tbl_meetingsRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addtbl_projectenRow(tbl_projectenRow row) {
+            public void Addtbl_meetingsRow(tbl_meetingsRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_projectenRow Addtbl_projectenRow(int project_code, string project_name_, string project_status) {
-                tbl_projectenRow rowtbl_projectenRow = ((tbl_projectenRow)(this.NewRow()));
+            public tbl_meetingsRow Addtbl_meetingsRow(int p_projectID, int m_meetingID, System.DateTime m_date, System.DateTime m_startTime, System.DateTime m_endTime, string m_contactPerson, string m_location, string m_atteningPersons) {
+                tbl_meetingsRow rowtbl_meetingsRow = ((tbl_meetingsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        project_code,
-                        project_name_,
-                        project_status};
-                rowtbl_projectenRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtbl_projectenRow);
-                return rowtbl_projectenRow;
+                        p_projectID,
+                        m_meetingID,
+                        m_date,
+                        m_startTime,
+                        m_endTime,
+                        m_contactPerson,
+                        m_location,
+                        m_atteningPersons};
+                rowtbl_meetingsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtbl_meetingsRow);
+                return rowtbl_meetingsRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_projectenRow FindByproject_code(int project_code) {
-                return ((tbl_projectenRow)(this.Rows.Find(new object[] {
-                            project_code})));
+            public tbl_meetingsRow FindByp_projectID(int p_projectID) {
+                return ((tbl_meetingsRow)(this.Rows.Find(new object[] {
+                            p_projectID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tbl_projectenDataTable cln = ((tbl_projectenDataTable)(base.Clone()));
+                tbl_meetingsDataTable cln = ((tbl_meetingsDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -408,60 +463,77 @@ namespace BarrocITApp {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tbl_projectenDataTable();
+                return new tbl_meetingsDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnproject_code = base.Columns["project code"];
-                this.columnproject_name_ = base.Columns["project name "];
-                this.columnproject_status = base.Columns["project status"];
+                this.columnp_projectID = base.Columns["p_projectID"];
+                this.columnm_meetingID = base.Columns["m_meetingID"];
+                this.columnm_date = base.Columns["m_date"];
+                this.columnm_startTime = base.Columns["m_startTime"];
+                this.columnm_endTime = base.Columns["m_endTime"];
+                this.columnm_contactPerson = base.Columns["m_contactPerson"];
+                this.columnm_location = base.Columns["m_location"];
+                this.columnm_atteningPersons = base.Columns["m_atteningPersons"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnproject_code = new global::System.Data.DataColumn("project code", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnproject_code);
-                this.columnproject_name_ = new global::System.Data.DataColumn("project name ", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnproject_name_);
-                this.columnproject_status = new global::System.Data.DataColumn("project status", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnproject_status);
+                this.columnp_projectID = new global::System.Data.DataColumn("p_projectID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnp_projectID);
+                this.columnm_meetingID = new global::System.Data.DataColumn("m_meetingID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnm_meetingID);
+                this.columnm_date = new global::System.Data.DataColumn("m_date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnm_date);
+                this.columnm_startTime = new global::System.Data.DataColumn("m_startTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnm_startTime);
+                this.columnm_endTime = new global::System.Data.DataColumn("m_endTime", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnm_endTime);
+                this.columnm_contactPerson = new global::System.Data.DataColumn("m_contactPerson", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnm_contactPerson);
+                this.columnm_location = new global::System.Data.DataColumn("m_location", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnm_location);
+                this.columnm_atteningPersons = new global::System.Data.DataColumn("m_atteningPersons", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnm_atteningPersons);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnproject_code}, true));
-                this.columnproject_code.AllowDBNull = false;
-                this.columnproject_code.Unique = true;
-                this.columnproject_name_.AllowDBNull = false;
-                this.columnproject_name_.MaxLength = 40;
-                this.columnproject_status.AllowDBNull = false;
-                this.columnproject_status.MaxLength = 20;
+                                this.columnp_projectID}, true));
+                this.columnp_projectID.AllowDBNull = false;
+                this.columnp_projectID.Unique = true;
+                this.columnm_meetingID.AllowDBNull = false;
+                this.columnm_date.AllowDBNull = false;
+                this.columnm_contactPerson.AllowDBNull = false;
+                this.columnm_contactPerson.MaxLength = 32;
+                this.columnm_location.MaxLength = 64;
+                this.columnm_atteningPersons.MaxLength = 256;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_projectenRow Newtbl_projectenRow() {
-                return ((tbl_projectenRow)(this.NewRow()));
+            public tbl_meetingsRow Newtbl_meetingsRow() {
+                return ((tbl_meetingsRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tbl_projectenRow(builder);
+                return new tbl_meetingsRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tbl_projectenRow);
+                return typeof(tbl_meetingsRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tbl_projectenRowChanged != null)) {
-                    this.tbl_projectenRowChanged(this, new tbl_projectenRowChangeEvent(((tbl_projectenRow)(e.Row)), e.Action));
+                if ((this.tbl_meetingsRowChanged != null)) {
+                    this.tbl_meetingsRowChanged(this, new tbl_meetingsRowChangeEvent(((tbl_meetingsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -469,8 +541,8 @@ namespace BarrocITApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tbl_projectenRowChanging != null)) {
-                    this.tbl_projectenRowChanging(this, new tbl_projectenRowChangeEvent(((tbl_projectenRow)(e.Row)), e.Action));
+                if ((this.tbl_meetingsRowChanging != null)) {
+                    this.tbl_meetingsRowChanging(this, new tbl_meetingsRowChangeEvent(((tbl_meetingsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -478,8 +550,8 @@ namespace BarrocITApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tbl_projectenRowDeleted != null)) {
-                    this.tbl_projectenRowDeleted(this, new tbl_projectenRowChangeEvent(((tbl_projectenRow)(e.Row)), e.Action));
+                if ((this.tbl_meetingsRowDeleted != null)) {
+                    this.tbl_meetingsRowDeleted(this, new tbl_meetingsRowChangeEvent(((tbl_meetingsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -487,14 +559,14 @@ namespace BarrocITApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tbl_projectenRowDeleting != null)) {
-                    this.tbl_projectenRowDeleting(this, new tbl_projectenRowChangeEvent(((tbl_projectenRow)(e.Row)), e.Action));
+                if ((this.tbl_meetingsRowDeleting != null)) {
+                    this.tbl_meetingsRowDeleting(this, new tbl_meetingsRowChangeEvent(((tbl_meetingsRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removetbl_projectenRow(tbl_projectenRow row) {
+            public void Removetbl_meetingsRow(tbl_meetingsRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -503,7 +575,7 @@ namespace BarrocITApp {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BarrocITDBDataSet2 ds = new BarrocITDBDataSet2();
+                _BarrocITDB_N_DataSet5 ds = new _BarrocITDB_N_DataSet5();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -521,7 +593,7 @@ namespace BarrocITApp {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tbl_projectenDataTable";
+                attribute2.FixedValue = "tbl_meetingsDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -565,48 +637,171 @@ namespace BarrocITApp {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tbl_projectenRow : global::System.Data.DataRow {
+        public partial class tbl_meetingsRow : global::System.Data.DataRow {
             
-            private tbl_projectenDataTable tabletbl_projecten;
+            private tbl_meetingsDataTable tabletbl_meetings;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_projectenRow(global::System.Data.DataRowBuilder rb) : 
+            internal tbl_meetingsRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletbl_projecten = ((tbl_projectenDataTable)(this.Table));
+                this.tabletbl_meetings = ((tbl_meetingsDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int project_code {
+            public int p_projectID {
                 get {
-                    return ((int)(this[this.tabletbl_projecten.project_codeColumn]));
+                    return ((int)(this[this.tabletbl_meetings.p_projectIDColumn]));
                 }
                 set {
-                    this[this.tabletbl_projecten.project_codeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string project_name_ {
-                get {
-                    return ((string)(this[this.tabletbl_projecten.project_name_Column]));
-                }
-                set {
-                    this[this.tabletbl_projecten.project_name_Column] = value;
+                    this[this.tabletbl_meetings.p_projectIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string project_status {
+            public int m_meetingID {
                 get {
-                    return ((string)(this[this.tabletbl_projecten.project_statusColumn]));
+                    return ((int)(this[this.tabletbl_meetings.m_meetingIDColumn]));
                 }
                 set {
-                    this[this.tabletbl_projecten.project_statusColumn] = value;
+                    this[this.tabletbl_meetings.m_meetingIDColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime m_date {
+                get {
+                    return ((global::System.DateTime)(this[this.tabletbl_meetings.m_dateColumn]));
+                }
+                set {
+                    this[this.tabletbl_meetings.m_dateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime m_startTime {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletbl_meetings.m_startTimeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'m_startTime\' in table \'tbl_meetings\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_meetings.m_startTimeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime m_endTime {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletbl_meetings.m_endTimeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'m_endTime\' in table \'tbl_meetings\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_meetings.m_endTimeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string m_contactPerson {
+                get {
+                    return ((string)(this[this.tabletbl_meetings.m_contactPersonColumn]));
+                }
+                set {
+                    this[this.tabletbl_meetings.m_contactPersonColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string m_location {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_meetings.m_locationColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'m_location\' in table \'tbl_meetings\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_meetings.m_locationColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string m_atteningPersons {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_meetings.m_atteningPersonsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'m_atteningPersons\' in table \'tbl_meetings\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_meetings.m_atteningPersonsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Ism_startTimeNull() {
+                return this.IsNull(this.tabletbl_meetings.m_startTimeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setm_startTimeNull() {
+                this[this.tabletbl_meetings.m_startTimeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Ism_endTimeNull() {
+                return this.IsNull(this.tabletbl_meetings.m_endTimeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setm_endTimeNull() {
+                this[this.tabletbl_meetings.m_endTimeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Ism_locationNull() {
+                return this.IsNull(this.tabletbl_meetings.m_locationColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setm_locationNull() {
+                this[this.tabletbl_meetings.m_locationColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Ism_atteningPersonsNull() {
+                return this.IsNull(this.tabletbl_meetings.m_atteningPersonsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setm_atteningPersonsNull() {
+                this[this.tabletbl_meetings.m_atteningPersonsColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -614,22 +809,22 @@ namespace BarrocITApp {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class tbl_projectenRowChangeEvent : global::System.EventArgs {
+        public class tbl_meetingsRowChangeEvent : global::System.EventArgs {
             
-            private tbl_projectenRow eventRow;
+            private tbl_meetingsRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_projectenRowChangeEvent(tbl_projectenRow row, global::System.Data.DataRowAction action) {
+            public tbl_meetingsRowChangeEvent(tbl_meetingsRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_projectenRow Row {
+            public tbl_meetingsRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -645,7 +840,7 @@ namespace BarrocITApp {
         }
     }
 }
-namespace BarrocITApp.BarrocITDBDataSet2TableAdapters {
+namespace BarrocITApp._BarrocITDB_N_DataSet5TableAdapters {
     
     
     /// <summary>
@@ -657,7 +852,7 @@ namespace BarrocITApp.BarrocITDBDataSet2TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class tbl_projectenTableAdapter : global::System.ComponentModel.Component {
+    public partial class tbl_meetingsTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -671,7 +866,7 @@ namespace BarrocITApp.BarrocITDBDataSet2TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public tbl_projectenTableAdapter() {
+        public tbl_meetingsTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -768,46 +963,77 @@ namespace BarrocITApp.BarrocITDBDataSet2TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tbl_projecten";
-            tableMapping.ColumnMappings.Add("project code", "project code");
-            tableMapping.ColumnMappings.Add("project name ", "project name ");
-            tableMapping.ColumnMappings.Add("project status", "project status");
+            tableMapping.DataSetTable = "tbl_meetings";
+            tableMapping.ColumnMappings.Add("p_projectID", "p_projectID");
+            tableMapping.ColumnMappings.Add("m_meetingID", "m_meetingID");
+            tableMapping.ColumnMappings.Add("m_date", "m_date");
+            tableMapping.ColumnMappings.Add("m_startTime", "m_startTime");
+            tableMapping.ColumnMappings.Add("m_endTime", "m_endTime");
+            tableMapping.ColumnMappings.Add("m_contactPerson", "m_contactPerson");
+            tableMapping.ColumnMappings.Add("m_location", "m_location");
+            tableMapping.ColumnMappings.Add("m_atteningPersons", "m_atteningPersons");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[tbl_projecten] WHERE (([project code] = @Original_project_code" +
-                ") AND ([project name ] = @Original_project_name_) AND ([project status] = @Origi" +
-                "nal_project_status))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tbl_meetings] WHERE (([p_projectID] = @Original_p_projectID) AND ([m_meetingID] = @Original_m_meetingID) AND ([m_date] = @Original_m_date) AND ((@IsNull_m_startTime = 1 AND [m_startTime] IS NULL) OR ([m_startTime] = @Original_m_startTime)) AND ((@IsNull_m_endTime = 1 AND [m_endTime] IS NULL) OR ([m_endTime] = @Original_m_endTime)) AND ([m_contactPerson] = @Original_m_contactPerson) AND ((@IsNull_m_location = 1 AND [m_location] IS NULL) OR ([m_location] = @Original_m_location)) AND ((@IsNull_m_atteningPersons = 1 AND [m_atteningPersons] IS NULL) OR ([m_atteningPersons] = @Original_m_atteningPersons)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_project_code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_project_name_", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project name ", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_project_status", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_p_projectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "p_projectID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_meetingID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_meetingID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_m_startTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_startTime", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_startTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_startTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_m_endTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_endTime", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_endTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_endTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_contactPerson", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_contactPerson", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_m_location", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_location", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_location", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_location", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_m_atteningPersons", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_atteningPersons", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_atteningPersons", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_atteningPersons", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tbl_projecten] ([project code], [project name ], [project status]) VALUES (@project_code, @project_name_, @project_status);
-SELECT [project code], [project name ], [project status] FROM tbl_projecten WHERE ([project code] = @project_code)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tbl_meetings] ([p_projectID], [m_meetingID], [m_date], [m_startTime], [m_endTime], [m_contactPerson], [m_location], [m_atteningPersons]) VALUES (@p_projectID, @m_meetingID, @m_date, @m_startTime, @m_endTime, @m_contactPerson, @m_location, @m_atteningPersons);
+SELECT p_projectID, m_meetingID, m_date, m_startTime, m_endTime, m_contactPerson, m_location, m_atteningPersons FROM tbl_meetings WHERE (p_projectID = @p_projectID)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@project_code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@project_name_", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project name ", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@project_status", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p_projectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "p_projectID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_meetingID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_meetingID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_startTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_startTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_endTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_endTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_contactPerson", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_contactPerson", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_location", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_location", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_atteningPersons", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_atteningPersons", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tbl_projecten] SET [project code] = @project_code, [project name ] = @project_name_, [project status] = @project_status WHERE (([project code] = @Original_project_code) AND ([project name ] = @Original_project_name_) AND ([project status] = @Original_project_status));
-SELECT [project code], [project name ], [project status] FROM tbl_projecten WHERE ([project code] = @project_code)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tbl_meetings] SET [p_projectID] = @p_projectID, [m_meetingID] = @m_meetingID, [m_date] = @m_date, [m_startTime] = @m_startTime, [m_endTime] = @m_endTime, [m_contactPerson] = @m_contactPerson, [m_location] = @m_location, [m_atteningPersons] = @m_atteningPersons WHERE (([p_projectID] = @Original_p_projectID) AND ([m_meetingID] = @Original_m_meetingID) AND ([m_date] = @Original_m_date) AND ((@IsNull_m_startTime = 1 AND [m_startTime] IS NULL) OR ([m_startTime] = @Original_m_startTime)) AND ((@IsNull_m_endTime = 1 AND [m_endTime] IS NULL) OR ([m_endTime] = @Original_m_endTime)) AND ([m_contactPerson] = @Original_m_contactPerson) AND ((@IsNull_m_location = 1 AND [m_location] IS NULL) OR ([m_location] = @Original_m_location)) AND ((@IsNull_m_atteningPersons = 1 AND [m_atteningPersons] IS NULL) OR ([m_atteningPersons] = @Original_m_atteningPersons)));
+SELECT p_projectID, m_meetingID, m_date, m_startTime, m_endTime, m_contactPerson, m_location, m_atteningPersons FROM tbl_meetings WHERE (p_projectID = @p_projectID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@project_code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@project_name_", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project name ", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@project_status", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_project_code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_project_name_", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project name ", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_project_status", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "project status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p_projectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "p_projectID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_meetingID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_meetingID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_startTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_startTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_endTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_endTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_contactPerson", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_contactPerson", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_location", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_location", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@m_atteningPersons", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_atteningPersons", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_p_projectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "p_projectID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_meetingID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_meetingID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_m_startTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_startTime", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_startTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_startTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_m_endTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_endTime", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_endTime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_endTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_contactPerson", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_contactPerson", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_m_location", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_location", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_location", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_location", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_m_atteningPersons", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_atteningPersons", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_m_atteningPersons", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "m_atteningPersons", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::BarrocITApp.Properties.Settings.Default.BarrocITDBConnectionString;
+            this._connection.ConnectionString = global::BarrocITApp.Properties.Settings.Default.BarrocITDB_N_ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -816,7 +1042,8 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [project code], [project name ], [project status] FROM dbo.tbl_projecten";
+            this._commandCollection[0].CommandText = "SELECT p_projectID, m_meetingID, m_date, m_startTime, m_endTime, m_contactPerson," +
+                " m_location, m_atteningPersons FROM dbo.tbl_meetings";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -824,7 +1051,7 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BarrocITDBDataSet2.tbl_projectenDataTable dataTable) {
+        public virtual int Fill(_BarrocITDB_N_DataSet5.tbl_meetingsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -837,9 +1064,9 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BarrocITDBDataSet2.tbl_projectenDataTable GetData() {
+        public virtual _BarrocITDB_N_DataSet5.tbl_meetingsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BarrocITDBDataSet2.tbl_projectenDataTable dataTable = new BarrocITDBDataSet2.tbl_projectenDataTable();
+            _BarrocITDB_N_DataSet5.tbl_meetingsDataTable dataTable = new _BarrocITDB_N_DataSet5.tbl_meetingsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -847,15 +1074,15 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BarrocITDBDataSet2.tbl_projectenDataTable dataTable) {
+        public virtual int Update(_BarrocITDB_N_DataSet5.tbl_meetingsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BarrocITDBDataSet2 dataSet) {
-            return this.Adapter.Update(dataSet, "tbl_projecten");
+        public virtual int Update(_BarrocITDB_N_DataSet5 dataSet) {
+            return this.Adapter.Update(dataSet, "tbl_meetings");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -877,19 +1104,47 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_project_code, string Original_project_name_, string Original_project_status) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_project_code));
-            if ((Original_project_name_ == null)) {
-                throw new global::System.ArgumentNullException("Original_project_name_");
+        public virtual int Delete(int Original_p_projectID, int Original_m_meetingID, System.DateTime Original_m_date, global::System.Nullable<global::System.DateTime> Original_m_startTime, global::System.Nullable<global::System.DateTime> Original_m_endTime, string Original_m_contactPerson, string Original_m_location, string Original_m_atteningPersons) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_p_projectID));
+            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_m_meetingID));
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_m_date));
+            if ((Original_m_startTime.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_m_startTime.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_project_name_));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Original_project_status == null)) {
-                throw new global::System.ArgumentNullException("Original_project_status");
+            if ((Original_m_endTime.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_m_endTime.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_project_status));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((Original_m_contactPerson == null)) {
+                throw new global::System.ArgumentNullException("Original_m_contactPerson");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_m_contactPerson));
+            }
+            if ((Original_m_location == null)) {
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((string)(Original_m_location));
+            }
+            if ((Original_m_atteningPersons == null)) {
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((string)(Original_m_atteningPersons));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -911,19 +1166,39 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int project_code, string project_name_, string project_status) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(project_code));
-            if ((project_name_ == null)) {
-                throw new global::System.ArgumentNullException("project_name_");
+        public virtual int Insert(int p_projectID, int m_meetingID, System.DateTime m_date, global::System.Nullable<global::System.DateTime> m_startTime, global::System.Nullable<global::System.DateTime> m_endTime, string m_contactPerson, string m_location, string m_atteningPersons) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(p_projectID));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(m_meetingID));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(m_date));
+            if ((m_startTime.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(m_startTime.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(project_name_));
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((project_status == null)) {
-                throw new global::System.ArgumentNullException("project_status");
+            if ((m_endTime.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(m_endTime.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(project_status));
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((m_contactPerson == null)) {
+                throw new global::System.ArgumentNullException("m_contactPerson");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(m_contactPerson));
+            }
+            if ((m_location == null)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(m_location));
+            }
+            if ((m_atteningPersons == null)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(m_atteningPersons));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -945,32 +1220,96 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int project_code, string project_name_, string project_status, int Original_project_code, string Original_project_name_, string Original_project_status) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(project_code));
-            if ((project_name_ == null)) {
-                throw new global::System.ArgumentNullException("project_name_");
+        public virtual int Update(
+                    int p_projectID, 
+                    int m_meetingID, 
+                    System.DateTime m_date, 
+                    global::System.Nullable<global::System.DateTime> m_startTime, 
+                    global::System.Nullable<global::System.DateTime> m_endTime, 
+                    string m_contactPerson, 
+                    string m_location, 
+                    string m_atteningPersons, 
+                    int Original_p_projectID, 
+                    int Original_m_meetingID, 
+                    System.DateTime Original_m_date, 
+                    global::System.Nullable<global::System.DateTime> Original_m_startTime, 
+                    global::System.Nullable<global::System.DateTime> Original_m_endTime, 
+                    string Original_m_contactPerson, 
+                    string Original_m_location, 
+                    string Original_m_atteningPersons) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(p_projectID));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(m_meetingID));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(m_date));
+            if ((m_startTime.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(m_startTime.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(project_name_));
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((project_status == null)) {
-                throw new global::System.ArgumentNullException("project_status");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(project_status));
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_project_code));
-            if ((Original_project_name_ == null)) {
-                throw new global::System.ArgumentNullException("Original_project_name_");
+            if ((m_endTime.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(m_endTime.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_project_name_));
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Original_project_status == null)) {
-                throw new global::System.ArgumentNullException("Original_project_status");
+            if ((m_contactPerson == null)) {
+                throw new global::System.ArgumentNullException("m_contactPerson");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_project_status));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(m_contactPerson));
+            }
+            if ((m_location == null)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(m_location));
+            }
+            if ((m_atteningPersons == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(m_atteningPersons));
+            }
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_p_projectID));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_m_meetingID));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((System.DateTime)(Original_m_date));
+            if ((Original_m_startTime.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((System.DateTime)(Original_m_startTime.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((Original_m_endTime.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((System.DateTime)(Original_m_endTime.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((Original_m_contactPerson == null)) {
+                throw new global::System.ArgumentNullException("Original_m_contactPerson");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_m_contactPerson));
+            }
+            if ((Original_m_location == null)) {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_m_location));
+            }
+            if ((Original_m_atteningPersons == null)) {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_m_atteningPersons));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -992,8 +1331,8 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string project_name_, string project_status, int Original_project_code, string Original_project_name_, string Original_project_status) {
-            return this.Update(Original_project_code, project_name_, project_status, Original_project_code, Original_project_name_, Original_project_status);
+        public virtual int Update(int m_meetingID, System.DateTime m_date, global::System.Nullable<global::System.DateTime> m_startTime, global::System.Nullable<global::System.DateTime> m_endTime, string m_contactPerson, string m_location, string m_atteningPersons, int Original_p_projectID, int Original_m_meetingID, System.DateTime Original_m_date, global::System.Nullable<global::System.DateTime> Original_m_startTime, global::System.Nullable<global::System.DateTime> Original_m_endTime, string Original_m_contactPerson, string Original_m_location, string Original_m_atteningPersons) {
+            return this.Update(Original_p_projectID, m_meetingID, m_date, m_startTime, m_endTime, m_contactPerson, m_location, m_atteningPersons, Original_p_projectID, Original_m_meetingID, Original_m_date, Original_m_startTime, Original_m_endTime, Original_m_contactPerson, Original_m_location, Original_m_atteningPersons);
         }
     }
     
@@ -1009,7 +1348,7 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         
         private UpdateOrderOption _updateOrder;
         
-        private tbl_projectenTableAdapter _tbl_projectenTableAdapter;
+        private tbl_meetingsTableAdapter _tbl_meetingsTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1031,12 +1370,12 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public tbl_projectenTableAdapter tbl_projectenTableAdapter {
+        public tbl_meetingsTableAdapter tbl_meetingsTableAdapter {
             get {
-                return this._tbl_projectenTableAdapter;
+                return this._tbl_meetingsTableAdapter;
             }
             set {
-                this._tbl_projectenTableAdapter = value;
+                this._tbl_meetingsTableAdapter = value;
             }
         }
         
@@ -1059,9 +1398,9 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._tbl_projectenTableAdapter != null) 
-                            && (this._tbl_projectenTableAdapter.Connection != null))) {
-                    return this._tbl_projectenTableAdapter.Connection;
+                if (((this._tbl_meetingsTableAdapter != null) 
+                            && (this._tbl_meetingsTableAdapter.Connection != null))) {
+                    return this._tbl_meetingsTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1076,7 +1415,7 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._tbl_projectenTableAdapter != null)) {
+                if ((this._tbl_meetingsTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1088,14 +1427,14 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(BarrocITDBDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(_BarrocITDB_N_DataSet5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tbl_projectenTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tbl_projecten.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._tbl_meetingsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tbl_meetings.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._tbl_projectenTableAdapter.Update(updatedRows));
+                    result = (result + this._tbl_meetingsTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1107,13 +1446,13 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(BarrocITDBDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(_BarrocITDB_N_DataSet5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tbl_projectenTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tbl_projecten.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._tbl_meetingsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tbl_meetings.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._tbl_projectenTableAdapter.Update(addedRows));
+                    result = (result + this._tbl_meetingsTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1125,13 +1464,13 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(BarrocITDBDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(_BarrocITDB_N_DataSet5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._tbl_projectenTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tbl_projecten.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._tbl_meetingsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tbl_meetings.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._tbl_projectenTableAdapter.Update(deletedRows));
+                    result = (result + this._tbl_meetingsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1167,15 +1506,15 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(BarrocITDBDataSet2 dataSet) {
+        public virtual int UpdateAll(_BarrocITDB_N_DataSet5 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._tbl_projectenTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._tbl_projectenTableAdapter.Connection) == false))) {
+            if (((this._tbl_meetingsTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tbl_meetingsTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1211,13 +1550,13 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._tbl_projectenTableAdapter != null)) {
-                    revertConnections.Add(this._tbl_projectenTableAdapter, this._tbl_projectenTableAdapter.Connection);
-                    this._tbl_projectenTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._tbl_projectenTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._tbl_projectenTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._tbl_projectenTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_projectenTableAdapter.Adapter);
+                if ((this._tbl_meetingsTableAdapter != null)) {
+                    revertConnections.Add(this._tbl_meetingsTableAdapter, this._tbl_meetingsTableAdapter.Connection);
+                    this._tbl_meetingsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tbl_meetingsTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tbl_meetingsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tbl_meetingsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_meetingsTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1278,9 +1617,9 @@ SELECT [project code], [project name ], [project status] FROM tbl_projecten WHER
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._tbl_projectenTableAdapter != null)) {
-                    this._tbl_projectenTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tbl_projectenTableAdapter]));
-                    this._tbl_projectenTableAdapter.Transaction = null;
+                if ((this._tbl_meetingsTableAdapter != null)) {
+                    this._tbl_meetingsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tbl_meetingsTableAdapter]));
+                    this._tbl_meetingsTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

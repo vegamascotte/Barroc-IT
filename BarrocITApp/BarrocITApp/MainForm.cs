@@ -27,12 +27,17 @@ namespace BarrocITApp
         #region FormLoadData
         private void MainForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'barrocITDBDataSet1.tbl_klantendata' table. You can move, or remove it, as needed.
-            this.tbl_klantendataTableAdapter1.Fill(this.barrocITDBDataSet1.tbl_klantendata);
-            // TODO: This line of code loads data into the 'barrocITDBDataSet.tbl_klantendata' table. You can move, or remove it, as needed.
-            //this.tbl_klantendataTableAdapter.Fill(this.barrocITDBDataSet.tbl_klantendata);
-            // TODO: This line of code loads data into the 'barrocITDBDataSet2.tbl_projecten' table. You can move, or remove it, as needed.
-            this.tbl_projectenTableAdapter.Fill(this.barrocITDBDataSet2.tbl_projecten);
+            // TODO: This line of code loads data into the '_BarrocITDB_N_DataSet5.tbl_meetings' table. You can move, or remove it, as needed.
+            this.tbl_meetingsTableAdapter.Fill(this._BarrocITDB_N_DataSet5.tbl_meetings);
+            // TODO: This line of code loads data into the '_BarrocITDB_N_DataSet4.tbl_clientData' table. You can move, or remove it, as needed.
+            this.tbl_clientDataTableAdapter.Fill(this._BarrocITDB_N_DataSet4.tbl_clientData);
+            // TODO: This line of code loads data into the '_BarrocITDB_N_DataSet3.tbl_invoices' table. You can move, or remove it, as needed.
+            this.tbl_invoicesTableAdapter.Fill(this._BarrocITDB_N_DataSet3.tbl_invoices);
+            // TODO: This line of code loads data into the '_BarrocITDB_N_DataSet2.tbl_projects' table. You can move, or remove it, as needed.
+            this.tbl_projectsTableAdapter1.Fill(this._BarrocITDB_N_DataSet2.tbl_projects);
+            // TODO: This line of code loads data into the '_BarrocITDB_N_DataSet.tbl_projects' table. You can move, or remove it, as needed.
+            this.tbl_projectsTableAdapter.Fill(this._BarrocITDB_N_DataSet.tbl_projects);
+
             Lbl_LogedInas.Text = "Logged is as: " + loggedInAs + " at: " + DateTime.Now.ToShortTimeString();
         }
         #endregion

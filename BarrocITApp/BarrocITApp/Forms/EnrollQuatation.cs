@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BarrocITApp.Forms
 {
-    public partial class EnrollQuatation : Form
+    public partial class Meetings : Form
     {
-        public EnrollQuatation()
+        public Meetings()
         {
             InitializeComponent();
         }

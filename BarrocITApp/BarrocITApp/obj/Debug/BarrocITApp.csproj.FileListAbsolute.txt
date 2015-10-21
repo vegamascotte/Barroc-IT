@@ -13,21 +13,20 @@ C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\Barro
 C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.pdb
 C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.csprojResolveAssemblyReference.cache
 C:\Users\sjoerd\Documents\School\[Periode 5]\Project\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.EnrollBill.resources
-C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITDB.mdf
-C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITDB_log.ldf
-C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.exe.config
-C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.exe
-C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.pdb
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.AddClient.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.AddProject.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.EditClientForm.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.EditProject.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.EnrollBill.resources
-C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.EnrollQuatation.resources
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.Meetings.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.MainForm.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.LoginForm.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Properties.Resources.resources
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.csproj.GenerateResource.Cache
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITDB(N).mdf
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITDB(N)_log.ldf
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.exe.config
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.exe
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITApp.pdb
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.exe
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.pdb
-C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.csprojResolveAssemblyReference.cache

@@ -20,17 +20,17 @@ namespace BarrocITApp {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("BarrocITDBDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("_BarrocITDB_N_DataSet3")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class BarrocITDBDataSet1 : global::System.Data.DataSet {
+    public partial class _BarrocITDB_N_DataSet3 : global::System.Data.DataSet {
         
-        private tbl_klantendataDataTable tabletbl_klantendata;
+        private tbl_invoicesDataTable tabletbl_invoices;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public BarrocITDBDataSet1() {
+        public _BarrocITDB_N_DataSet3() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace BarrocITApp {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected BarrocITDBDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected _BarrocITDB_N_DataSet3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace BarrocITApp {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["tbl_klantendata"] != null)) {
-                    base.Tables.Add(new tbl_klantendataDataTable(ds.Tables["tbl_klantendata"]));
+                if ((ds.Tables["tbl_invoices"] != null)) {
+                    base.Tables.Add(new tbl_invoicesDataTable(ds.Tables["tbl_invoices"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace BarrocITApp {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tbl_klantendataDataTable tbl_klantendata {
+        public tbl_invoicesDataTable tbl_invoices {
             get {
-                return this.tabletbl_klantendata;
+                return this.tabletbl_invoices;
             }
         }
         
@@ -127,7 +127,7 @@ namespace BarrocITApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            BarrocITDBDataSet1 cln = ((BarrocITDBDataSet1)(base.Clone()));
+            _BarrocITDB_N_DataSet3 cln = ((_BarrocITDB_N_DataSet3)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace BarrocITApp {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["tbl_klantendata"] != null)) {
-                    base.Tables.Add(new tbl_klantendataDataTable(ds.Tables["tbl_klantendata"]));
+                if ((ds.Tables["tbl_invoices"] != null)) {
+                    base.Tables.Add(new tbl_invoicesDataTable(ds.Tables["tbl_invoices"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace BarrocITApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tabletbl_klantendata = ((tbl_klantendataDataTable)(base.Tables["tbl_klantendata"]));
+            this.tabletbl_invoices = ((tbl_invoicesDataTable)(base.Tables["tbl_invoices"]));
             if ((initTable == true)) {
-                if ((this.tabletbl_klantendata != null)) {
-                    this.tabletbl_klantendata.InitVars();
+                if ((this.tabletbl_invoices != null)) {
+                    this.tabletbl_invoices.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace BarrocITApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "BarrocITDBDataSet1";
+            this.DataSetName = "_BarrocITDB_N_DataSet3";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/BarrocITDBDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/_BarrocITDB_N_DataSet3.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tabletbl_klantendata = new tbl_klantendataDataTable();
-            base.Tables.Add(this.tabletbl_klantendata);
+            this.tabletbl_invoices = new tbl_invoicesDataTable();
+            base.Tables.Add(this.tabletbl_invoices);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializetbl_klantendata() {
+        private bool ShouldSerializetbl_invoices() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace BarrocITApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            BarrocITDBDataSet1 ds = new BarrocITDBDataSet1();
+            _BarrocITDB_N_DataSet3 ds = new _BarrocITDB_N_DataSet3();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,21 +270,29 @@ namespace BarrocITApp {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void tbl_klantendataRowChangeEventHandler(object sender, tbl_klantendataRowChangeEvent e);
+        public delegate void tbl_invoicesRowChangeEventHandler(object sender, tbl_invoicesRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tbl_klantendataDataTable : global::System.Data.TypedTableBase<tbl_klantendataRow> {
+        public partial class tbl_invoicesDataTable : global::System.Data.TypedTableBase<tbl_invoicesRow> {
             
-            private global::System.Data.DataColumn columncompanyName;
+            private global::System.Data.DataColumn columni_invoiceID;
+            
+            private global::System.Data.DataColumn columnp_projectID;
+            
+            private global::System.Data.DataColumn columni_taxcode;
+            
+            private global::System.Data.DataColumn columni_price;
+            
+            private global::System.Data.DataColumn columni_date;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_klantendataDataTable() {
-                this.TableName = "tbl_klantendata";
+            public tbl_invoicesDataTable() {
+                this.TableName = "tbl_invoices";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -292,7 +300,7 @@ namespace BarrocITApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_klantendataDataTable(global::System.Data.DataTable table) {
+            internal tbl_invoicesDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -309,16 +317,48 @@ namespace BarrocITApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected tbl_klantendataDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected tbl_invoicesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn companyNameColumn {
+            public global::System.Data.DataColumn i_invoiceIDColumn {
                 get {
-                    return this.columncompanyName;
+                    return this.columni_invoiceID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn p_projectIDColumn {
+                get {
+                    return this.columnp_projectID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn i_taxcodeColumn {
+                get {
+                    return this.columni_taxcode;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn i_priceColumn {
+                get {
+                    return this.columni_price;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn i_dateColumn {
+                get {
+                    return this.columni_date;
                 }
             }
             
@@ -333,45 +373,56 @@ namespace BarrocITApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_klantendataRow this[int index] {
+            public tbl_invoicesRow this[int index] {
                 get {
-                    return ((tbl_klantendataRow)(this.Rows[index]));
+                    return ((tbl_invoicesRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_klantendataRowChangeEventHandler tbl_klantendataRowChanging;
+            public event tbl_invoicesRowChangeEventHandler tbl_invoicesRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_klantendataRowChangeEventHandler tbl_klantendataRowChanged;
+            public event tbl_invoicesRowChangeEventHandler tbl_invoicesRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_klantendataRowChangeEventHandler tbl_klantendataRowDeleting;
+            public event tbl_invoicesRowChangeEventHandler tbl_invoicesRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_klantendataRowChangeEventHandler tbl_klantendataRowDeleted;
+            public event tbl_invoicesRowChangeEventHandler tbl_invoicesRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addtbl_klantendataRow(tbl_klantendataRow row) {
+            public void Addtbl_invoicesRow(tbl_invoicesRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_klantendataRow Addtbl_klantendataRow(string companyName) {
-                tbl_klantendataRow rowtbl_klantendataRow = ((tbl_klantendataRow)(this.NewRow()));
+            public tbl_invoicesRow Addtbl_invoicesRow(int i_invoiceID, int p_projectID, string i_taxcode, decimal i_price, System.DateTime i_date) {
+                tbl_invoicesRow rowtbl_invoicesRow = ((tbl_invoicesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        companyName};
-                rowtbl_klantendataRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtbl_klantendataRow);
-                return rowtbl_klantendataRow;
+                        i_invoiceID,
+                        p_projectID,
+                        i_taxcode,
+                        i_price,
+                        i_date};
+                rowtbl_invoicesRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtbl_invoicesRow);
+                return rowtbl_invoicesRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbl_invoicesRow FindByi_invoiceID(int i_invoiceID) {
+                return ((tbl_invoicesRow)(this.Rows.Find(new object[] {
+                            i_invoiceID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tbl_klantendataDataTable cln = ((tbl_klantendataDataTable)(base.Clone()));
+                tbl_invoicesDataTable cln = ((tbl_invoicesDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -379,48 +430,64 @@ namespace BarrocITApp {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tbl_klantendataDataTable();
+                return new tbl_invoicesDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columncompanyName = base.Columns["companyName"];
+                this.columni_invoiceID = base.Columns["i_invoiceID"];
+                this.columnp_projectID = base.Columns["p_projectID"];
+                this.columni_taxcode = base.Columns["i_taxcode"];
+                this.columni_price = base.Columns["i_price"];
+                this.columni_date = base.Columns["i_date"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columncompanyName = new global::System.Data.DataColumn("companyName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncompanyName);
-                this.columncompanyName.AllowDBNull = false;
-                this.columncompanyName.MaxLength = 40;
+                this.columni_invoiceID = new global::System.Data.DataColumn("i_invoiceID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columni_invoiceID);
+                this.columnp_projectID = new global::System.Data.DataColumn("p_projectID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnp_projectID);
+                this.columni_taxcode = new global::System.Data.DataColumn("i_taxcode", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columni_taxcode);
+                this.columni_price = new global::System.Data.DataColumn("i_price", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columni_price);
+                this.columni_date = new global::System.Data.DataColumn("i_date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columni_date);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columni_invoiceID}, true));
+                this.columni_invoiceID.AllowDBNull = false;
+                this.columni_invoiceID.Unique = true;
+                this.columnp_projectID.AllowDBNull = false;
+                this.columni_taxcode.MaxLength = 16;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_klantendataRow Newtbl_klantendataRow() {
-                return ((tbl_klantendataRow)(this.NewRow()));
+            public tbl_invoicesRow Newtbl_invoicesRow() {
+                return ((tbl_invoicesRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tbl_klantendataRow(builder);
+                return new tbl_invoicesRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tbl_klantendataRow);
+                return typeof(tbl_invoicesRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tbl_klantendataRowChanged != null)) {
-                    this.tbl_klantendataRowChanged(this, new tbl_klantendataRowChangeEvent(((tbl_klantendataRow)(e.Row)), e.Action));
+                if ((this.tbl_invoicesRowChanged != null)) {
+                    this.tbl_invoicesRowChanged(this, new tbl_invoicesRowChangeEvent(((tbl_invoicesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -428,8 +495,8 @@ namespace BarrocITApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tbl_klantendataRowChanging != null)) {
-                    this.tbl_klantendataRowChanging(this, new tbl_klantendataRowChangeEvent(((tbl_klantendataRow)(e.Row)), e.Action));
+                if ((this.tbl_invoicesRowChanging != null)) {
+                    this.tbl_invoicesRowChanging(this, new tbl_invoicesRowChangeEvent(((tbl_invoicesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -437,8 +504,8 @@ namespace BarrocITApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tbl_klantendataRowDeleted != null)) {
-                    this.tbl_klantendataRowDeleted(this, new tbl_klantendataRowChangeEvent(((tbl_klantendataRow)(e.Row)), e.Action));
+                if ((this.tbl_invoicesRowDeleted != null)) {
+                    this.tbl_invoicesRowDeleted(this, new tbl_invoicesRowChangeEvent(((tbl_invoicesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -446,14 +513,14 @@ namespace BarrocITApp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tbl_klantendataRowDeleting != null)) {
-                    this.tbl_klantendataRowDeleting(this, new tbl_klantendataRowChangeEvent(((tbl_klantendataRow)(e.Row)), e.Action));
+                if ((this.tbl_invoicesRowDeleting != null)) {
+                    this.tbl_invoicesRowDeleting(this, new tbl_invoicesRowChangeEvent(((tbl_invoicesRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removetbl_klantendataRow(tbl_klantendataRow row) {
+            public void Removetbl_invoicesRow(tbl_invoicesRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -462,7 +529,7 @@ namespace BarrocITApp {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BarrocITDBDataSet1 ds = new BarrocITDBDataSet1();
+                _BarrocITDB_N_DataSet3 ds = new _BarrocITDB_N_DataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -480,7 +547,7 @@ namespace BarrocITApp {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tbl_klantendataDataTable";
+                attribute2.FixedValue = "tbl_invoicesDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -524,26 +591,121 @@ namespace BarrocITApp {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tbl_klantendataRow : global::System.Data.DataRow {
+        public partial class tbl_invoicesRow : global::System.Data.DataRow {
             
-            private tbl_klantendataDataTable tabletbl_klantendata;
+            private tbl_invoicesDataTable tabletbl_invoices;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_klantendataRow(global::System.Data.DataRowBuilder rb) : 
+            internal tbl_invoicesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletbl_klantendata = ((tbl_klantendataDataTable)(this.Table));
+                this.tabletbl_invoices = ((tbl_invoicesDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string companyName {
+            public int i_invoiceID {
                 get {
-                    return ((string)(this[this.tabletbl_klantendata.companyNameColumn]));
+                    return ((int)(this[this.tabletbl_invoices.i_invoiceIDColumn]));
                 }
                 set {
-                    this[this.tabletbl_klantendata.companyNameColumn] = value;
+                    this[this.tabletbl_invoices.i_invoiceIDColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int p_projectID {
+                get {
+                    return ((int)(this[this.tabletbl_invoices.p_projectIDColumn]));
+                }
+                set {
+                    this[this.tabletbl_invoices.p_projectIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string i_taxcode {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_invoices.i_taxcodeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'i_taxcode\' in table \'tbl_invoices\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_invoices.i_taxcodeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal i_price {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbl_invoices.i_priceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'i_price\' in table \'tbl_invoices\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_invoices.i_priceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime i_date {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletbl_invoices.i_dateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'i_date\' in table \'tbl_invoices\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_invoices.i_dateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isi_taxcodeNull() {
+                return this.IsNull(this.tabletbl_invoices.i_taxcodeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Seti_taxcodeNull() {
+                this[this.tabletbl_invoices.i_taxcodeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isi_priceNull() {
+                return this.IsNull(this.tabletbl_invoices.i_priceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Seti_priceNull() {
+                this[this.tabletbl_invoices.i_priceColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isi_dateNull() {
+                return this.IsNull(this.tabletbl_invoices.i_dateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Seti_dateNull() {
+                this[this.tabletbl_invoices.i_dateColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -551,22 +713,22 @@ namespace BarrocITApp {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class tbl_klantendataRowChangeEvent : global::System.EventArgs {
+        public class tbl_invoicesRowChangeEvent : global::System.EventArgs {
             
-            private tbl_klantendataRow eventRow;
+            private tbl_invoicesRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_klantendataRowChangeEvent(tbl_klantendataRow row, global::System.Data.DataRowAction action) {
+            public tbl_invoicesRowChangeEvent(tbl_invoicesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_klantendataRow Row {
+            public tbl_invoicesRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -582,7 +744,7 @@ namespace BarrocITApp {
         }
     }
 }
-namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
+namespace BarrocITApp._BarrocITDB_N_DataSet3TableAdapters {
     
     
     /// <summary>
@@ -594,7 +756,7 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class tbl_klantendataTableAdapter : global::System.ComponentModel.Component {
+    public partial class tbl_invoicesTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -608,7 +770,7 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public tbl_klantendataTableAdapter() {
+        public tbl_invoicesTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -705,16 +867,60 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tbl_klantendata";
-            tableMapping.ColumnMappings.Add("companyName", "companyName");
+            tableMapping.DataSetTable = "tbl_invoices";
+            tableMapping.ColumnMappings.Add("i_invoiceID", "i_invoiceID");
+            tableMapping.ColumnMappings.Add("p_projectID", "p_projectID");
+            tableMapping.ColumnMappings.Add("i_taxcode", "i_taxcode");
+            tableMapping.ColumnMappings.Add("i_price", "i_price");
+            tableMapping.ColumnMappings.Add("i_date", "i_date");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tbl_invoices] WHERE (([i_invoiceID] = @Original_i_invoiceID) AND ([p_projectID] = @Original_p_projectID) AND ((@IsNull_i_taxcode = 1 AND [i_taxcode] IS NULL) OR ([i_taxcode] = @Original_i_taxcode)) AND ((@IsNull_i_price = 1 AND [i_price] IS NULL) OR ([i_price] = @Original_i_price)) AND ((@IsNull_i_date = 1 AND [i_date] IS NULL) OR ([i_date] = @Original_i_date)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_i_invoiceID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_invoiceID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_p_projectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "p_projectID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_i_taxcode", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_taxcode", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_i_taxcode", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_taxcode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_i_price", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_price", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_i_price", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "i_price", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_i_date", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_date", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_i_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tbl_invoices] ([i_invoiceID], [p_projectID], [i_taxcode], [i_price], [i_date]) VALUES (@i_invoiceID, @p_projectID, @i_taxcode, @i_price, @i_date);
+SELECT i_invoiceID, p_projectID, i_taxcode, i_price, i_date FROM tbl_invoices WHERE (i_invoiceID = @i_invoiceID)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@i_invoiceID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_invoiceID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p_projectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "p_projectID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@i_taxcode", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_taxcode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@i_price", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "i_price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@i_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tbl_invoices] SET [i_invoiceID] = @i_invoiceID, [p_projectID] = @p_projectID, [i_taxcode] = @i_taxcode, [i_price] = @i_price, [i_date] = @i_date WHERE (([i_invoiceID] = @Original_i_invoiceID) AND ([p_projectID] = @Original_p_projectID) AND ((@IsNull_i_taxcode = 1 AND [i_taxcode] IS NULL) OR ([i_taxcode] = @Original_i_taxcode)) AND ((@IsNull_i_price = 1 AND [i_price] IS NULL) OR ([i_price] = @Original_i_price)) AND ((@IsNull_i_date = 1 AND [i_date] IS NULL) OR ([i_date] = @Original_i_date)));
+SELECT i_invoiceID, p_projectID, i_taxcode, i_price, i_date FROM tbl_invoices WHERE (i_invoiceID = @i_invoiceID)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@i_invoiceID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_invoiceID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@p_projectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "p_projectID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@i_taxcode", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_taxcode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@i_price", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "i_price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@i_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_i_invoiceID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_invoiceID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_p_projectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "p_projectID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_i_taxcode", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_taxcode", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_i_taxcode", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_taxcode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_i_price", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_price", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_i_price", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "i_price", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_i_date", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_date", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_i_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "i_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::BarrocITApp.Properties.Settings.Default.BarrocITDBConnectionString;
+            this._connection.ConnectionString = global::BarrocITApp.Properties.Settings.Default.BarrocITDB_N_ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -723,7 +929,8 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT companyName FROM dbo.tbl_klantendata";
+            this._commandCollection[0].CommandText = "SELECT i_invoiceID, p_projectID, i_taxcode, i_price, i_date FROM dbo.tbl_invoices" +
+                "";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -731,7 +938,7 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BarrocITDBDataSet1.tbl_klantendataDataTable dataTable) {
+        public virtual int Fill(_BarrocITDB_N_DataSet3.tbl_invoicesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -744,11 +951,203 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BarrocITDBDataSet1.tbl_klantendataDataTable GetData() {
+        public virtual _BarrocITDB_N_DataSet3.tbl_invoicesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BarrocITDBDataSet1.tbl_klantendataDataTable dataTable = new BarrocITDBDataSet1.tbl_klantendataDataTable();
+            _BarrocITDB_N_DataSet3.tbl_invoicesDataTable dataTable = new _BarrocITDB_N_DataSet3.tbl_invoicesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(_BarrocITDB_N_DataSet3.tbl_invoicesDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(_BarrocITDB_N_DataSet3 dataSet) {
+            return this.Adapter.Update(dataSet, "tbl_invoices");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_i_invoiceID, int Original_p_projectID, string Original_i_taxcode, global::System.Nullable<decimal> Original_i_price, global::System.Nullable<global::System.DateTime> Original_i_date) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_i_invoiceID));
+            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_p_projectID));
+            if ((Original_i_taxcode == null)) {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_i_taxcode));
+            }
+            if ((Original_i_price.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((decimal)(Original_i_price.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((Original_i_date.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((System.DateTime)(Original_i_date.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int i_invoiceID, int p_projectID, string i_taxcode, global::System.Nullable<decimal> i_price, global::System.Nullable<global::System.DateTime> i_date) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(i_invoiceID));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(p_projectID));
+            if ((i_taxcode == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(i_taxcode));
+            }
+            if ((i_price.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(i_price.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((i_date.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(i_date.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int i_invoiceID, int p_projectID, string i_taxcode, global::System.Nullable<decimal> i_price, global::System.Nullable<global::System.DateTime> i_date, int Original_i_invoiceID, int Original_p_projectID, string Original_i_taxcode, global::System.Nullable<decimal> Original_i_price, global::System.Nullable<global::System.DateTime> Original_i_date) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(i_invoiceID));
+            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(p_projectID));
+            if ((i_taxcode == null)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(i_taxcode));
+            }
+            if ((i_price.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(i_price.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((i_date.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(i_date.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_i_invoiceID));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_p_projectID));
+            if ((Original_i_taxcode == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_i_taxcode));
+            }
+            if ((Original_i_price.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(Original_i_price.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((Original_i_date.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((System.DateTime)(Original_i_date.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int p_projectID, string i_taxcode, global::System.Nullable<decimal> i_price, global::System.Nullable<global::System.DateTime> i_date, int Original_i_invoiceID, int Original_p_projectID, string Original_i_taxcode, global::System.Nullable<decimal> Original_i_price, global::System.Nullable<global::System.DateTime> Original_i_date) {
+            return this.Update(Original_i_invoiceID, p_projectID, i_taxcode, i_price, i_date, Original_i_invoiceID, Original_p_projectID, Original_i_taxcode, Original_i_price, Original_i_date);
         }
     }
     
@@ -764,6 +1163,8 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
+        private tbl_invoicesTableAdapter _tbl_invoicesTableAdapter;
+        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -776,6 +1177,20 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
             }
             set {
                 this._updateOrder = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public tbl_invoicesTableAdapter tbl_invoicesTableAdapter {
+            get {
+                return this._tbl_invoicesTableAdapter;
+            }
+            set {
+                this._tbl_invoicesTableAdapter = value;
             }
         }
         
@@ -798,6 +1213,10 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
+                if (((this._tbl_invoicesTableAdapter != null) 
+                            && (this._tbl_invoicesTableAdapter.Connection != null))) {
+                    return this._tbl_invoicesTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -811,6 +1230,9 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
+                if ((this._tbl_invoicesTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -820,8 +1242,17 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(BarrocITDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(_BarrocITDB_N_DataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._tbl_invoicesTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tbl_invoices.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tbl_invoicesTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -830,8 +1261,16 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(BarrocITDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(_BarrocITDB_N_DataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._tbl_invoicesTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tbl_invoices.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tbl_invoicesTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -840,8 +1279,16 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(BarrocITDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(_BarrocITDB_N_DataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._tbl_invoicesTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tbl_invoices.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tbl_invoicesTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             return result;
         }
         
@@ -874,12 +1321,17 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(BarrocITDBDataSet1 dataSet) {
+        public virtual int UpdateAll(_BarrocITDB_N_DataSet3 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
+            }
+            if (((this._tbl_invoicesTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tbl_invoicesTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -913,6 +1365,15 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
+                if ((this._tbl_invoicesTableAdapter != null)) {
+                    revertConnections.Add(this._tbl_invoicesTableAdapter, this._tbl_invoicesTableAdapter.Connection);
+                    this._tbl_invoicesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tbl_invoicesTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tbl_invoicesTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tbl_invoicesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tbl_invoicesTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -970,6 +1431,10 @@ namespace BarrocITApp.BarrocITDBDataSet1TableAdapters {
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
+                }
+                if ((this._tbl_invoicesTableAdapter != null)) {
+                    this._tbl_invoicesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tbl_invoicesTableAdapter]));
+                    this._tbl_invoicesTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
