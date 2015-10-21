@@ -29,64 +29,63 @@ namespace BarrocITApp.Forms
             else
                 tbx_Email.BackColor = Color.Green;
 
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB(N).mdf;Integrated Security=True;Connect Timeout=30"))
+                {
+                    SqlCommand CmdSql = new SqlCommand("INSERT INTO tbl_clientData (c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr) VALUES (@c_name, @c_zipcode1, @c_adress1, @c_place1, @c_zipcode2, @c_adress2, @c_place2, @c_contactPerson, @c_contactPersonInitials, @c_phoneNumber, @c_faxNumber, @c_email, @b_bankAccountNumber, @b_ledgerAccountNumber, @b_limit, @b_grossRevenu, @b_creditBalance, @b_creditworthiness, @b_potentialCustomer, @b_bkr)", conn);
+                   
+                    conn.Open();
 
-            
-       
-            // //try
-           //// {
-           //     using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB.mdf;Integrated Security=True;Connect Timeout=30"))
-           //     {
-           //         SqlCommand CmdSql = new SqlCommand("INSERT INTO tbl_klantendata (companyName, contactPerson, zipcode1, zipcode2, adress1, adress2, place1, place2, initials, phoneNumber, faxNumber, email, appointmentDay, lastContactDate, nextAction, salePercentage, bankAccountNumber, creditBalance, numberOfInvoices, grossRevenu, limit, ledgerAccountNumber, taxcode, openProjects, applications, hardware, operatingSystem, appointments, internalContactPerson) VALUES (@companyName,@contactPerson,@zipcode1,@zipcode2,@adress1,@adress2,@place1,@place2,@initials,@phoneNumber,@faxNumber,@email,@appointmentDay,@lastContactDate,@nextAction,@salePercentage,@bankAccountNumber,@creditBalance,@numberOfInvoices,@grossRevenu,@limit,@ledgerAccountNumber,@taxcode,@openProjects,@applications,@hardware,@operatingSystem,@appointments,@internalContactPerson)", conn);
+                    CmdSql.Parameters.AddWithValue("@c_name", tbx_CompanyName.Text);
+                    CmdSql.Parameters.AddWithValue("@c_zipcode1", tbx_Zipcode1.Text);
+                    CmdSql.Parameters.AddWithValue("@c_adress1", tbx_Adress1.Text);
+                    CmdSql.Parameters.AddWithValue("@c_place1", tbx_Place1.Text);
+                    CmdSql.Parameters.AddWithValue("@c_zipcode2", tbx_Zipcode2.Text);
+                    CmdSql.Parameters.AddWithValue("@c_adress2", tbx_Adress2.Text);
+                    CmdSql.Parameters.AddWithValue("@c_place2", tbx_Place2.Text);
+                    CmdSql.Parameters.AddWithValue("@c_contactPerson", tbx_ContactPerson.Text);
+                    CmdSql.Parameters.AddWithValue("@c_contactPersonInitials", tbx_ContactInitials.Text);
+                    CmdSql.Parameters.AddWithValue("@c_phoneNumber", tbx_Phonenumber.Text);
+                    CmdSql.Parameters.AddWithValue("@c_faxNumber", tbx_FaxNumber.Text);
+                    CmdSql.Parameters.AddWithValue("@c_email", tbx_Email.Text);
 
-           //         conn.Open();
-           //         //clean this code after dbhandler
-           //         if (true)
-           //         {
-           //             CmdSql.Parameters.AddWithValue("@companyName", tbx_CompanyName.Text);
-           //         }
-           //         CmdSql.Parameters.AddWithValue("@contactPerson", tbx_ContactPerson.Text);
-           //         CmdSql.Parameters.AddWithValue("@zipcode1", tbx_Zipcode1.Text);
-           //         CmdSql.Parameters.AddWithValue("@zipcode2", tbx_Zipcode2.Text);
-           //         CmdSql.Parameters.AddWithValue("@adress1", tbx_Adress1.Text);
-           //         CmdSql.Parameters.AddWithValue("@adress2", tbx_Adress2.Text);
-           //         CmdSql.Parameters.AddWithValue("@place1", tbx_Place1.Text);
-           //         CmdSql.Parameters.AddWithValue("@place2", tbx_Place2.Text);
-           //         CmdSql.Parameters.AddWithValue("@initials", tbx_Initials.Text);
-           //         CmdSql.Parameters.AddWithValue("@phoneNumber", tbx_Phonenumber.Text);
-           //         CmdSql.Parameters.AddWithValue("@faxNumber", tbx_FaxNumber.Text);
-           //         CmdSql.Parameters.AddWithValue("@email", tbx_Email.Text);
-           //         // CmdSql.Parameters.AddWithValue("@potential")
-           //         CmdSql.Parameters.AddWithValue("@appointmentDay", datetime_ApointmentDay.Value);
-           //         CmdSql.Parameters.AddWithValue("@lastContactDate", datetime_LastContactDate.Value);
-           //         CmdSql.Parameters.AddWithValue("@nextAction", tbx_NextAction.Text);
-           //         CmdSql.Parameters.AddWithValue("@salePercentage", tbx_SalesPercentage.Text);
-           //         //CmdSql.Parameters.AddWithValue("creditworthy")
-           //         CmdSql.Parameters.AddWithValue("@bankAccountNumber", tbx_BankAccountNumber.Text);
-           //         CmdSql.Parameters.AddWithValue("@creditBalance", tbx_CreditBalance.Text);
-           //         CmdSql.Parameters.AddWithValue("@numberOfInvoices", tbx_NumberOfInvoices.Text);
-           //         CmdSql.Parameters.AddWithValue("@grossRevenu", tbx_GrossRevenu.Text);
-           //         CmdSql.Parameters.AddWithValue("@limit", tbx_Limit.Text);
-           //         CmdSql.Parameters.AddWithValue("@ledgerAccountNumber", tbx_LedgerAccountNumber.Text);
-           //         CmdSql.Parameters.AddWithValue("@taxcode", tbx_Taxcode.Text);
-           //         //CmdSql.Parameters.AddWithValue("maintenance contract")
-           //         CmdSql.Parameters.AddWithValue("@openProjects", tbx_OpenProjects.Text);
-           //         CmdSql.Parameters.AddWithValue("@applications", tbx_Applications.Text);
-           //         CmdSql.Parameters.AddWithValue("@hardware", tbx_Hardware.Text);
-           //         CmdSql.Parameters.AddWithValue("@operatingSystem", tbx_OpperatingSystem.Text);
-           //         CmdSql.Parameters.AddWithValue("@appointments", tbx_Appontments.Text);
-           //         CmdSql.Parameters.AddWithValue("internalContactPerson", tbx_ContactPerson.Text);
+                    CmdSql.Parameters.AddWithValue("@b_bankAccountNumber", tbx_BankAccountNumber.Text);
+                    CmdSql.Parameters.AddWithValue("@b_ledgerAccountNumber", tbx_LedgerAccountNumber.Text);
+                    CmdSql.Parameters.AddWithValue("@b_limit", tbx_Limit.Text);
+                    CmdSql.Parameters.AddWithValue("@b_grossRevenu", tbx_GrossRevenu.Text);
+                    CmdSql.Parameters.AddWithValue("@b_creditBalance", tbx_CreditBalance.Text);
+                  
 
-           //         CmdSql.ExecuteNonQuery();
+                    if (Cbx_CreditWorthy.Checked == true)
+                    {
+                     CmdSql.Parameters.AddWithValue("@b_creditworthiness", "1");
+                    }
+                    if (Cbx_CreditWorthy.Checked == false)
+                    {
+                     CmdSql.Parameters.AddWithValue("@b_creditworthiness", "0");
+                    }
+                    if (Cbx_PotentialCustomer.Checked == true)
+                    {
+                        CmdSql.Parameters.AddWithValue("@b_potentialCustomer", "1");
+                    }
+                    if (Cbx_PotentialCustomer.Checked == false)
+                    {
+                        CmdSql.Parameters.AddWithValue("@b_potentialCustomer", "0");
+                    }
+                    CmdSql.Parameters.AddWithValue("@b_bkr", tbx_Bkr.Text);
+                    
+                    CmdSql.ExecuteNonQuery();
 
-           //         conn.Close();
-           //     }
-           // }
-           // catch (Exception)
-           // {
+                    conn.Close();
+                }
+            }
+            catch (Exception)
+            {
 
-           //     throw;
-           // }
-        
+                throw;
+            }
+
         }
       
     }

@@ -46,7 +46,7 @@
             this.Lbl_Place1 = new System.Windows.Forms.Label();
             this.Lbl_Place2 = new System.Windows.Forms.Label();
             this.Lbl_Cinitials = new System.Windows.Forms.Label();
-            this.tbx_CInitials = new System.Windows.Forms.TextBox();
+            this.tbx_ContactInitials = new System.Windows.Forms.TextBox();
             this.tbx_FaxNumber = new System.Windows.Forms.TextBox();
             this.tbx_Phonenumber = new System.Windows.Forms.TextBox();
             this.tbx_Email = new System.Windows.Forms.TextBox();
@@ -56,20 +56,20 @@
             this.Lbl_PotentialCustomer = new System.Windows.Forms.Label();
             this.groupbox_Clientdata = new System.Windows.Forms.GroupBox();
             this.tbx_LedgerAccountNumber = new System.Windows.Forms.TextBox();
-            this.tbx_Limit = new System.Windows.Forms.TextBox();
-            this.tbx_GrossRevenu = new System.Windows.Forms.TextBox();
-            this.tbx_CreditBalance = new System.Windows.Forms.TextBox();
-            this.tbx_BankAccountNumber = new System.Windows.Forms.TextBox();
-            this.creditworthyN = new System.Windows.Forms.RadioButton();
-            this.creditworthyY = new System.Windows.Forms.RadioButton();
-            this.Lbl_LedgerAccountNumber = new System.Windows.Forms.Label();
-            this.Lbl_Limit = new System.Windows.Forms.Label();
             this.Lbl_GrossRevenu = new System.Windows.Forms.Label();
+            this.tbx_GrossRevenu = new System.Windows.Forms.TextBox();
+            this.tbx_Limit = new System.Windows.Forms.TextBox();
+            this.tbx_CreditBalance = new System.Windows.Forms.TextBox();
+            this.Lbl_Limit = new System.Windows.Forms.Label();
+            this.tbx_BankAccountNumber = new System.Windows.Forms.TextBox();
+            this.Lbl_LedgerAccountNumber = new System.Windows.Forms.Label();
             this.Lbl_CreditBalance = new System.Windows.Forms.Label();
             this.Lbl_BankAccountNumber = new System.Windows.Forms.Label();
             this.Lbl_CreditWorthy = new System.Windows.Forms.Label();
-            this.potentialcustomerN = new System.Windows.Forms.RadioButton();
-            this.potentialcustomerY = new System.Windows.Forms.RadioButton();
+            this.lbl_Bkr = new System.Windows.Forms.Label();
+            this.tbx_Bkr = new System.Windows.Forms.TextBox();
+            this.Cbx_PotentialCustomer = new System.Windows.Forms.CheckBox();
+            this.Cbx_CreditWorthy = new System.Windows.Forms.CheckBox();
             this.groupbox_Clientdata.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -220,12 +220,12 @@
             this.Lbl_Cinitials.TabIndex = 19;
             this.Lbl_Cinitials.Text = "Contact person initials";
             // 
-            // tbx_CInitials
+            // tbx_ContactInitials
             // 
-            this.tbx_CInitials.Location = new System.Drawing.Point(136, 74);
-            this.tbx_CInitials.Name = "tbx_CInitials";
-            this.tbx_CInitials.Size = new System.Drawing.Size(210, 20);
-            this.tbx_CInitials.TabIndex = 20;
+            this.tbx_ContactInitials.Location = new System.Drawing.Point(136, 74);
+            this.tbx_ContactInitials.Name = "tbx_ContactInitials";
+            this.tbx_ContactInitials.Size = new System.Drawing.Size(210, 20);
+            this.tbx_ContactInitials.TabIndex = 20;
             // 
             // tbx_FaxNumber
             // 
@@ -286,6 +286,10 @@
             // 
             // groupbox_Clientdata
             // 
+            this.groupbox_Clientdata.Controls.Add(this.Cbx_CreditWorthy);
+            this.groupbox_Clientdata.Controls.Add(this.Cbx_PotentialCustomer);
+            this.groupbox_Clientdata.Controls.Add(this.lbl_Bkr);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_Bkr);
             this.groupbox_Clientdata.Controls.Add(this.tbx_LedgerAccountNumber);
             this.groupbox_Clientdata.Controls.Add(this.Lbl_GrossRevenu);
             this.groupbox_Clientdata.Controls.Add(this.tbx_GrossRevenu);
@@ -293,14 +297,10 @@
             this.groupbox_Clientdata.Controls.Add(this.tbx_CreditBalance);
             this.groupbox_Clientdata.Controls.Add(this.Lbl_Limit);
             this.groupbox_Clientdata.Controls.Add(this.tbx_BankAccountNumber);
-            this.groupbox_Clientdata.Controls.Add(this.creditworthyN);
-            this.groupbox_Clientdata.Controls.Add(this.creditworthyY);
             this.groupbox_Clientdata.Controls.Add(this.Lbl_LedgerAccountNumber);
             this.groupbox_Clientdata.Controls.Add(this.Lbl_CreditBalance);
             this.groupbox_Clientdata.Controls.Add(this.Lbl_BankAccountNumber);
             this.groupbox_Clientdata.Controls.Add(this.Lbl_CreditWorthy);
-            this.groupbox_Clientdata.Controls.Add(this.potentialcustomerN);
-            this.groupbox_Clientdata.Controls.Add(this.potentialcustomerY);
             this.groupbox_Clientdata.Controls.Add(this.lbl_CompanyName);
             this.groupbox_Clientdata.Controls.Add(this.Lbl_PotentialCustomer);
             this.groupbox_Clientdata.Controls.Add(this.tbx_CompanyName);
@@ -317,7 +317,7 @@
             this.groupbox_Clientdata.Controls.Add(this.tbx_Phonenumber);
             this.groupbox_Clientdata.Controls.Add(this.tbx_FaxNumber);
             this.groupbox_Clientdata.Controls.Add(this.Lbl_adress2);
-            this.groupbox_Clientdata.Controls.Add(this.tbx_CInitials);
+            this.groupbox_Clientdata.Controls.Add(this.tbx_ContactInitials);
             this.groupbox_Clientdata.Controls.Add(this.tbx_Place1);
             this.groupbox_Clientdata.Controls.Add(this.Lbl_Cinitials);
             this.groupbox_Clientdata.Controls.Add(this.tbx_Adress2);
@@ -340,12 +340,14 @@
             this.tbx_LedgerAccountNumber.Size = new System.Drawing.Size(210, 20);
             this.tbx_LedgerAccountNumber.TabIndex = 59;
             // 
-            // tbx_Limit
+            // Lbl_GrossRevenu
             // 
-            this.tbx_Limit.Location = new System.Drawing.Point(496, 126);
-            this.tbx_Limit.Name = "tbx_Limit";
-            this.tbx_Limit.Size = new System.Drawing.Size(210, 20);
-            this.tbx_Limit.TabIndex = 58;
+            this.Lbl_GrossRevenu.AutoSize = true;
+            this.Lbl_GrossRevenu.Location = new System.Drawing.Point(370, 155);
+            this.Lbl_GrossRevenu.Name = "Lbl_GrossRevenu";
+            this.Lbl_GrossRevenu.Size = new System.Drawing.Size(70, 13);
+            this.Lbl_GrossRevenu.TabIndex = 40;
+            this.Lbl_GrossRevenu.Text = "Gross revenu";
             // 
             // tbx_GrossRevenu
             // 
@@ -354,50 +356,19 @@
             this.tbx_GrossRevenu.Size = new System.Drawing.Size(210, 20);
             this.tbx_GrossRevenu.TabIndex = 57;
             // 
+            // tbx_Limit
+            // 
+            this.tbx_Limit.Location = new System.Drawing.Point(496, 126);
+            this.tbx_Limit.Name = "tbx_Limit";
+            this.tbx_Limit.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Limit.TabIndex = 58;
+            // 
             // tbx_CreditBalance
             // 
             this.tbx_CreditBalance.Location = new System.Drawing.Point(496, 100);
             this.tbx_CreditBalance.Name = "tbx_CreditBalance";
             this.tbx_CreditBalance.Size = new System.Drawing.Size(210, 20);
             this.tbx_CreditBalance.TabIndex = 55;
-            // 
-            // tbx_BankAccountNumber
-            // 
-            this.tbx_BankAccountNumber.Location = new System.Drawing.Point(496, 48);
-            this.tbx_BankAccountNumber.Name = "tbx_BankAccountNumber";
-            this.tbx_BankAccountNumber.Size = new System.Drawing.Size(210, 20);
-            this.tbx_BankAccountNumber.TabIndex = 53;
-            // 
-            // creditworthyN
-            // 
-            this.creditworthyN.AutoSize = true;
-            this.creditworthyN.Location = new System.Drawing.Point(576, 77);
-            this.creditworthyN.Name = "creditworthyN";
-            this.creditworthyN.Size = new System.Drawing.Size(39, 17);
-            this.creditworthyN.TabIndex = 52;
-            this.creditworthyN.TabStop = true;
-            this.creditworthyN.Text = "No";
-            this.creditworthyN.UseVisualStyleBackColor = true;
-            // 
-            // creditworthyY
-            // 
-            this.creditworthyY.AutoSize = true;
-            this.creditworthyY.Location = new System.Drawing.Point(496, 77);
-            this.creditworthyY.Name = "creditworthyY";
-            this.creditworthyY.Size = new System.Drawing.Size(43, 17);
-            this.creditworthyY.TabIndex = 51;
-            this.creditworthyY.TabStop = true;
-            this.creditworthyY.Text = "Yes";
-            this.creditworthyY.UseVisualStyleBackColor = true;
-            // 
-            // Lbl_LedgerAccountNumber
-            // 
-            this.Lbl_LedgerAccountNumber.AutoSize = true;
-            this.Lbl_LedgerAccountNumber.Location = new System.Drawing.Point(370, 25);
-            this.Lbl_LedgerAccountNumber.Name = "Lbl_LedgerAccountNumber";
-            this.Lbl_LedgerAccountNumber.Size = new System.Drawing.Size(120, 13);
-            this.Lbl_LedgerAccountNumber.TabIndex = 42;
-            this.Lbl_LedgerAccountNumber.Text = "Ledger account number";
             // 
             // Lbl_Limit
             // 
@@ -408,14 +379,21 @@
             this.Lbl_Limit.TabIndex = 41;
             this.Lbl_Limit.Text = "Limit";
             // 
-            // Lbl_GrossRevenu
+            // tbx_BankAccountNumber
             // 
-            this.Lbl_GrossRevenu.AutoSize = true;
-            this.Lbl_GrossRevenu.Location = new System.Drawing.Point(370, 155);
-            this.Lbl_GrossRevenu.Name = "Lbl_GrossRevenu";
-            this.Lbl_GrossRevenu.Size = new System.Drawing.Size(70, 13);
-            this.Lbl_GrossRevenu.TabIndex = 40;
-            this.Lbl_GrossRevenu.Text = "Gross revenu";
+            this.tbx_BankAccountNumber.Location = new System.Drawing.Point(496, 48);
+            this.tbx_BankAccountNumber.Name = "tbx_BankAccountNumber";
+            this.tbx_BankAccountNumber.Size = new System.Drawing.Size(210, 20);
+            this.tbx_BankAccountNumber.TabIndex = 53;
+            // 
+            // Lbl_LedgerAccountNumber
+            // 
+            this.Lbl_LedgerAccountNumber.AutoSize = true;
+            this.Lbl_LedgerAccountNumber.Location = new System.Drawing.Point(370, 25);
+            this.Lbl_LedgerAccountNumber.Name = "Lbl_LedgerAccountNumber";
+            this.Lbl_LedgerAccountNumber.Size = new System.Drawing.Size(120, 13);
+            this.Lbl_LedgerAccountNumber.TabIndex = 42;
+            this.Lbl_LedgerAccountNumber.Text = "Ledger account number";
             // 
             // Lbl_CreditBalance
             // 
@@ -444,27 +422,41 @@
             this.Lbl_CreditWorthy.TabIndex = 36;
             this.Lbl_CreditWorthy.Text = "Creditworthy";
             // 
-            // potentialcustomerN
+            // lbl_Bkr
             // 
-            this.potentialcustomerN.AutoSize = true;
-            this.potentialcustomerN.Location = new System.Drawing.Point(228, 336);
-            this.potentialcustomerN.Name = "potentialcustomerN";
-            this.potentialcustomerN.Size = new System.Drawing.Size(39, 17);
-            this.potentialcustomerN.TabIndex = 33;
-            this.potentialcustomerN.TabStop = true;
-            this.potentialcustomerN.Text = "No";
-            this.potentialcustomerN.UseVisualStyleBackColor = true;
+            this.lbl_Bkr.AutoSize = true;
+            this.lbl_Bkr.Location = new System.Drawing.Point(370, 181);
+            this.lbl_Bkr.Name = "lbl_Bkr";
+            this.lbl_Bkr.Size = new System.Drawing.Size(23, 13);
+            this.lbl_Bkr.TabIndex = 60;
+            this.lbl_Bkr.Text = "Bkr";
             // 
-            // potentialcustomerY
+            // tbx_Bkr
             // 
-            this.potentialcustomerY.AutoSize = true;
-            this.potentialcustomerY.Location = new System.Drawing.Point(136, 336);
-            this.potentialcustomerY.Name = "potentialcustomerY";
-            this.potentialcustomerY.Size = new System.Drawing.Size(43, 17);
-            this.potentialcustomerY.TabIndex = 32;
-            this.potentialcustomerY.TabStop = true;
-            this.potentialcustomerY.Text = "Yes";
-            this.potentialcustomerY.UseVisualStyleBackColor = true;
+            this.tbx_Bkr.Location = new System.Drawing.Point(496, 178);
+            this.tbx_Bkr.Name = "tbx_Bkr";
+            this.tbx_Bkr.Size = new System.Drawing.Size(210, 20);
+            this.tbx_Bkr.TabIndex = 61;
+            // 
+            // Cbx_PotentialCustomer
+            // 
+            this.Cbx_PotentialCustomer.AutoSize = true;
+            this.Cbx_PotentialCustomer.Location = new System.Drawing.Point(136, 337);
+            this.Cbx_PotentialCustomer.Name = "Cbx_PotentialCustomer";
+            this.Cbx_PotentialCustomer.Size = new System.Drawing.Size(80, 17);
+            this.Cbx_PotentialCustomer.TabIndex = 62;
+            this.Cbx_PotentialCustomer.Text = "checkBox1";
+            this.Cbx_PotentialCustomer.UseVisualStyleBackColor = true;
+            // 
+            // Cbx_CreditWorthy
+            // 
+            this.Cbx_CreditWorthy.AutoSize = true;
+            this.Cbx_CreditWorthy.Location = new System.Drawing.Point(496, 76);
+            this.Cbx_CreditWorthy.Name = "Cbx_CreditWorthy";
+            this.Cbx_CreditWorthy.Size = new System.Drawing.Size(80, 17);
+            this.Cbx_CreditWorthy.TabIndex = 63;
+            this.Cbx_CreditWorthy.Text = "checkBox2";
+            this.Cbx_CreditWorthy.UseVisualStyleBackColor = true;
             // 
             // AddClient
             // 
@@ -501,7 +493,7 @@
         private System.Windows.Forms.Label Lbl_Place1;
         private System.Windows.Forms.Label Lbl_Place2;
         private System.Windows.Forms.Label Lbl_Cinitials;
-        private System.Windows.Forms.TextBox tbx_CInitials;
+        private System.Windows.Forms.TextBox tbx_ContactInitials;
         private System.Windows.Forms.TextBox tbx_FaxNumber;
         private System.Windows.Forms.TextBox tbx_Phonenumber;
         private System.Windows.Forms.TextBox tbx_Email;
@@ -510,20 +502,20 @@
         private System.Windows.Forms.Label Lbl_Email;
         private System.Windows.Forms.Label Lbl_PotentialCustomer;
         private System.Windows.Forms.GroupBox groupbox_Clientdata;
-        private System.Windows.Forms.RadioButton potentialcustomerN;
-        private System.Windows.Forms.RadioButton potentialcustomerY;
         private System.Windows.Forms.Label Lbl_LedgerAccountNumber;
         private System.Windows.Forms.Label Lbl_Limit;
         private System.Windows.Forms.Label Lbl_GrossRevenu;
         private System.Windows.Forms.Label Lbl_CreditBalance;
         private System.Windows.Forms.Label Lbl_BankAccountNumber;
         private System.Windows.Forms.Label Lbl_CreditWorthy;
-        private System.Windows.Forms.RadioButton creditworthyN;
-        private System.Windows.Forms.RadioButton creditworthyY;
         private System.Windows.Forms.TextBox tbx_LedgerAccountNumber;
         private System.Windows.Forms.TextBox tbx_Limit;
         private System.Windows.Forms.TextBox tbx_GrossRevenu;
         private System.Windows.Forms.TextBox tbx_CreditBalance;
         private System.Windows.Forms.TextBox tbx_BankAccountNumber;
+        private System.Windows.Forms.Label lbl_Bkr;
+        private System.Windows.Forms.TextBox tbx_Bkr;
+        private System.Windows.Forms.CheckBox Cbx_CreditWorthy;
+        private System.Windows.Forms.CheckBox Cbx_PotentialCustomer;
     }
 }

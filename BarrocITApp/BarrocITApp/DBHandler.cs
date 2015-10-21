@@ -15,7 +15,7 @@ namespace BarrocITApp
         
         public static void Init()
         {
-            con = new SqlConnection(@"Data Source = (LocalDB)\v11.0; AttachDbFilename = C:\Users\admin\Desktop\BarrocITApp\BarrocITApp\BarrocITDB.mdf; Integrated Security = True; Connect Timeout = 30");
+            con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB(N).mdf;Integrated Security=True;Connect Timeout=30");
         }
 
         public static bool TestConnection()
@@ -134,6 +134,7 @@ namespace BarrocITApp
             return false;
         }
 
+
         public static object[] GetRow(DataTable table, int index)
         {
             return table.Rows[index].ItemArray;
@@ -143,6 +144,10 @@ namespace BarrocITApp
         {
         }
 
+        public void InsertClient()
+        { 
+        
+        }
 
     }
 }
