@@ -54,8 +54,7 @@ namespace BarrocITApp.Forms
                     CmdSql.Parameters.AddWithValue("@b_ledgerAccountNumber", tbx_LedgerAccountNumber.Text);
                     CmdSql.Parameters.AddWithValue("@b_limit", tbx_Limit.Text);
                     CmdSql.Parameters.AddWithValue("@b_grossRevenu", tbx_GrossRevenu.Text);
-                    CmdSql.Parameters.AddWithValue("@b_creditBalance", tbx_CreditBalance.Text);
-                  
+                    CmdSql.Parameters.AddWithValue("@b_creditBalance", tbx_CreditBalance.Text);       
 
                     if (Cbx_CreditWorthy.Checked == true)
                     {
@@ -78,12 +77,12 @@ namespace BarrocITApp.Forms
                     CmdSql.ExecuteNonQuery();
 
                     conn.Close();
+                    this.Close();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(ex.Message);
             }
 
         }
