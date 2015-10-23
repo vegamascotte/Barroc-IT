@@ -15,11 +15,7 @@ namespace BarrocITApp
         
         public void Init()
         {
-<<<<<<< HEAD
-            con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Jeebes\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB(N).mdf;Integrated Security=True;Connect Timeout=30");
-=======
             con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB(N).mdf;Integrated Security=True;Connect Timeout=30");
->>>>>>> origin/master
         }
 
         public bool TestConnection()
@@ -138,12 +134,7 @@ namespace BarrocITApp
             return false;
         }
 
-<<<<<<< HEAD
-        public object[] GetRow(DataTable table, int index)
-=======
-
         public static object[] GetRow(DataTable table, int index)
->>>>>>> origin/master
         {
             return table.Rows[index].ItemArray;
         }
@@ -152,7 +143,6 @@ namespace BarrocITApp
         {
         }
 
-<<<<<<< HEAD
         public void InsertRow(string table, string values)
         {
             Init();
@@ -163,12 +153,6 @@ namespace BarrocITApp
             cmd.CommandText = "INSERT INTO " + table + " VALUES" + "(" + values + ")";
             cmd.CommandType = CommandType.Text;
             cmd.Connection = con;
-=======
-        public void InsertClient()
-        { 
-        
-        }
->>>>>>> origin/master
 
             con.Open();
             cmd.ExecuteNonQuery();

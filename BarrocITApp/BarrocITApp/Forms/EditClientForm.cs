@@ -93,13 +93,14 @@ namespace BarrocITApp
 
         private void btn_saveEditClient_Click(object sender, EventArgs e)
         {
-
+            string sqlQuery;
+            sqlQuery = "UPDATE tbl_clientData SET c_name=@c_name, c_zipcode1=@c_zipcode1, c_adress1=@c_adress1, c_place1=@c_place1, c_zipcode2=@, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr"
 
             try
             {
                 using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB(N).mdf;Integrated Security=True;Connect Timeout=30"))
                 {
-                    SqlCommand CmdSql = new SqlCommand("UPDATE tbl_clientData SET c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr VALUES (@c_name, @c_zipcode1, @c_adress1, @c_place1, @c_zipcode2, @c_adress2, @c_place2, @c_contactPerson, @c_contactPersonInitials, @c_phoneNumber, @c_faxNumber, @c_email, @b_bankAccountNumber, @b_ledgerAccountNumber, @b_limit, @b_grossRevenu, @b_creditBalance, @b_creditworthiness, @b_potentialCustomer, @b_bkr)", conn);
+                    SqlCommand CmdSql = new SqlCommand("UPDATE tbl_clientData SET c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr VALUES @c_name, @c_zipcode1, @c_adress1, @c_place1, @c_zipcode2, @c_adress2, @c_place2, @c_contactPerson, @c_contactPersonInitials, @c_phoneNumber, @c_faxNumber, @c_email, @b_bankAccountNumber, @b_ledgerAccountNumber, @b_limit, @b_grossRevenu, @b_creditBalance, @b_creditworthiness, @b_potentialCustomer, @b_bkr", conn);
 
                     conn.Open();
 

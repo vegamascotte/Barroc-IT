@@ -12,15 +12,17 @@ using System.Windows.Forms;
 namespace BarrocITApp
 {
     public enum Role { Finance, Sales, Development}
+    
 
     public partial class LoginForm : Form
     {
         private Role role;
+        private DBHandler dbHandler = new DBHandler();
 
         public LoginForm()
         {
             InitializeComponent();
-            DBHandler.Init();
+            dbHandler.Init();
         }
         //Load of form
         private void LoginForm_Load(object sender, EventArgs e)
@@ -52,7 +54,7 @@ namespace BarrocITApp
         {
             if(UsernameEmpty() && PasswordEmpty())
             {
-                if(DBHandler.CheckLoginData(tb_username.Text, tb_password.Text, ref role))
+                if (dbHandler.CheckLoginData(tb_username.Text, tb_password.Text, ref role))
                 {
                     this.Hide();
 
