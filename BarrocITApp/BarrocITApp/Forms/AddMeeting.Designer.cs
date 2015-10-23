@@ -33,7 +33,7 @@
             this.datetime_EndTime = new System.Windows.Forms.DateTimePicker();
             this.tbx_ContactPerson = new System.Windows.Forms.TextBox();
             this.tbx_Location = new System.Windows.Forms.TextBox();
-            this.Tbx_AttendingPersons = new System.Windows.Forms.TextBox();
+            this.tbx_AttendingPersons = new System.Windows.Forms.TextBox();
             this.btn_SaveMeeting = new System.Windows.Forms.Button();
             this.lbl_MeetingDate = new System.Windows.Forms.Label();
             this.lbl_StartTime = new System.Windows.Forms.Label();
@@ -83,12 +83,12 @@
             this.tbx_Location.Size = new System.Drawing.Size(200, 20);
             this.tbx_Location.TabIndex = 4;
             // 
-            // Tbx_AttendingPersons
+            // tbx_AttendingPersons
             // 
-            this.Tbx_AttendingPersons.Location = new System.Drawing.Point(119, 246);
-            this.Tbx_AttendingPersons.Name = "Tbx_AttendingPersons";
-            this.Tbx_AttendingPersons.Size = new System.Drawing.Size(200, 20);
-            this.Tbx_AttendingPersons.TabIndex = 5;
+            this.tbx_AttendingPersons.Location = new System.Drawing.Point(119, 246);
+            this.tbx_AttendingPersons.Name = "tbx_AttendingPersons";
+            this.tbx_AttendingPersons.Size = new System.Drawing.Size(200, 20);
+            this.tbx_AttendingPersons.TabIndex = 5;
             // 
             // btn_SaveMeeting
             // 
@@ -158,7 +158,7 @@
             // 
             this.tbl_meetingsTableAdapter1.ClearBeforeFill = true;
             // 
-            // Meetings
+            // AddMeeting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -170,13 +170,13 @@
             this.Controls.Add(this.lbl_StartTime);
             this.Controls.Add(this.lbl_MeetingDate);
             this.Controls.Add(this.btn_SaveMeeting);
-            this.Controls.Add(this.Tbx_AttendingPersons);
+            this.Controls.Add(this.tbx_AttendingPersons);
             this.Controls.Add(this.tbx_Location);
             this.Controls.Add(this.tbx_ContactPerson);
             this.Controls.Add(this.datetime_EndTime);
             this.Controls.Add(this.datetime_StartTime);
             this.Controls.Add(this.datetime_MeetingDate);
-            this.Name = "Meetings";
+            this.Name = "AddMeeting";
             this.Text = "Meetings";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -190,7 +190,7 @@
         private System.Windows.Forms.DateTimePicker datetime_EndTime;
         private System.Windows.Forms.TextBox tbx_ContactPerson;
         private System.Windows.Forms.TextBox tbx_Location;
-        private System.Windows.Forms.TextBox Tbx_AttendingPersons;
+        private System.Windows.Forms.TextBox tbx_AttendingPersons;
         private System.Windows.Forms.Button btn_SaveMeeting;
         private System.Windows.Forms.Label lbl_MeetingDate;
         private System.Windows.Forms.Label lbl_StartTime;
