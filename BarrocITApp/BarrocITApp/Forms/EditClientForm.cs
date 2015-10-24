@@ -93,8 +93,6 @@ namespace BarrocITApp
 
         private void btn_saveEditClient_Click(object sender, EventArgs e)
         {
-            string sqlQuery;
-            sqlQuery = "UPDATE tbl_clientData SET c_name=@c_name, c_zipcode1=@c_zipcode1, c_adress1=@c_adress1, c_place1=@c_place1, c_zipcode2=@, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr"
 
             try
             {
@@ -159,6 +157,11 @@ namespace BarrocITApp
             {
                 MessageBox.Show(ex.Message);
             }
+
+        }
+
+        private void groupbox_Clientdata_Enter(object sender, EventArgs e)
+        {
 
         }
     }

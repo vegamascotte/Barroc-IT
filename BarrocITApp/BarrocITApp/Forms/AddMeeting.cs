@@ -25,9 +25,9 @@ namespace BarrocITApp.Forms
             {
 
                 //project ID is hardcoded for now.. has to be changed
-                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Jeebes\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB(N).mdf;Integrated Security=True;Connect Timeout=30"))
+                using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB(N).mdf;Integrated Security=True;Connect Timeout=30"))
                 {
-                    SqlCommand CmdSql = new SqlCommand("INSERT INTO tbl_meetings (p_projectID, m_date, m_startTime, m_endTime, m_contactPerson, m_location,m_attendingPersons) VALUES (@p_projectID, @m_date, @m_startTime, @m_endTime, @m_contactPerson, @m_location,@m_attendingPersons)", conn);
+                    SqlCommand CmdSql = new SqlCommand("INSERT INTO tbl_meetings (p_projectID, m_date, m_startTime, m_endTime, m_contactPerson, m_location,m_atteningPersons) VALUES (@p_projectID, @m_date, @m_startTime, @m_endTime, @m_contactPerson, @m_location,@m_atteningPersons)", conn);
                     
                     conn.Open();
 
@@ -38,7 +38,7 @@ namespace BarrocITApp.Forms
                     CmdSql.Parameters.AddWithValue("@m_endTime", datetime_EndTime.Value);
                     CmdSql.Parameters.AddWithValue("@m_contactPerson", tbx_ContactPerson.Text);
                     CmdSql.Parameters.AddWithValue("@m_location", tbx_Location.Text);
-                    CmdSql.Parameters.AddWithValue("@m_attendingPersons", tbx_AttendingPersons.Text);
+                    CmdSql.Parameters.AddWithValue("@m_atteningPersons", tbx_AttendingPersons.Text);
                     
 
                     CmdSql.ExecuteNonQuery();

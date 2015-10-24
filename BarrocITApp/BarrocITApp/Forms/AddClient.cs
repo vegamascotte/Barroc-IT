@@ -33,8 +33,9 @@ namespace BarrocITApp.Forms
             {
                 using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\BarrocITDB(N).mdf;Integrated Security=True;Connect Timeout=30"))
                 {
-                    SqlCommand CmdSql = new SqlCommand("INSERT INTO tbl_clientData (c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr) VALUES (@c_name, @c_zipcode1, @c_adress1, @c_place1, @c_zipcode2, @c_adress2, @c_place2, @c_contactPerson, @c_contactPersonInitials, @c_phoneNumber, @c_faxNumber, @c_email, @b_bankAccountNumber, @b_ledgerAccountNumber, @b_limit, @b_grossRevenu, @b_creditBalance, @b_creditworthiness, @b_potentialCustomer, @b_bkr)", conn);
+                    SqlCommand CmdSql = new SqlCommand("INSERT INTO tbl_clientData (c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr) VALUES (@c_name, @c_zipcode1, @c_adress1, @c_place1, @c_zipcode2, @c_adress2, @c_place2, @c_contactPerson, @c_contactPersonInitials, @c_phoneNumber, @c_faxNumber, @c_email, @b_bankAccountNumber, @b_ledgerAccountNumber, @b_limit, @b_grossRevenu, @b_creditBalance, @b_creditworthiness, @b_potentialCustomer, @b_bkr);" + "SELECT CAST(scope_identity() AS int)", conn);
                    
+
                     conn.Open();
 
                     CmdSql.Parameters.AddWithValue("@c_name", tbx_CompanyName.Text);
@@ -73,7 +74,11 @@ namespace BarrocITApp.Forms
                         CmdSql.Parameters.AddWithValue("@b_potentialCustomer", "0");
                     }
                     CmdSql.Parameters.AddWithValue("@b_bkr", tbx_Bkr.Text);
-                    
+
+                    int newCustID = (Int32)CmdSql.ExecuteScalar();
+
+                    MessageBox.Show(newCustID.ToString());
+
                     CmdSql.ExecuteNonQuery();
 
                     conn.Close();

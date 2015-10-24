@@ -16,7 +16,7 @@ namespace BarrocITApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EditClientForm());
+            Application.Run(new MainForm(0));
         }
     }
 }

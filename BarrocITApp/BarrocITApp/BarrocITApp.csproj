@@ -66,6 +66,12 @@
     <Compile Include="Forms\AddClient.Designer.cs">
       <DependentUpon>AddClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddMeeting.Designer.cs">
+      <DependentUpon>AddMeeting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddProject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,12 +95,6 @@
     </Compile>
     <Compile Include="Forms\EnrollBill.Designer.cs">
       <DependentUpon>EnrollBill.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\EnrollQuatation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\EnrollQuatation.Designer.cs">
-      <DependentUpon>EnrollQuatation.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -144,6 +144,9 @@
     <EmbeddedResource Include="Forms\AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddMeeting.resx">
+      <DependentUpon>AddMeeting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddProject.resx">
       <DependentUpon>AddProject.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,9 +158,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EnrollBill.resx">
       <DependentUpon>EnrollBill.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EnrollQuatation.resx">
-      <DependentUpon>EnrollQuatation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

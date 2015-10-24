@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupbox_Clientdata = new System.Windows.Forms.GroupBox();
+            this.cbx_Bkr = new System.Windows.Forms.CheckBox();
             this.Cbx_CreditWorthy = new System.Windows.Forms.CheckBox();
             this.Cbx_PotentialCustomer = new System.Windows.Forms.CheckBox();
             this.lbl_Bkr = new System.Windows.Forms.Label();
@@ -69,7 +70,6 @@
             this.tbx_EditPlace2 = new System.Windows.Forms.TextBox();
             this.Lbl_Zipcode2 = new System.Windows.Forms.Label();
             this.btn_saveEditClient = new System.Windows.Forms.Button();
-            this.cbx_Bkr = new System.Windows.Forms.CheckBox();
             this.groupbox_Clientdata.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,6 +123,18 @@
             this.groupbox_Clientdata.TabIndex = 34;
             this.groupbox_Clientdata.TabStop = false;
             this.groupbox_Clientdata.Text = "Client Data";
+            this.groupbox_Clientdata.Enter += new System.EventHandler(this.groupbox_Clientdata_Enter);
+            // 
+            // cbx_Bkr
+            // 
+            this.cbx_Bkr.AutoSize = true;
+            this.cbx_Bkr.Location = new System.Drawing.Point(744, 274);
+            this.cbx_Bkr.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbx_Bkr.Name = "cbx_Bkr";
+            this.cbx_Bkr.Size = new System.Drawing.Size(113, 24);
+            this.cbx_Bkr.TabIndex = 64;
+            this.cbx_Bkr.Text = "checkBox2";
+            this.cbx_Bkr.UseVisualStyleBackColor = true;
             // 
             // Cbx_CreditWorthy
             // 
@@ -492,17 +504,6 @@
             this.btn_saveEditClient.Text = "Save";
             this.btn_saveEditClient.UseVisualStyleBackColor = true;
             this.btn_saveEditClient.Click += new System.EventHandler(this.btn_saveEditClient_Click);
-            // 
-            // cbx_Bkr
-            // 
-            this.cbx_Bkr.AutoSize = true;
-            this.cbx_Bkr.Location = new System.Drawing.Point(744, 274);
-            this.cbx_Bkr.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cbx_Bkr.Name = "cbx_Bkr";
-            this.cbx_Bkr.Size = new System.Drawing.Size(113, 24);
-            this.cbx_Bkr.TabIndex = 64;
-            this.cbx_Bkr.Text = "checkBox2";
-            this.cbx_Bkr.UseVisualStyleBackColor = true;
             // 
             // EditClientForm
             // 
