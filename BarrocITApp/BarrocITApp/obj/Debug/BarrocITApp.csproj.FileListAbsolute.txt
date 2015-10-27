@@ -30,4 +30,5 @@ C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\Bar
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.exe
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.pdb
 C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.Forms.AddMeeting.resources
-C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\obj\Debug\BarrocITApp.csprojResolveAssemblyReference.cache
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITDB.mdf
+C:\Users\sjoerd\Documents\GitHub\Barroc-IT\BarrocITApp\BarrocITApp\bin\Debug\BarrocITDB_log.ldf

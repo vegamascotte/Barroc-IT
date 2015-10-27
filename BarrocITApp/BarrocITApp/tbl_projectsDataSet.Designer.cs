@@ -22,7 +22,7 @@ namespace BarrocITApp {
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
     [global::System.Xml.Serialization.XmlRootAttribute("_BarrocITDB_N_DataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class _BarrocITDB_N_DataSet : global::System.Data.DataSet {
+    public partial class tbl_projectsDataSet : global::System.Data.DataSet {
         
         private tbl_projectsDataTable tabletbl_projects;
         
@@ -30,7 +30,7 @@ namespace BarrocITApp {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public _BarrocITDB_N_DataSet() {
+        public tbl_projectsDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace BarrocITApp {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected _BarrocITDB_N_DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected tbl_projectsDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace BarrocITApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            _BarrocITDB_N_DataSet cln = ((_BarrocITDB_N_DataSet)(base.Clone()));
+            tbl_projectsDataSet cln = ((tbl_projectsDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -225,7 +225,7 @@ namespace BarrocITApp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            _BarrocITDB_N_DataSet ds = new _BarrocITDB_N_DataSet();
+            tbl_projectsDataSet ds = new tbl_projectsDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -712,7 +712,7 @@ namespace BarrocITApp {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                _BarrocITDB_N_DataSet ds = new _BarrocITDB_N_DataSet();
+                tbl_projectsDataSet ds = new tbl_projectsDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1458,7 +1458,7 @@ SELECT p_projectID, p_name, p_status, p_startDate, p_endDate, p_appointments, p_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_BarrocITDB_N_DataSet.tbl_projectsDataTable dataTable) {
+        public virtual int Fill(tbl_projectsDataSet.tbl_projectsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1471,9 +1471,9 @@ SELECT p_projectID, p_name, p_status, p_startDate, p_endDate, p_appointments, p_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _BarrocITDB_N_DataSet.tbl_projectsDataTable GetData() {
+        public virtual tbl_projectsDataSet.tbl_projectsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            _BarrocITDB_N_DataSet.tbl_projectsDataTable dataTable = new _BarrocITDB_N_DataSet.tbl_projectsDataTable();
+            tbl_projectsDataSet.tbl_projectsDataTable dataTable = new tbl_projectsDataSet.tbl_projectsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1481,14 +1481,14 @@ SELECT p_projectID, p_name, p_status, p_startDate, p_endDate, p_appointments, p_
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_BarrocITDB_N_DataSet.tbl_projectsDataTable dataTable) {
+        public virtual int Update(tbl_projectsDataSet.tbl_projectsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(_BarrocITDB_N_DataSet dataSet) {
+        public virtual int Update(tbl_projectsDataSet dataSet) {
             return this.Adapter.Update(dataSet, "tbl_projects");
         }
         
@@ -2169,7 +2169,7 @@ SELECT p_projectID, p_name, p_status, p_startDate, p_endDate, p_appointments, p_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(_BarrocITDB_N_DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(tbl_projectsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_projectsTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.tbl_projects.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -2188,7 +2188,7 @@ SELECT p_projectID, p_name, p_status, p_startDate, p_endDate, p_appointments, p_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(_BarrocITDB_N_DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(tbl_projectsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_projectsTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.tbl_projects.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -2206,7 +2206,7 @@ SELECT p_projectID, p_name, p_status, p_startDate, p_endDate, p_appointments, p_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(_BarrocITDB_N_DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(tbl_projectsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tbl_projectsTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tbl_projects.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -2248,7 +2248,7 @@ SELECT p_projectID, p_name, p_status, p_startDate, p_endDate, p_appointments, p_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(_BarrocITDB_N_DataSet dataSet) {
+        public virtual int UpdateAll(tbl_projectsDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

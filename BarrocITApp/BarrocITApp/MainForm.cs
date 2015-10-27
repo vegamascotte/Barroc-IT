@@ -27,15 +27,12 @@ namespace BarrocITApp
         #region FormLoadData
         private void MainForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_BarrocITDB_N_DataSet5.tbl_meetings' table. You can move, or remove it, as needed.
+            // TODO: This line of code loads data into the 'barrocITDBDataSet.tbl_clientData' table. You can move, or remove it, as needed.
+            this.tbl_clientDataTableAdapter1.Fill(this.barrocITDBDataSet.tbl_clientData);
+            //Fill All Datagrids
             this.tbl_meetingsTableAdapter.Fill(this._BarrocITDB_N_DataSet5.tbl_meetings);
-            // TODO: This line of code loads data into the '_BarrocITDB_N_DataSet4.tbl_clientData' table. You can move, or remove it, as needed.
             this.tbl_clientDataTableAdapter.Fill(this._BarrocITDB_N_DataSet4.tbl_clientData);
-            // TODO: This line of code loads data into the '_BarrocITDB_N_DataSet3.tbl_invoices' table. You can move, or remove it, as needed.
             this.tbl_invoicesTableAdapter.Fill(this._BarrocITDB_N_DataSet3.tbl_invoices);
-            // TODO: This line of code loads data into the '_BarrocITDB_N_DataSet2.tbl_projects' table. You can move, or remove it, as needed.
-            this.tbl_projectsTableAdapter1.Fill(this._BarrocITDB_N_DataSet2.tbl_projects);
-            // TODO: This line of code loads data into the '_BarrocITDB_N_DataSet.tbl_projects' table. You can move, or remove it, as needed.
             this.tbl_projectsTableAdapter.Fill(this._BarrocITDB_N_DataSet.tbl_projects);
 
             Lbl_LogedInas.Text = "Logged is as: " + loggedInAs + " at: " + DateTime.Now.ToShortTimeString();
@@ -93,6 +90,20 @@ namespace BarrocITApp
 
             editClientForm = new EditClientForm();
             editClientForm.Show();
+        }
+
+        private void SaveButtonClientData_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tblklantendataBindingSource4.EndEdit();
+            this.tbl_clientDataTableAdapter.Update(_BarrocITDB_N_DataSet4);
+            dataGridView3.Refresh();
+            MessageBox.Show("Data Updated");
+        }
+
+        private void tblklantendataBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

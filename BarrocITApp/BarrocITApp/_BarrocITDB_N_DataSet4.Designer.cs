@@ -1472,29 +1472,28 @@ namespace BarrocITApp._BarrocITDB_N_DataSet4TableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[tbl_clientData] WHERE (([c_id] = @Original_c_id) AND ([c_name]" +
-                " = @Original_c_name) AND ([c_zipcode1] = @Original_c_zipcode1) AND ([c_adress1] " +
-                "= @Original_c_adress1) AND ([c_place1] = @Original_c_place1) AND ((@IsNull_c_zip" +
-                "code2 = 1 AND [c_zipcode2] IS NULL) OR ([c_zipcode2] = @Original_c_zipcode2)) AN" +
-                "D ((@IsNull_c_adress2 = 1 AND [c_adress2] IS NULL) OR ([c_adress2] = @Original_c" +
-                "_adress2)) AND ((@IsNull_c_place2 = 1 AND [c_place2] IS NULL) OR ([c_place2] = @" +
-                "Original_c_place2)) AND ((@IsNull_c_contactPerson = 1 AND [c_contactPerson] IS N" +
-                "ULL) OR ([c_contactPerson] = @Original_c_contactPerson)) AND ((@IsNull_c_contact" +
-                "PersonInitials = 1 AND [c_contactPersonInitials] IS NULL) OR ([c_contactPersonIn" +
-                "itials] = @Original_c_contactPersonInitials)) AND ([c_phoneNumber] = @Original_c" +
-                "_phoneNumber) AND ((@IsNull_c_faxNumber = 1 AND [c_faxNumber] IS NULL) OR ([c_fa" +
-                "xNumber] = @Original_c_faxNumber)) AND ((@IsNull_c_email = 1 AND [c_email] IS NU" +
-                "LL) OR ([c_email] = @Original_c_email)) AND ((@IsNull_b_bankAccountNumber = 1 AN" +
-                "D [b_bankAccountNumber] IS NULL) OR ([b_bankAccountNumber] = @Original_b_bankAcc" +
-                "ountNumber)) AND ([b_ledgerAccountNumber] = @Original_b_ledgerAccountNumber) AND" +
-                " ((@IsNull_b_limit = 1 AND [b_limit] IS NULL) OR ([b_limit] = @Original_b_limit)" +
-                ") AND ((@IsNull_b_grossRevenu = 1 AND [b_grossRevenu] IS NULL) OR ([b_grossReven" +
-                "u] = @Original_b_grossRevenu)) AND ((@IsNull_b_creditBalance = 1 AND [b_creditBa" +
-                "lance] IS NULL) OR ([b_creditBalance] = @Original_b_creditBalance)) AND ([b_cred" +
-                "itworthiness] = @Original_b_creditworthiness) AND ([b_potentialCustomer] = @Orig" +
-                "inal_b_potentialCustomer) AND ([b_bkr] = @Original_b_bkr))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [tbl_clientData] WHERE (([c_name] = @Original_c_name) AND ([c_zipcode" +
+                "1] = @Original_c_zipcode1) AND ([c_adress1] = @Original_c_adress1) AND ([c_place" +
+                "1] = @Original_c_place1) AND ((@IsNull_c_zipcode2 = 1 AND [c_zipcode2] IS NULL) " +
+                "OR ([c_zipcode2] = @Original_c_zipcode2)) AND ((@IsNull_c_adress2 = 1 AND [c_adr" +
+                "ess2] IS NULL) OR ([c_adress2] = @Original_c_adress2)) AND ((@IsNull_c_place2 = " +
+                "1 AND [c_place2] IS NULL) OR ([c_place2] = @Original_c_place2)) AND ((@IsNull_c_" +
+                "contactPerson = 1 AND [c_contactPerson] IS NULL) OR ([c_contactPerson] = @Origin" +
+                "al_c_contactPerson)) AND ((@IsNull_c_contactPersonInitials = 1 AND [c_contactPer" +
+                "sonInitials] IS NULL) OR ([c_contactPersonInitials] = @Original_c_contactPersonI" +
+                "nitials)) AND ([c_phoneNumber] = @Original_c_phoneNumber) AND ((@IsNull_c_faxNum" +
+                "ber = 1 AND [c_faxNumber] IS NULL) OR ([c_faxNumber] = @Original_c_faxNumber)) A" +
+                "ND ((@IsNull_c_email = 1 AND [c_email] IS NULL) OR ([c_email] = @Original_c_emai" +
+                "l)) AND ((@IsNull_b_bankAccountNumber = 1 AND [b_bankAccountNumber] IS NULL) OR " +
+                "([b_bankAccountNumber] = @Original_b_bankAccountNumber)) AND ([b_ledgerAccountNu" +
+                "mber] = @Original_b_ledgerAccountNumber) AND ((@IsNull_b_limit = 1 AND [b_limit]" +
+                " IS NULL) OR ([b_limit] = @Original_b_limit)) AND ((@IsNull_b_grossRevenu = 1 AN" +
+                "D [b_grossRevenu] IS NULL) OR ([b_grossRevenu] = @Original_b_grossRevenu)) AND (" +
+                "(@IsNull_b_creditBalance = 1 AND [b_creditBalance] IS NULL) OR ([b_creditBalance" +
+                "] = @Original_b_creditBalance)) AND ([b_creditworthiness] = @Original_b_creditwo" +
+                "rthiness) AND ([b_potentialCustomer] = @Original_b_potentialCustomer) AND ([b_bk" +
+                "r] = @Original_b_bkr) AND ([c_id] = @Original_c_id))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_name", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_zipcode1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_zipcode1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_adress1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_adress1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1526,12 +1525,12 @@ namespace BarrocITApp._BarrocITDB_N_DataSet4TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_creditworthiness", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_creditworthiness", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_potentialCustomer", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_potentialCustomer", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_bkr", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_bkr", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tbl_clientData] ([c_id], [c_name], [c_zipcode1], [c_adress1], [c_place1], [c_zipcode2], [c_adress2], [c_place2], [c_contactPerson], [c_contactPersonInitials], [c_phoneNumber], [c_faxNumber], [c_email], [b_bankAccountNumber], [b_ledgerAccountNumber], [b_limit], [b_grossRevenu], [b_creditBalance], [b_creditworthiness], [b_potentialCustomer], [b_bkr]) VALUES (@c_id, @c_name, @c_zipcode1, @c_adress1, @c_place1, @c_zipcode2, @c_adress2, @c_place2, @c_contactPerson, @c_contactPersonInitials, @c_phoneNumber, @c_faxNumber, @c_email, @b_bankAccountNumber, @b_ledgerAccountNumber, @b_limit, @b_grossRevenu, @b_creditBalance, @b_creditworthiness, @b_potentialCustomer, @b_bkr);
-SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr FROM tbl_clientData WHERE (c_id = @c_id)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [tbl_clientData] ([c_name], [c_zipcode1], [c_adress1], [c_place1], [c_zipcode2], [c_adress2], [c_place2], [c_contactPerson], [c_contactPersonInitials], [c_phoneNumber], [c_faxNumber], [c_email], [b_bankAccountNumber], [b_ledgerAccountNumber], [b_limit], [b_grossRevenu], [b_creditBalance], [b_creditworthiness], [b_potentialCustomer], [b_bkr]) VALUES (@c_name, @c_zipcode1, @c_adress1, @c_place1, @c_zipcode2, @c_adress2, @c_place2, @c_contactPerson, @c_contactPersonInitials, @c_phoneNumber, @c_faxNumber, @c_email, @b_bankAccountNumber, @b_ledgerAccountNumber, @b_limit, @b_grossRevenu, @b_creditBalance, @b_creditworthiness, @b_potentialCustomer, @b_bkr);
+SELECT c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr, c_id FROM tbl_clientData WHERE (c_id = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_name", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_zipcode1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_zipcode1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_adress1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_adress1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1554,42 +1553,41 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_bkr", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_bkr", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[tbl_clientData] SET [c_id] = @c_id, [c_name] = @c_name, [c_zipcode1" +
-                "] = @c_zipcode1, [c_adress1] = @c_adress1, [c_place1] = @c_place1, [c_zipcode2] " +
-                "= @c_zipcode2, [c_adress2] = @c_adress2, [c_place2] = @c_place2, [c_contactPerso" +
-                "n] = @c_contactPerson, [c_contactPersonInitials] = @c_contactPersonInitials, [c_" +
-                "phoneNumber] = @c_phoneNumber, [c_faxNumber] = @c_faxNumber, [c_email] = @c_emai" +
-                "l, [b_bankAccountNumber] = @b_bankAccountNumber, [b_ledgerAccountNumber] = @b_le" +
-                "dgerAccountNumber, [b_limit] = @b_limit, [b_grossRevenu] = @b_grossRevenu, [b_cr" +
-                "editBalance] = @b_creditBalance, [b_creditworthiness] = @b_creditworthiness, [b_" +
-                "potentialCustomer] = @b_potentialCustomer, [b_bkr] = @b_bkr WHERE (([c_id] = @Or" +
-                "iginal_c_id) AND ([c_name] = @Original_c_name) AND ([c_zipcode1] = @Original_c_z" +
-                "ipcode1) AND ([c_adress1] = @Original_c_adress1) AND ([c_place1] = @Original_c_p" +
-                "lace1) AND ((@IsNull_c_zipcode2 = 1 AND [c_zipcode2] IS NULL) OR ([c_zipcode2] =" +
-                " @Original_c_zipcode2)) AND ((@IsNull_c_adress2 = 1 AND [c_adress2] IS NULL) OR " +
-                "([c_adress2] = @Original_c_adress2)) AND ((@IsNull_c_place2 = 1 AND [c_place2] I" +
-                "S NULL) OR ([c_place2] = @Original_c_place2)) AND ((@IsNull_c_contactPerson = 1 " +
-                "AND [c_contactPerson] IS NULL) OR ([c_contactPerson] = @Original_c_contactPerson" +
-                ")) AND ((@IsNull_c_contactPersonInitials = 1 AND [c_contactPersonInitials] IS NU" +
-                "LL) OR ([c_contactPersonInitials] = @Original_c_contactPersonInitials)) AND ([c_" +
-                "phoneNumber] = @Original_c_phoneNumber) AND ((@IsNull_c_faxNumber = 1 AND [c_fax" +
-                "Number] IS NULL) OR ([c_faxNumber] = @Original_c_faxNumber)) AND ((@IsNull_c_ema" +
-                "il = 1 AND [c_email] IS NULL) OR ([c_email] = @Original_c_email)) AND ((@IsNull_" +
-                "b_bankAccountNumber = 1 AND [b_bankAccountNumber] IS NULL) OR ([b_bankAccountNum" +
-                "ber] = @Original_b_bankAccountNumber)) AND ([b_ledgerAccountNumber] = @Original_" +
-                "b_ledgerAccountNumber) AND ((@IsNull_b_limit = 1 AND [b_limit] IS NULL) OR ([b_l" +
-                "imit] = @Original_b_limit)) AND ((@IsNull_b_grossRevenu = 1 AND [b_grossRevenu] " +
-                "IS NULL) OR ([b_grossRevenu] = @Original_b_grossRevenu)) AND ((@IsNull_b_creditB" +
-                "alance = 1 AND [b_creditBalance] IS NULL) OR ([b_creditBalance] = @Original_b_cr" +
-                "editBalance)) AND ([b_creditworthiness] = @Original_b_creditworthiness) AND ([b_" +
-                "potentialCustomer] = @Original_b_potentialCustomer) AND ([b_bkr] = @Original_b_b" +
-                "kr));\r\nSELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adres" +
-                "s2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumb" +
-                "er, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu," +
-                " b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr FROM tbl_client" +
-                "Data WHERE (c_id = @c_id)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [tbl_clientData] SET [c_name] = @c_name, [c_zipcode1] = @c_zipcode1, [c_ad" +
+                "ress1] = @c_adress1, [c_place1] = @c_place1, [c_zipcode2] = @c_zipcode2, [c_adre" +
+                "ss2] = @c_adress2, [c_place2] = @c_place2, [c_contactPerson] = @c_contactPerson," +
+                " [c_contactPersonInitials] = @c_contactPersonInitials, [c_phoneNumber] = @c_phon" +
+                "eNumber, [c_faxNumber] = @c_faxNumber, [c_email] = @c_email, [b_bankAccountNumbe" +
+                "r] = @b_bankAccountNumber, [b_ledgerAccountNumber] = @b_ledgerAccountNumber, [b_" +
+                "limit] = @b_limit, [b_grossRevenu] = @b_grossRevenu, [b_creditBalance] = @b_cred" +
+                "itBalance, [b_creditworthiness] = @b_creditworthiness, [b_potentialCustomer] = @" +
+                "b_potentialCustomer, [b_bkr] = @b_bkr WHERE (([c_name] = @Original_c_name) AND (" +
+                "[c_zipcode1] = @Original_c_zipcode1) AND ([c_adress1] = @Original_c_adress1) AND" +
+                " ([c_place1] = @Original_c_place1) AND ((@IsNull_c_zipcode2 = 1 AND [c_zipcode2]" +
+                " IS NULL) OR ([c_zipcode2] = @Original_c_zipcode2)) AND ((@IsNull_c_adress2 = 1 " +
+                "AND [c_adress2] IS NULL) OR ([c_adress2] = @Original_c_adress2)) AND ((@IsNull_c" +
+                "_place2 = 1 AND [c_place2] IS NULL) OR ([c_place2] = @Original_c_place2)) AND ((" +
+                "@IsNull_c_contactPerson = 1 AND [c_contactPerson] IS NULL) OR ([c_contactPerson]" +
+                " = @Original_c_contactPerson)) AND ((@IsNull_c_contactPersonInitials = 1 AND [c_" +
+                "contactPersonInitials] IS NULL) OR ([c_contactPersonInitials] = @Original_c_cont" +
+                "actPersonInitials)) AND ([c_phoneNumber] = @Original_c_phoneNumber) AND ((@IsNul" +
+                "l_c_faxNumber = 1 AND [c_faxNumber] IS NULL) OR ([c_faxNumber] = @Original_c_fax" +
+                "Number)) AND ((@IsNull_c_email = 1 AND [c_email] IS NULL) OR ([c_email] = @Origi" +
+                "nal_c_email)) AND ((@IsNull_b_bankAccountNumber = 1 AND [b_bankAccountNumber] IS" +
+                " NULL) OR ([b_bankAccountNumber] = @Original_b_bankAccountNumber)) AND ([b_ledge" +
+                "rAccountNumber] = @Original_b_ledgerAccountNumber) AND ((@IsNull_b_limit = 1 AND" +
+                " [b_limit] IS NULL) OR ([b_limit] = @Original_b_limit)) AND ((@IsNull_b_grossRev" +
+                "enu = 1 AND [b_grossRevenu] IS NULL) OR ([b_grossRevenu] = @Original_b_grossReve" +
+                "nu)) AND ((@IsNull_b_creditBalance = 1 AND [b_creditBalance] IS NULL) OR ([b_cre" +
+                "ditBalance] = @Original_b_creditBalance)) AND ([b_creditworthiness] = @Original_" +
+                "b_creditworthiness) AND ([b_potentialCustomer] = @Original_b_potentialCustomer) " +
+                "AND ([b_bkr] = @Original_b_bkr) AND ([c_id] = @Original_c_id));\r\nSELECT c_name, " +
+                "c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerso" +
+                "n, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNu" +
+                "mber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditwo" +
+                "rthiness, b_potentialCustomer, b_bkr, c_id FROM tbl_clientData WHERE (c_id = @c_" +
+                "id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_name", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_zipcode1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_zipcode1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_adress1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_adress1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1610,7 +1608,6 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_creditworthiness", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_creditworthiness", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_potentialCustomer", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_potentialCustomer", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_bkr", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_bkr", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_name", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_zipcode1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_zipcode1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_adress1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_adress1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1642,6 +1639,8 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_creditworthiness", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_creditworthiness", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_potentialCustomer", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_potentialCustomer", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_bkr", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_bkr", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "c_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1654,11 +1653,68 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr FROM dbo.tbl_clientData";
+            this._commandCollection[0].CommandText = @"SELECT c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr, c_id FROM tbl_clientData";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"UPDATE [tbl_clientData] SET [c_name] = @c_name, [c_zipcode1] = @c_zipcode1, [c_adress1] = @c_adress1, [c_place1] = @c_place1, [c_zipcode2] = @c_zipcode2, [c_adress2] = @c_adress2, [c_place2] = @c_place2, [c_contactPerson] = @c_contactPerson, [c_contactPersonInitials] = @c_contactPersonInitials, [c_phoneNumber] = @c_phoneNumber, [c_faxNumber] = @c_faxNumber, [c_email] = @c_email, [b_bankAccountNumber] = @b_bankAccountNumber, [b_ledgerAccountNumber] = @b_ledgerAccountNumber, [b_limit] = @b_limit, [b_grossRevenu] = @b_grossRevenu, [b_creditBalance] = @b_creditBalance, [b_creditworthiness] = @b_creditworthiness, [b_potentialCustomer] = @b_potentialCustomer, [b_bkr] = @b_bkr SELECT c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr, c_id FROM tbl_clientData WHERE (c_id = @c_id)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_name", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_zipcode1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_zipcode1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_adress1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_adress1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_place1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_place1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_zipcode2", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_zipcode2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_adress2", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_adress2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_place2", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_place2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_contactPerson", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_contactPerson", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_contactPersonInitials", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_contactPersonInitials", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_phoneNumber", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_phoneNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_faxNumber", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_faxNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_email", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_bankAccountNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_bankAccountNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_ledgerAccountNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_ledgerAccountNumber", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_limit", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "b_limit", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_grossRevenu", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "b_grossRevenu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_creditBalance", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "b_creditBalance", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_creditworthiness", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_creditworthiness", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_potentialCustomer", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_potentialCustomer", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@b_bkr", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_bkr", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_name", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_zipcode1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_zipcode1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_adress1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_adress1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_place1", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_place1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_c_zipcode2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_zipcode2", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_zipcode2", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_zipcode2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_c_adress2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_adress2", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_adress2", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_adress2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_c_place2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_place2", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_place2", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_place2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_c_contactPerson", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_contactPerson", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_contactPerson", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_contactPerson", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_c_contactPersonInitials", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_contactPersonInitials", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_contactPersonInitials", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_contactPersonInitials", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_phoneNumber", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_phoneNumber", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_c_faxNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_faxNumber", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_faxNumber", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_faxNumber", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_c_email", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_email", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_email", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_bankAccountNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_bankAccountNumber", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_bankAccountNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_bankAccountNumber", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_ledgerAccountNumber", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_ledgerAccountNumber", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_limit", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_limit", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_limit", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "b_limit", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_grossRevenu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_grossRevenu", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_grossRevenu", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "b_grossRevenu", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_b_creditBalance", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_creditBalance", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_creditBalance", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "b_creditBalance", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_creditworthiness", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_creditworthiness", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_potentialCustomer", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_potentialCustomer", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_b_bkr", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "b_bkr", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_c_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "c_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@c_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "c_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1719,7 +1775,6 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
         public virtual int Delete(
-                    int Original_c_id, 
                     string Original_c_name, 
                     string Original_c_zipcode1, 
                     string Original_c_adress1, 
@@ -1739,145 +1794,146 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
                     global::System.Nullable<decimal> Original_b_creditBalance, 
                     string Original_b_creditworthiness, 
                     string Original_b_potentialCustomer, 
-                    string Original_b_bkr) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_c_id));
+                    string Original_b_bkr, 
+                    int Original_c_id) {
             if ((Original_c_name == null)) {
                 throw new global::System.ArgumentNullException("Original_c_name");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_c_name));
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_c_name));
             }
             if ((Original_c_zipcode1 == null)) {
                 throw new global::System.ArgumentNullException("Original_c_zipcode1");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_c_zipcode1));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_c_zipcode1));
             }
             if ((Original_c_adress1 == null)) {
                 throw new global::System.ArgumentNullException("Original_c_adress1");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_c_adress1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_c_adress1));
             }
             if ((Original_c_place1 == null)) {
                 throw new global::System.ArgumentNullException("Original_c_place1");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_c_place1));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_c_place1));
             }
             if ((Original_c_zipcode2 == null)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_c_zipcode2));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_c_zipcode2));
             }
             if ((Original_c_adress2 == null)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_c_adress2));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_c_adress2));
             }
             if ((Original_c_place2 == null)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_c_place2));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((string)(Original_c_place2));
             }
             if ((Original_c_contactPerson == null)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_c_contactPerson));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((string)(Original_c_contactPerson));
             }
             if ((Original_c_contactPersonInitials == null)) {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_c_contactPersonInitials));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((string)(Original_c_contactPersonInitials));
             }
             if ((Original_c_phoneNumber == null)) {
                 throw new global::System.ArgumentNullException("Original_c_phoneNumber");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((string)(Original_c_phoneNumber));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_c_phoneNumber));
             }
             if ((Original_c_faxNumber == null)) {
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[17].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((string)(Original_c_faxNumber));
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_c_faxNumber));
             }
             if ((Original_c_email == null)) {
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[19].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((string)(Original_c_email));
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_c_email));
             }
             if ((Original_b_bankAccountNumber.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[21].Value = ((int)(Original_b_bankAccountNumber.Value));
+                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[20].Value = ((int)(Original_b_bankAccountNumber.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[21].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
-            this.Adapter.DeleteCommand.Parameters[22].Value = ((int)(Original_b_ledgerAccountNumber));
+            this.Adapter.DeleteCommand.Parameters[21].Value = ((int)(Original_b_ledgerAccountNumber));
             if ((Original_b_limit.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[24].Value = ((decimal)(Original_b_limit.Value));
+                this.Adapter.DeleteCommand.Parameters[22].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[23].Value = ((decimal)(Original_b_limit.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[24].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[22].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[23].Value = global::System.DBNull.Value;
             }
             if ((Original_b_grossRevenu.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[26].Value = ((decimal)(Original_b_grossRevenu.Value));
+                this.Adapter.DeleteCommand.Parameters[24].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[25].Value = ((decimal)(Original_b_grossRevenu.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[26].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[24].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
             if ((Original_b_creditBalance.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[28].Value = ((decimal)(Original_b_creditBalance.Value));
+                this.Adapter.DeleteCommand.Parameters[26].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[27].Value = ((decimal)(Original_b_creditBalance.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[28].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[26].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[27].Value = global::System.DBNull.Value;
             }
             if ((Original_b_creditworthiness == null)) {
                 throw new global::System.ArgumentNullException("Original_b_creditworthiness");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[29].Value = ((string)(Original_b_creditworthiness));
+                this.Adapter.DeleteCommand.Parameters[28].Value = ((string)(Original_b_creditworthiness));
             }
             if ((Original_b_potentialCustomer == null)) {
                 throw new global::System.ArgumentNullException("Original_b_potentialCustomer");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[30].Value = ((string)(Original_b_potentialCustomer));
+                this.Adapter.DeleteCommand.Parameters[29].Value = ((string)(Original_b_potentialCustomer));
             }
             if ((Original_b_bkr == null)) {
                 throw new global::System.ArgumentNullException("Original_b_bkr");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[31].Value = ((string)(Original_b_bkr));
+                this.Adapter.DeleteCommand.Parameters[30].Value = ((string)(Original_b_bkr));
             }
+            this.Adapter.DeleteCommand.Parameters[31].Value = ((int)(Original_c_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1899,7 +1955,6 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(
-                    int c_id, 
                     string c_name, 
                     string c_zipcode1, 
                     string c_adress1, 
@@ -1920,121 +1975,120 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
                     string b_creditworthiness, 
                     string b_potentialCustomer, 
                     string b_bkr) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(c_id));
             if ((c_name == null)) {
                 throw new global::System.ArgumentNullException("c_name");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(c_name));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(c_name));
             }
             if ((c_zipcode1 == null)) {
                 throw new global::System.ArgumentNullException("c_zipcode1");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(c_zipcode1));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(c_zipcode1));
             }
             if ((c_adress1 == null)) {
                 throw new global::System.ArgumentNullException("c_adress1");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(c_adress1));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(c_adress1));
             }
             if ((c_place1 == null)) {
                 throw new global::System.ArgumentNullException("c_place1");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(c_place1));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(c_place1));
             }
             if ((c_zipcode2 == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(c_zipcode2));
+            }
+            if ((c_adress2 == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(c_zipcode2));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(c_adress2));
             }
-            if ((c_adress2 == null)) {
+            if ((c_place2 == null)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(c_adress2));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(c_place2));
             }
-            if ((c_place2 == null)) {
+            if ((c_contactPerson == null)) {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(c_place2));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(c_contactPerson));
             }
-            if ((c_contactPerson == null)) {
+            if ((c_contactPersonInitials == null)) {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(c_contactPerson));
-            }
-            if ((c_contactPersonInitials == null)) {
-                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(c_contactPersonInitials));
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(c_contactPersonInitials));
             }
             if ((c_phoneNumber == null)) {
                 throw new global::System.ArgumentNullException("c_phoneNumber");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(c_phoneNumber));
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(c_phoneNumber));
             }
             if ((c_faxNumber == null)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(c_faxNumber));
+            }
+            if ((c_email == null)) {
                 this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(c_faxNumber));
-            }
-            if ((c_email == null)) {
-                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(c_email));
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(c_email));
             }
             if ((b_bankAccountNumber.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[13].Value = ((int)(b_bankAccountNumber.Value));
+                this.Adapter.InsertCommand.Parameters[12].Value = ((int)(b_bankAccountNumber.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
-            this.Adapter.InsertCommand.Parameters[14].Value = ((int)(b_ledgerAccountNumber));
+            this.Adapter.InsertCommand.Parameters[13].Value = ((int)(b_ledgerAccountNumber));
             if ((b_limit.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[15].Value = ((decimal)(b_limit.Value));
+                this.Adapter.InsertCommand.Parameters[14].Value = ((decimal)(b_limit.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((b_grossRevenu.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[15].Value = ((decimal)(b_grossRevenu.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
-            if ((b_grossRevenu.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[16].Value = ((decimal)(b_grossRevenu.Value));
+            if ((b_creditBalance.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[16].Value = ((decimal)(b_creditBalance.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
-            }
-            if ((b_creditBalance.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[17].Value = ((decimal)(b_creditBalance.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
             if ((b_creditworthiness == null)) {
                 throw new global::System.ArgumentNullException("b_creditworthiness");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(b_creditworthiness));
+                this.Adapter.InsertCommand.Parameters[17].Value = ((string)(b_creditworthiness));
             }
             if ((b_potentialCustomer == null)) {
                 throw new global::System.ArgumentNullException("b_potentialCustomer");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[19].Value = ((string)(b_potentialCustomer));
+                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(b_potentialCustomer));
             }
             if ((b_bkr == null)) {
                 throw new global::System.ArgumentNullException("b_bkr");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[20].Value = ((string)(b_bkr));
+                this.Adapter.InsertCommand.Parameters[19].Value = ((string)(b_bkr));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2057,7 +2111,6 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    int c_id, 
                     string c_name, 
                     string c_zipcode1, 
                     string c_adress1, 
@@ -2078,7 +2131,6 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
                     string b_creditworthiness, 
                     string b_potentialCustomer, 
                     string b_bkr, 
-                    int Original_c_id, 
                     string Original_c_name, 
                     string Original_c_zipcode1, 
                     string Original_c_adress1, 
@@ -2098,261 +2150,263 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
                     global::System.Nullable<decimal> Original_b_creditBalance, 
                     string Original_b_creditworthiness, 
                     string Original_b_potentialCustomer, 
-                    string Original_b_bkr) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(c_id));
+                    string Original_b_bkr, 
+                    int Original_c_id, 
+                    int c_id) {
             if ((c_name == null)) {
                 throw new global::System.ArgumentNullException("c_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(c_name));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(c_name));
             }
             if ((c_zipcode1 == null)) {
                 throw new global::System.ArgumentNullException("c_zipcode1");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(c_zipcode1));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(c_zipcode1));
             }
             if ((c_adress1 == null)) {
                 throw new global::System.ArgumentNullException("c_adress1");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(c_adress1));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(c_adress1));
             }
             if ((c_place1 == null)) {
                 throw new global::System.ArgumentNullException("c_place1");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(c_place1));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(c_place1));
             }
             if ((c_zipcode2 == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(c_zipcode2));
+            }
+            if ((c_adress2 == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(c_zipcode2));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(c_adress2));
             }
-            if ((c_adress2 == null)) {
+            if ((c_place2 == null)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(c_adress2));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(c_place2));
             }
-            if ((c_place2 == null)) {
+            if ((c_contactPerson == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(c_place2));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(c_contactPerson));
             }
-            if ((c_contactPerson == null)) {
+            if ((c_contactPersonInitials == null)) {
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(c_contactPerson));
-            }
-            if ((c_contactPersonInitials == null)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(c_contactPersonInitials));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(c_contactPersonInitials));
             }
             if ((c_phoneNumber == null)) {
                 throw new global::System.ArgumentNullException("c_phoneNumber");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(c_phoneNumber));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(c_phoneNumber));
             }
             if ((c_faxNumber == null)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(c_faxNumber));
+            }
+            if ((c_email == null)) {
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(c_faxNumber));
-            }
-            if ((c_email == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(c_email));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(c_email));
             }
             if ((b_bankAccountNumber.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(b_bankAccountNumber.Value));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(b_bankAccountNumber.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(b_ledgerAccountNumber));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(b_ledgerAccountNumber));
             if ((b_limit.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((decimal)(b_limit.Value));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((decimal)(b_limit.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((b_grossRevenu.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((decimal)(b_grossRevenu.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
-            if ((b_grossRevenu.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((decimal)(b_grossRevenu.Value));
+            if ((b_creditBalance.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((decimal)(b_creditBalance.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
-            }
-            if ((b_creditBalance.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((decimal)(b_creditBalance.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
             if ((b_creditworthiness == null)) {
                 throw new global::System.ArgumentNullException("b_creditworthiness");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(b_creditworthiness));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(b_creditworthiness));
             }
             if ((b_potentialCustomer == null)) {
                 throw new global::System.ArgumentNullException("b_potentialCustomer");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(b_potentialCustomer));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(b_potentialCustomer));
             }
             if ((b_bkr == null)) {
                 throw new global::System.ArgumentNullException("b_bkr");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(b_bkr));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(b_bkr));
             }
-            this.Adapter.UpdateCommand.Parameters[21].Value = ((int)(Original_c_id));
             if ((Original_c_name == null)) {
                 throw new global::System.ArgumentNullException("Original_c_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_c_name));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_c_name));
             }
             if ((Original_c_zipcode1 == null)) {
                 throw new global::System.ArgumentNullException("Original_c_zipcode1");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_c_zipcode1));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_c_zipcode1));
             }
             if ((Original_c_adress1 == null)) {
                 throw new global::System.ArgumentNullException("Original_c_adress1");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_c_adress1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_c_adress1));
             }
             if ((Original_c_place1 == null)) {
                 throw new global::System.ArgumentNullException("Original_c_place1");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_c_place1));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_c_place1));
             }
             if ((Original_c_zipcode2 == null)) {
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_c_zipcode2));
+            }
+            if ((Original_c_adress2 == null)) {
                 this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_c_zipcode2));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_c_adress2));
             }
-            if ((Original_c_adress2 == null)) {
+            if ((Original_c_place2 == null)) {
                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_c_adress2));
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_c_place2));
             }
-            if ((Original_c_place2 == null)) {
+            if ((Original_c_contactPerson == null)) {
                 this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_c_place2));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_c_contactPerson));
             }
-            if ((Original_c_contactPerson == null)) {
+            if ((Original_c_contactPersonInitials == null)) {
                 this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_c_contactPerson));
-            }
-            if ((Original_c_contactPersonInitials == null)) {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_c_contactPersonInitials));
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_c_contactPersonInitials));
             }
             if ((Original_c_phoneNumber == null)) {
                 throw new global::System.ArgumentNullException("Original_c_phoneNumber");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((string)(Original_c_phoneNumber));
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((string)(Original_c_phoneNumber));
             }
             if ((Original_c_faxNumber == null)) {
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[36].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[36].Value = ((string)(Original_c_faxNumber));
+            }
+            if ((Original_c_email == null)) {
                 this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[38].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((string)(Original_c_faxNumber));
+                this.Adapter.UpdateCommand.Parameters[38].Value = ((string)(Original_c_email));
             }
-            if ((Original_c_email == null)) {
+            if ((Original_b_bankAccountNumber.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[40].Value = ((int)(Original_b_bankAccountNumber.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[40].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[40].Value = ((string)(Original_c_email));
-            }
-            if ((Original_b_bankAccountNumber.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[41].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[42].Value = ((int)(Original_b_bankAccountNumber.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[41].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[42].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[43].Value = ((int)(Original_b_ledgerAccountNumber));
+            this.Adapter.UpdateCommand.Parameters[41].Value = ((int)(Original_b_ledgerAccountNumber));
             if ((Original_b_limit.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[43].Value = ((decimal)(Original_b_limit.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[43].Value = global::System.DBNull.Value;
+            }
+            if ((Original_b_grossRevenu.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[45].Value = ((decimal)(Original_b_limit.Value));
+                this.Adapter.UpdateCommand.Parameters[45].Value = ((decimal)(Original_b_grossRevenu.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[45].Value = global::System.DBNull.Value;
             }
-            if ((Original_b_grossRevenu.HasValue == true)) {
+            if ((Original_b_creditBalance.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[47].Value = ((decimal)(Original_b_grossRevenu.Value));
+                this.Adapter.UpdateCommand.Parameters[47].Value = ((decimal)(Original_b_creditBalance.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[47].Value = global::System.DBNull.Value;
             }
-            if ((Original_b_creditBalance.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[49].Value = ((decimal)(Original_b_creditBalance.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[49].Value = global::System.DBNull.Value;
-            }
             if ((Original_b_creditworthiness == null)) {
                 throw new global::System.ArgumentNullException("Original_b_creditworthiness");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[50].Value = ((string)(Original_b_creditworthiness));
+                this.Adapter.UpdateCommand.Parameters[48].Value = ((string)(Original_b_creditworthiness));
             }
             if ((Original_b_potentialCustomer == null)) {
                 throw new global::System.ArgumentNullException("Original_b_potentialCustomer");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[51].Value = ((string)(Original_b_potentialCustomer));
+                this.Adapter.UpdateCommand.Parameters[49].Value = ((string)(Original_b_potentialCustomer));
             }
             if ((Original_b_bkr == null)) {
                 throw new global::System.ArgumentNullException("Original_b_bkr");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[52].Value = ((string)(Original_b_bkr));
+                this.Adapter.UpdateCommand.Parameters[50].Value = ((string)(Original_b_bkr));
             }
+            this.Adapter.UpdateCommand.Parameters[51].Value = ((int)(Original_c_id));
+            this.Adapter.UpdateCommand.Parameters[52].Value = ((int)(c_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2394,7 +2448,6 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
                     string b_creditworthiness, 
                     string b_potentialCustomer, 
                     string b_bkr, 
-                    int Original_c_id, 
                     string Original_c_name, 
                     string Original_c_zipcode1, 
                     string Original_c_adress1, 
@@ -2414,8 +2467,383 @@ SELECT c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_p
                     global::System.Nullable<decimal> Original_b_creditBalance, 
                     string Original_b_creditworthiness, 
                     string Original_b_potentialCustomer, 
-                    string Original_b_bkr) {
-            return this.Update(Original_c_id, c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr, Original_c_id, Original_c_name, Original_c_zipcode1, Original_c_adress1, Original_c_place1, Original_c_zipcode2, Original_c_adress2, Original_c_place2, Original_c_contactPerson, Original_c_contactPersonInitials, Original_c_phoneNumber, Original_c_faxNumber, Original_c_email, Original_b_bankAccountNumber, Original_b_ledgerAccountNumber, Original_b_limit, Original_b_grossRevenu, Original_b_creditBalance, Original_b_creditworthiness, Original_b_potentialCustomer, Original_b_bkr);
+                    string Original_b_bkr, 
+                    int Original_c_id) {
+            return this.Update(c_name, c_zipcode1, c_adress1, c_place1, c_zipcode2, c_adress2, c_place2, c_contactPerson, c_contactPersonInitials, c_phoneNumber, c_faxNumber, c_email, b_bankAccountNumber, b_ledgerAccountNumber, b_limit, b_grossRevenu, b_creditBalance, b_creditworthiness, b_potentialCustomer, b_bkr, Original_c_name, Original_c_zipcode1, Original_c_adress1, Original_c_place1, Original_c_zipcode2, Original_c_adress2, Original_c_place2, Original_c_contactPerson, Original_c_contactPersonInitials, Original_c_phoneNumber, Original_c_faxNumber, Original_c_email, Original_b_bankAccountNumber, Original_b_ledgerAccountNumber, Original_b_limit, Original_b_grossRevenu, Original_b_creditBalance, Original_b_creditworthiness, Original_b_potentialCustomer, Original_b_bkr, Original_c_id, Original_c_id);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateQuery(
+                    string c_name, 
+                    string c_zipcode1, 
+                    string c_adress1, 
+                    string c_place1, 
+                    string c_zipcode2, 
+                    string c_adress2, 
+                    string c_place2, 
+                    string c_contactPerson, 
+                    string c_contactPersonInitials, 
+                    string c_phoneNumber, 
+                    string c_faxNumber, 
+                    string c_email, 
+                    global::System.Nullable<int> b_bankAccountNumber, 
+                    int b_ledgerAccountNumber, 
+                    global::System.Nullable<decimal> b_limit, 
+                    global::System.Nullable<decimal> b_grossRevenu, 
+                    global::System.Nullable<decimal> b_creditBalance, 
+                    string b_creditworthiness, 
+                    string b_potentialCustomer, 
+                    string b_bkr, 
+                    string Original_c_name, 
+                    string Original_c_zipcode1, 
+                    string Original_c_adress1, 
+                    string Original_c_place1, 
+                    global::System.Nullable<int> IsNull_c_zipcode2, 
+                    string Original_c_zipcode2, 
+                    global::System.Nullable<int> IsNull_c_adress2, 
+                    string Original_c_adress2, 
+                    global::System.Nullable<int> IsNull_c_place2, 
+                    string Original_c_place2, 
+                    global::System.Nullable<int> IsNull_c_contactPerson, 
+                    string Original_c_contactPerson, 
+                    global::System.Nullable<int> IsNull_c_contactPersonInitials, 
+                    string Original_c_contactPersonInitials, 
+                    string Original_c_phoneNumber, 
+                    global::System.Nullable<int> IsNull_c_faxNumber, 
+                    string Original_c_faxNumber, 
+                    global::System.Nullable<int> IsNull_c_email, 
+                    string Original_c_email, 
+                    global::System.Nullable<int> IsNull_b_bankAccountNumber, 
+                    global::System.Nullable<int> Original_b_bankAccountNumber, 
+                    int Original_b_ledgerAccountNumber, 
+                    global::System.Nullable<int> IsNull_b_limit, 
+                    global::System.Nullable<decimal> Original_b_limit, 
+                    global::System.Nullable<int> IsNull_b_grossRevenu, 
+                    global::System.Nullable<decimal> Original_b_grossRevenu, 
+                    global::System.Nullable<int> IsNull_b_creditBalance, 
+                    global::System.Nullable<decimal> Original_b_creditBalance, 
+                    string Original_b_creditworthiness, 
+                    string Original_b_potentialCustomer, 
+                    string Original_b_bkr, 
+                    int Original_c_id, 
+                    int c_id) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            if ((c_name == null)) {
+                throw new global::System.ArgumentNullException("c_name");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(c_name));
+            }
+            if ((c_zipcode1 == null)) {
+                throw new global::System.ArgumentNullException("c_zipcode1");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(c_zipcode1));
+            }
+            if ((c_adress1 == null)) {
+                throw new global::System.ArgumentNullException("c_adress1");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(c_adress1));
+            }
+            if ((c_place1 == null)) {
+                throw new global::System.ArgumentNullException("c_place1");
+            }
+            else {
+                command.Parameters[3].Value = ((string)(c_place1));
+            }
+            if ((c_zipcode2 == null)) {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[4].Value = ((string)(c_zipcode2));
+            }
+            if ((c_adress2 == null)) {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[5].Value = ((string)(c_adress2));
+            }
+            if ((c_place2 == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(c_place2));
+            }
+            if ((c_contactPerson == null)) {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[7].Value = ((string)(c_contactPerson));
+            }
+            if ((c_contactPersonInitials == null)) {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[8].Value = ((string)(c_contactPersonInitials));
+            }
+            if ((c_phoneNumber == null)) {
+                throw new global::System.ArgumentNullException("c_phoneNumber");
+            }
+            else {
+                command.Parameters[9].Value = ((string)(c_phoneNumber));
+            }
+            if ((c_faxNumber == null)) {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[10].Value = ((string)(c_faxNumber));
+            }
+            if ((c_email == null)) {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[11].Value = ((string)(c_email));
+            }
+            if ((b_bankAccountNumber.HasValue == true)) {
+                command.Parameters[12].Value = ((int)(b_bankAccountNumber.Value));
+            }
+            else {
+                command.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            command.Parameters[13].Value = ((int)(b_ledgerAccountNumber));
+            if ((b_limit.HasValue == true)) {
+                command.Parameters[14].Value = ((decimal)(b_limit.Value));
+            }
+            else {
+                command.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((b_grossRevenu.HasValue == true)) {
+                command.Parameters[15].Value = ((decimal)(b_grossRevenu.Value));
+            }
+            else {
+                command.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            if ((b_creditBalance.HasValue == true)) {
+                command.Parameters[16].Value = ((decimal)(b_creditBalance.Value));
+            }
+            else {
+                command.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            if ((b_creditworthiness == null)) {
+                throw new global::System.ArgumentNullException("b_creditworthiness");
+            }
+            else {
+                command.Parameters[17].Value = ((string)(b_creditworthiness));
+            }
+            if ((b_potentialCustomer == null)) {
+                throw new global::System.ArgumentNullException("b_potentialCustomer");
+            }
+            else {
+                command.Parameters[18].Value = ((string)(b_potentialCustomer));
+            }
+            if ((b_bkr == null)) {
+                throw new global::System.ArgumentNullException("b_bkr");
+            }
+            else {
+                command.Parameters[19].Value = ((string)(b_bkr));
+            }
+            if ((Original_c_name == null)) {
+                throw new global::System.ArgumentNullException("Original_c_name");
+            }
+            else {
+                command.Parameters[20].Value = ((string)(Original_c_name));
+            }
+            if ((Original_c_zipcode1 == null)) {
+                throw new global::System.ArgumentNullException("Original_c_zipcode1");
+            }
+            else {
+                command.Parameters[21].Value = ((string)(Original_c_zipcode1));
+            }
+            if ((Original_c_adress1 == null)) {
+                throw new global::System.ArgumentNullException("Original_c_adress1");
+            }
+            else {
+                command.Parameters[22].Value = ((string)(Original_c_adress1));
+            }
+            if ((Original_c_place1 == null)) {
+                throw new global::System.ArgumentNullException("Original_c_place1");
+            }
+            else {
+                command.Parameters[23].Value = ((string)(Original_c_place1));
+            }
+            if ((IsNull_c_zipcode2.HasValue == true)) {
+                command.Parameters[24].Value = ((int)(IsNull_c_zipcode2.Value));
+            }
+            else {
+                command.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            if ((Original_c_zipcode2 == null)) {
+                command.Parameters[25].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[25].Value = ((string)(Original_c_zipcode2));
+            }
+            if ((IsNull_c_adress2.HasValue == true)) {
+                command.Parameters[26].Value = ((int)(IsNull_c_adress2.Value));
+            }
+            else {
+                command.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            if ((Original_c_adress2 == null)) {
+                command.Parameters[27].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[27].Value = ((string)(Original_c_adress2));
+            }
+            if ((IsNull_c_place2.HasValue == true)) {
+                command.Parameters[28].Value = ((int)(IsNull_c_place2.Value));
+            }
+            else {
+                command.Parameters[28].Value = global::System.DBNull.Value;
+            }
+            if ((Original_c_place2 == null)) {
+                command.Parameters[29].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[29].Value = ((string)(Original_c_place2));
+            }
+            if ((IsNull_c_contactPerson.HasValue == true)) {
+                command.Parameters[30].Value = ((int)(IsNull_c_contactPerson.Value));
+            }
+            else {
+                command.Parameters[30].Value = global::System.DBNull.Value;
+            }
+            if ((Original_c_contactPerson == null)) {
+                command.Parameters[31].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[31].Value = ((string)(Original_c_contactPerson));
+            }
+            if ((IsNull_c_contactPersonInitials.HasValue == true)) {
+                command.Parameters[32].Value = ((int)(IsNull_c_contactPersonInitials.Value));
+            }
+            else {
+                command.Parameters[32].Value = global::System.DBNull.Value;
+            }
+            if ((Original_c_contactPersonInitials == null)) {
+                command.Parameters[33].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[33].Value = ((string)(Original_c_contactPersonInitials));
+            }
+            if ((Original_c_phoneNumber == null)) {
+                throw new global::System.ArgumentNullException("Original_c_phoneNumber");
+            }
+            else {
+                command.Parameters[34].Value = ((string)(Original_c_phoneNumber));
+            }
+            if ((IsNull_c_faxNumber.HasValue == true)) {
+                command.Parameters[35].Value = ((int)(IsNull_c_faxNumber.Value));
+            }
+            else {
+                command.Parameters[35].Value = global::System.DBNull.Value;
+            }
+            if ((Original_c_faxNumber == null)) {
+                command.Parameters[36].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[36].Value = ((string)(Original_c_faxNumber));
+            }
+            if ((IsNull_c_email.HasValue == true)) {
+                command.Parameters[37].Value = ((int)(IsNull_c_email.Value));
+            }
+            else {
+                command.Parameters[37].Value = global::System.DBNull.Value;
+            }
+            if ((Original_c_email == null)) {
+                command.Parameters[38].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[38].Value = ((string)(Original_c_email));
+            }
+            if ((IsNull_b_bankAccountNumber.HasValue == true)) {
+                command.Parameters[39].Value = ((int)(IsNull_b_bankAccountNumber.Value));
+            }
+            else {
+                command.Parameters[39].Value = global::System.DBNull.Value;
+            }
+            if ((Original_b_bankAccountNumber.HasValue == true)) {
+                command.Parameters[40].Value = ((int)(Original_b_bankAccountNumber.Value));
+            }
+            else {
+                command.Parameters[40].Value = global::System.DBNull.Value;
+            }
+            command.Parameters[41].Value = ((int)(Original_b_ledgerAccountNumber));
+            if ((IsNull_b_limit.HasValue == true)) {
+                command.Parameters[42].Value = ((int)(IsNull_b_limit.Value));
+            }
+            else {
+                command.Parameters[42].Value = global::System.DBNull.Value;
+            }
+            if ((Original_b_limit.HasValue == true)) {
+                command.Parameters[43].Value = ((decimal)(Original_b_limit.Value));
+            }
+            else {
+                command.Parameters[43].Value = global::System.DBNull.Value;
+            }
+            if ((IsNull_b_grossRevenu.HasValue == true)) {
+                command.Parameters[44].Value = ((int)(IsNull_b_grossRevenu.Value));
+            }
+            else {
+                command.Parameters[44].Value = global::System.DBNull.Value;
+            }
+            if ((Original_b_grossRevenu.HasValue == true)) {
+                command.Parameters[45].Value = ((decimal)(Original_b_grossRevenu.Value));
+            }
+            else {
+                command.Parameters[45].Value = global::System.DBNull.Value;
+            }
+            if ((IsNull_b_creditBalance.HasValue == true)) {
+                command.Parameters[46].Value = ((int)(IsNull_b_creditBalance.Value));
+            }
+            else {
+                command.Parameters[46].Value = global::System.DBNull.Value;
+            }
+            if ((Original_b_creditBalance.HasValue == true)) {
+                command.Parameters[47].Value = ((decimal)(Original_b_creditBalance.Value));
+            }
+            else {
+                command.Parameters[47].Value = global::System.DBNull.Value;
+            }
+            if ((Original_b_creditworthiness == null)) {
+                throw new global::System.ArgumentNullException("Original_b_creditworthiness");
+            }
+            else {
+                command.Parameters[48].Value = ((string)(Original_b_creditworthiness));
+            }
+            if ((Original_b_potentialCustomer == null)) {
+                throw new global::System.ArgumentNullException("Original_b_potentialCustomer");
+            }
+            else {
+                command.Parameters[49].Value = ((string)(Original_b_potentialCustomer));
+            }
+            if ((Original_b_bkr == null)) {
+                throw new global::System.ArgumentNullException("Original_b_bkr");
+            }
+            else {
+                command.Parameters[50].Value = ((string)(Original_b_bkr));
+            }
+            command.Parameters[51].Value = ((int)(Original_c_id));
+            command.Parameters[52].Value = ((int)(c_id));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
